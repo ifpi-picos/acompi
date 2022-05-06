@@ -1,0 +1,25 @@
+*{
+box-sizing: border-box;
+}
+
+body{
+    width: 70%;
+    margin: auto;
+}
+div{
+    border: 0.1rem solid black;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+h1{
+    text-align: center;
+}
+
+button{
+    padding-top: 7%;
+    padding-bottom: 7%;
+    float: right;
+    background-color: #4CAF50;
+    color: white;
+}
