@@ -14,4 +14,5 @@ Para os alunos do IFPI -Instituto Federal do Piauí-, que necessitam de computad
 Ao contrário de outros sistemas de reserva de computadores que dependem de agentes externos ao aplicativo para completar o processo, nosso produto, além de ser feito inteiramente sob medida para o IFPI, não depende de agentes externos para poder concluir a reserva.
 
 **wireframes**
+
 https://miro.com/app/board/uXjVO37HErc=/?share_link_id=475032403989
