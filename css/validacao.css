@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+}
+
+.container-validacao{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.validacao{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.validacao input{
+    width: 100%;
+}
+
+img{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    height: 10%;
+    width: 10%;
+}
