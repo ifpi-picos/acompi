@@ -15,7 +15,7 @@ Ao contrário de outros sistemas de reserva de computadores que dependem de agen
 
 **Descrição**
 
-O objetivo do acompi é dar uso aos computadores ociosos do Instituto Federal do Piauí campus picos, para isso ele utiliza um sistema de match baseado em aplicativos de relacionamento. Seus usuários são:
+O objetivo do acompi é dar uso aos computadores ociosos do Instituto Federal do Piauí campus picos. Seus usuários são:
 
 - Alunos: aqueles que reservam os computadores dos laboratórios.
 
@@ -31,7 +31,9 @@ Os passos para se efetuar uma reserva no acompi são:
 
 - 3 O site prioriza os cartões dos alunos em cada turma, cartões esses que ainda podem ser reordenados pelo professor.
 
-- 4 Após os cartões serem ordenados pelo sistema, os primeiros da fila reservam os computadores. Exemplo: se uma turma tem 30 cartões e o laboratório 15 computadores, o sistema prioriza os cartões e os 15 primeiros efetuam a reserva.
+- 4 Após os cartões serem ordenados pelo sistema, os primeiros da fila reservam os computadores. 
+
+- Exemplo: se uma turma tem 30 cartões e o laboratório 15 computadores, o sistema prioriza os cartões e os 15 primeiros efetuam a reserva.
 
 **Wireframes**
 
