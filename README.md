@@ -1,5 +1,12 @@
-# acompi front-end
+# Acompi front-end
 Projeto Integrador I e Internet I 2022.1
+
+**Membros da equipe**
+
+Allan Barbosa da Silva
+Wesley Veloso Costa
+Rodrigo Pereira dos Santos
+Iago Breno Araújo Damasceno
 
 **Briefing**
 
@@ -10,7 +17,7 @@ ociosos onde os professores/administrativo possam ficar responsáveis e os aluno
 
 **Visão do produto**
 
-Para os alunos do IFPI -Instituto Federal do Piauí-, que necessitam de computadores com acesso à internet ou mesmo de um espaço propício para trabalho, o acompi é um sistema de reserva de computadores que ajuda os alunos a disponibilizarem um tempo, de acordo com sua agenda, para utilizarem os computadores ociosos do IFPI.
+Para os alunos do IFPI -Instituto Federal do Piauí, que necessitam de computadores com acesso à internet ou mesmo de um espaço propício para trabalho, o acompi é um sistema de reserva de computadores que ajuda os alunos a disponibilizarem um tempo, de acordo com sua agenda, para utilizarem os computadores ociosos do IFPI.
 Ao contrário de outros sistemas de reserva de computadores que dependem de agentes externos ao aplicativo para completar o processo, nosso produto, além de ser feito inteiramente sob medida para o IFPI, não depende de agentes externos para poder concluir a reserva.
 
 **Descrição**
