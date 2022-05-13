@@ -20,9 +20,9 @@ main{
 button{
     padding-top: 3%;
     padding-bottom: 3%;
-    float: right;
-    background-color: #4CAF50;
+    background-color: blue;
     color: white;
+    display: block;
 }
 
 body{
@@ -53,4 +53,11 @@ img{
     right: 10%;
     height: 10%;
     width: 10%;
+}
+
+/* login */
+
+.linkCadastroLogin{
+    text-align: end;
+    
 }
