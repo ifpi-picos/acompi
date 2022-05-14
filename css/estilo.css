@@ -11,6 +11,10 @@ body{
     margin-bottom: 5%;
 }
 
+.camposCadastro div input{
+    width: 100% ;
+}
+
 .tituloCadastro{
     text-align: center;
 }
