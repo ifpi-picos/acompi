@@ -1,10 +1,12 @@
 *{
 box-sizing: border-box;
 }
+body{
+    margin: 0;
+}
 
-main{
-    width: 70%;
-    margin: auto;
+html, body{
+    height: 100%;
 }
 
 .camposCadastro div{
@@ -13,23 +15,23 @@ main{
     margin-bottom: 5%;
 }
 
+.camposCadastro div input{
+    width: 100% ;
+}
+
 .tituloCadastro{
     text-align: center;
 }
 
-button{
+.botaoCadastrar, .botaoLogin{
     padding-top: 3%;
     padding-bottom: 3%;
-    float: right;
-    background-color: #4CAF50;
+    background-color: blue;
     color: white;
+    display: block;
 }
 
-body{
-    margin: 0;
-}
-
-.container-validacao{
+.containerValidacaoCadastro{
     margin: 0;
     width: 100vw;
     height: 100vh;
@@ -47,24 +49,47 @@ body{
     width: 100%;
 }
 
-img{
+.imgValidacao{
     position: absolute;
     bottom: 10%;
     right: 10%;
     height: 10%;
     width: 10%;
 }
-body{
-    background-image: url("../img/index_background.jpg");
-    background-repeat: no-repeat;
+
+/* login */
+
+.linkCadastroLogin{
+    text-align: end;
+}
+
+/* index */
+.indexDiv p, .indexDiv h3{
+    margin: 0;
+}
+.indexBody{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    background-image: url("C:/Users/allan/workspace/programação/ADS-terceiro-semestre/acompi-front-end/img/estrelas.webp");
+}
+.indexLinkCadastro{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
 }
 .branco{
     color: white;
 }
-.linkCadastroIndex{
-    position: bottom 0;
-    right:0;
+.indexDiv{
+    margin: 1rem;
 }
-.slogan{
-    position: center;
+.link{
+    margin: 0;
+    color: 	#1E90FF;
+}
+.login button{
+    color: white;
 }
