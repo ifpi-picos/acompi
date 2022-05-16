@@ -54,3 +54,17 @@ img{
     height: 10%;
     width: 10%;
 }
+body{
+    background-image: url("../img/index_background.jpg");
+    background-repeat: no-repeat;
+}
+.branco{
+    color: white;
+}
+.linkCadastroIndex{
+    position: bottom 0;
+    right:0;
+}
+.slogan{
+    position: center;
+}
