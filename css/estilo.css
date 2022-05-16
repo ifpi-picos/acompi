@@ -101,3 +101,16 @@ html, body{
     padding: 4%;
     margin: 4%;
 }
+
+/*Configurações dos botões: menu, adicionar turma e deletar*/
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+.botao-deletar {
+    text-align: center;
+}
+
+/*Configurções do rodapé*/
