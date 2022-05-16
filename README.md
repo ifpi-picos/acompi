@@ -4,8 +4,11 @@ Projeto Integrador I e Internet I 2022.1
 **Membros da equipe**
 
 Allan Barbosa da Silva
+
 Wesley Veloso Costa
+
 Rodrigo Pereira dos Santos
+
 Iago Breno Araújo Damasceno
 
 **Briefing**
