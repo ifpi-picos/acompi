@@ -126,3 +126,24 @@ html, body{
     text-align: center;
     font-weight: 900;
 }
+
+/*--------------------Configurações da tela de criar turma--------------------*/
+
+/*Configurações gerais da página*/
+.corpo-criar-pagina-turma {
+    font-family: sans-serif;
+    background-color: azure;
+}
+
+/*Configurções iniciais*/
+.criar-turma-main {
+    border: 1px solid black;
+    margin: 1%;
+    padding: 4%;
+}
+
+/*Configurações do rodapé*/
+.criar-turma-footer {
+    text-align: center;
+    font-weight: 900;
+}
