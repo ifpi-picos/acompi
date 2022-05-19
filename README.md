@@ -54,4 +54,5 @@ https://miro.com/app/board/uXjVO37HErc=/?share_link_id=475032403989
 https://octopus.do/3rto2gys4i6
 
 **Paleta de cores**
+
 https://www.happyhues.co/palettes/3
