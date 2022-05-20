@@ -98,6 +98,60 @@ html, body{
 .login button{
     color: white;
 }
+
+/*-------------------Configurações │ Página Turma--------------------*/
+
+/*Configurações gerais da página*/
+.corpo-pagina {
+    font-family: sans-serif;
+    background-color: azure;
+}
+
+/*Configurações da tela de adição e exclusão de turmas*/
+.tela-turma {
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 4%;
+    margin: 4%;
+}
+
+/*Configurações dos botões: menu, adicionar turma e deletar*/
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+.botao-deletar {
+    text-align: center;
+}
+
+/*Configurções do rodapé*/
+.footer {
+    text-align: center;
+    font-weight: 900;
+}
+
+/*--------------------Configurações da tela de criar turma--------------------*/
+
+/*Configurações gerais da página*/
+.corpo-criar-pagina-turma {
+    font-family: sans-serif;
+    background-color: azure;
+}
+
+/*Configurções iniciais*/
+.criar-turma-main {
+    border: 1px solid black;
+    margin: 1%;
+    padding: 4%;
+}
+
+/*Configurações do rodapé*/
+.criar-turma-footer {
+    text-align: center;
+    font-weight: 900;
+}
 .login{
     width: 50%;
     height: 20%;    

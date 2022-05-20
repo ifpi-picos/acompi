@@ -3,10 +3,13 @@ Projeto Integrador I e Internet I 2022.1
 
 **Membros da equipe**
 
-Allan Barbosa da Silva
-Wesley Veloso Costa
-Rodrigo Pereira dos Santos
-Iago Breno Araújo Damasceno
+- Allan Barbosa da Silva
+
+- Wesley Veloso Costa
+
+- Rodrigo Pereira dos Santos
+
+- Iago Breno Araújo Damasceno
 
 **Briefing**
 
@@ -46,6 +49,14 @@ Os passos para se efetuar uma reserva no acompi são:
 
 https://miro.com/app/board/uXjVO37HErc=/?share_link_id=475032403989
 
+**Wireframes 1**
+
+https://miro.com/welcomeonboard/cWZYRVp0Q0VHTENidklKTG1PMVFUcTdORVVQNFMzRkd0S29iSm13Y2tuS2hyUGtLSU11MEo1SzljSXNHSVkyTHwzNDU4NzY0NTI0ODI3OTEwOTU4?share_link_id=626552663970
+
 **Mapa de navegação**
 
 https://octopus.do/3rto2gys4i6
+
+**Paleta de cores**
+
+https://www.happyhues.co/palettes/3
