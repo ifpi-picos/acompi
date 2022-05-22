@@ -3,10 +3,16 @@ box-sizing: border-box;
 }
 body{
     margin: 0;
+    background-color: #fffffe;
 }
 
 html, body{
     height: 100%;
+}
+
+/* cor padrao dos paragrafos*/
+.paragrafo{
+    color: #5f6c7b;
 }
 
 .formularioCadastro input{
@@ -16,24 +22,29 @@ html, body{
     width: 100% ;
 }
 
-.cadastro{
+/*main*/
+.cadastro, .validacao{
     display: flex;
     flex-direction: column;
     justify-items: center;
     min-width: 300px;
     max-width: 500px;
     width: 65%;
+    font-family: sans-serif;
 }
 
-.tituloCadastro{
+/*titulo*/
+.tituloCadastro, .tituloValidacao{
     text-align: center;
+    color: #094067;
 }
 
-.botaoCadastrar, .botaoLogin{
+/*botao principal*/
+.btnPrincipal, .botaoLogin{
     padding-top: 3%;
     padding-bottom: 3%;
-    background-color: #5bb4ca;
-    color: white;
+    background-color: #3da9fc;
+    color: #fffffe;
     display: block;
     width: 100%;
     border-radius: 5px;
@@ -49,21 +60,8 @@ html, body{
     align-items: center;
 }
 
-.validacao{
-    padding: 5px;
-    border-radius: 10px;
-}
-
 .validacao input{
     width: 100%;
-}
-
-.imgValidacao{
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-    height: 10%;
-    width: 10%;
 }
 
 /* login */
