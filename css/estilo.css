@@ -6,10 +6,6 @@ body{
     background-color: #fffffe;
 }
 
-html, body{
-    height: 100%;
-}
-
 /* cor padrao dos paragrafos*/
 .paragrafo{
     color: #5f6c7b;
@@ -127,3 +123,44 @@ html, body{
     width: 50%;
     height: 20%;    
 }
+
+/* início index */
+
+.indexLogo{
+    width: 30%;
+}
+#indexBody{
+    background-color: #d8eefe;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#indexTitulo{
+    color: #094067;
+    margin: 0;
+    margin-top: 15%;
+    margin-bottom: 7%;
+}
+.indexTexto{
+    color: #5f6c7b;
+    margin: 0;
+}
+#indexBotao{
+    background-color:#ef4565;
+    color: #fffffe;
+    width: 90%;
+    margin-bottom: 25%;
+}
+#indexLink{
+    color: #ef4565;
+}
+#indexPrincipal{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 25%;
+}
+/* fim index */
+
