@@ -132,6 +132,7 @@ body{
 /*Centralizando e aumentando tamanho da imagem*/
 .img-perfil {
     text-align: center;
+    margin-top: 5%;
 }
 
 /*Centralizando o nome do usuário na tela*/
@@ -141,12 +142,41 @@ body{
 
 /*Configurações do main*/
 .main-perfil-usuario {
-    margin-top: 30%;
+    margin-top: 20%;
     text-align: center;
 }
 
 /*Configurações do rodapé*/
 .footer-perfil-usuario {
+    text-align: center;
+    font-weight: 900;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*---------------------Configurações │ Mensagem de erro----------------------*/
+
+/*Aumentando ícone e centralizando na página*/
+.icone-erro {
+    text-align: center;
+}
+
+/*Configurações da mensagem de erro*/
+.main-erro {
+    text-align: center;
+}
+
+/*Configuraçoes do botão de retorno*/
+.botao-retorno {
+    border: 1px solid #3da9fc;
+    background-color: #3da9fc;
+    width: 50%;
+    text-align: center;
+}
+
+/*Configurações do rodapé*/
+.footer-erro {
     text-align: center;
     font-weight: 900;
     position: absolute;
