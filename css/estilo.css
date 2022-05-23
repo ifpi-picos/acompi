@@ -40,7 +40,7 @@ html, body{
 }
 
 /*botao principal*/
-.btnPrincipal, .botaoLogin{
+.btnPrincipal{
     padding-top: 3%;
     padding-bottom: 3%;
     background-color: #3da9fc;
@@ -68,37 +68,6 @@ html, body{
 
 .linkCadastroLogin{
     text-align: end;
-}
-
-/* index */
-.indexDiv p, .indexDiv h3{
-    margin: 0;
-}
-.indexBody{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
-    background-image: url("C:/Users/allan/workspace/programação/ADS-terceiro-semestre/acompi-front-end/img/download.jfif");
-}
-.indexLinkCadastro{
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-}
-.branco{
-    color: white;
-}
-.indexDiv{
-    margin: 1rem;
-}
-.link{
-    margin: 0;
-    color: blue;
-}
-.login button{
-    color: white;
 }
 
 /*-------------------Configurações │ Página Turma--------------------*/
@@ -157,7 +126,4 @@ html, body{
 .login{
     width: 50%;
     height: 20%;    
-}
-.botaoLogin{
-    width: 100%;
 }
