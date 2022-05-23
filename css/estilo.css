@@ -169,6 +169,7 @@ body{
     background-color: #3da9fc;
     width: 50%;
     text-align: center;
+    display: flex;
 }
 
 /*Configurações do rodapé*/
