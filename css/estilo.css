@@ -12,10 +12,10 @@ body{
 }
 
 .formularioCadastro input{
-    border: 0.1rem solid black;
-    margin-top: 3%;
+    border: 0.1rem solid #929292;
     margin-bottom: 5%;
     width: 100% ;
+    border-radius: 5px;
 }
 
 /*main*/
