@@ -47,10 +47,6 @@ Os passos para se efetuar uma reserva no acompi são:
 
 **Wireframes**
 
-https://miro.com/app/board/uXjVO37HErc=/?share_link_id=475032403989
-
-**Wireframes 1**
-
 https://miro.com/welcomeonboard/cWZYRVp0Q0VHTENidklKTG1PMVFUcTdORVVQNFMzRkd0S29iSm13Y2tuS2hyUGtLSU11MEo1SzljSXNHSVkyTHwzNDU4NzY0NTI0ODI3OTEwOTU4?share_link_id=626552663970
 
 **Mapa de navegação**
