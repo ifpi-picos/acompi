@@ -12,14 +12,14 @@ body{
 }
 
 .formularioCadastro input{
-    border: 0.1rem solid black;
-    margin-top: 3%;
+    border: 0.1rem solid #929292;
     margin-bottom: 5%;
     width: 100% ;
+    border-radius: 5px;
 }
 
 /*main*/
-.cadastro, .validacao{
+.cadastro, .validacao, .login{
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -30,7 +30,7 @@ body{
 }
 
 /*titulo*/
-.tituloCadastro, .tituloValidacao{
+.tituloCadastro, .tituloValidacao, .tituloLogin{
     text-align: center;
     color: #094067;
 }
@@ -60,11 +60,6 @@ body{
     width: 100%;
 }
 
-/* login */
-
-.linkCadastroLogin{
-    text-align: end;
-}
 
 /*-------------------Configurações │ Página Turma--------------------*/
 
@@ -134,6 +129,7 @@ body{
     text-align: center;
     margin-top: 5%;
 }
+
 
 /*Centralizando o nome do usuário na tela*/
 .nome-usuario {
@@ -230,3 +226,4 @@ body{
 }
 /* fim index */
 
+/*Início do Login*/
