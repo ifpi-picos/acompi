@@ -19,7 +19,7 @@ body{
 }
 
 /*main*/
-.cadastro, .validacao{
+.cadastro, .validacao, .login{
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -30,7 +30,7 @@ body{
 }
 
 /*titulo*/
-.tituloCadastro, .tituloValidacao{
+.tituloCadastro, .tituloValidacao, .tituloLogin{
     text-align: center;
     color: #094067;
 }
@@ -60,11 +60,6 @@ body{
     width: 100%;
 }
 
-/* login */
-
-.linkCadastroLogin{
-    text-align: end;
-}
 
 /*-------------------Configurações │ Página Turma--------------------*/
 
@@ -119,10 +114,6 @@ body{
     text-align: center;
     font-weight: 900;
 }
-.login{
-    width: 50%;
-    height: 20%;    
-}
 
 /* início index */
 
@@ -164,3 +155,4 @@ body{
 }
 /* fim index */
 
+/*Início do Login*/
