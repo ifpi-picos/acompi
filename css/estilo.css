@@ -19,7 +19,7 @@ body{
 }
 
 /*main*/
-.cadastro, .validacao{
+.cadastro, .validacao, .login{
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -30,7 +30,7 @@ body{
 }
 
 /*titulo*/
-.tituloCadastro, .tituloValidacao{
+.tituloCadastro, .tituloValidacao, .tituloLogin{
     text-align: center;
     color: #094067;
 }
@@ -60,17 +60,11 @@ body{
     width: 100%;
 }
 
-/* login */
-
-.linkCadastroLogin{
-    text-align: end;
-}
 
 /*-------------------Configurações │ Página Turma--------------------*/
 
 /*Configurações gerais da página*/
 .corpo-pagina {
-    font-family: sans-serif;
     background-color: azure;
 }
 
@@ -97,13 +91,15 @@ body{
 .footer {
     text-align: center;
     font-weight: 900;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
-/*--------------------Configurações da tela de criar turma--------------------*/
+/*--------------------Configurações │ Página Criar Turmas--------------------*/
 
 /*Configurações gerais da página*/
 .corpo-criar-pagina-turma {
-    font-family: sans-serif;
     background-color: azure;
 }
 
@@ -118,7 +114,43 @@ body{
 .criar-turma-footer {
     text-align: center;
     font-weight: 900;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
+
+/*--------------------Configurações │ Página Perfil do Usuário--------------------*/
+
+/*Ajustando tamanho menu hambúrguer*/
+
+
+/*Centralizando e aumentando tamanho da imagem*/
+.img-perfil {
+    text-align: center;
+}
+
+
+/*Centralizando o nome do usuário na tela*/
+.nome-usuario {
+    text-align: center;
+}
+
+/*Configurações do main*/
+.main-perfil-usuario {
+    margin-top: 30%;
+    text-align: center;
+}
+
+/*Configurações do rodapé*/
+.footer-perfil-usuario {
+    text-align: center;
+    font-weight: 900;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/*---------------------------------------------------------------------------------*/
+
 .login{
     width: 50%;
     height: 20%;    
@@ -164,3 +196,4 @@ body{
 }
 /* fim index */
 
+/*Início do Login*/
