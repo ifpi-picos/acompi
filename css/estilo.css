@@ -5,7 +5,9 @@ body{
     margin: 0;
     background-color: #fffffe;
 }
-
+html{
+    height:100%;
+}
 /* cor padrao dos paragrafos*/
 .paragrafo{
     color: #5f6c7b;
@@ -151,8 +153,6 @@ body{
     width: 100%;
 }
 
-/*---------------------Configurações │ Mensagem de erro----------------------*/
-
 /*Aumentando ícone e centralizando na página*/
 .icone-erro {
     text-align: center;
@@ -198,6 +198,8 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: 100%;
+    justify-content: center;
 }
 #indexTitulo{
     color: #094067;
@@ -209,21 +211,17 @@ body{
     color: #5f6c7b;
     margin: 0;
 }
-#indexBotao{
+#indexBotaoLink{
     color: #fffffe;
     width: 90%;
     margin-bottom: 25%;
+    text-decoration: none;
 }
 #indexPrincipal{
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10%;
     margin-bottom: 25%;
-}
-#indexBotaoLink{
-    text-decoration: none;
-    color: #fffffe;
 }
 /* fim index */
 
@@ -246,3 +244,37 @@ header{
 /* fim menu */
 
 /*Início do Login*/
+
+/* início media querie*/
+@media(min-width:770px){
+#indexPrincipal{
+    margin: 0;
+    width: 40%;
+}
+#indexBotao, #indexBotaoLink{
+    margin: 0;
+}
+#indexLogo{
+    width: 25%;
+}
+#indexBotaoLink{
+    width: 50%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+html, body{
+    height: 100%;
+}
+#indexBotao{
+    width: 100%;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#indexTitulo{
+    margin-top: 6%;
+    margin-bottom: 1%;
+}
+}
+/* fim media querie */
