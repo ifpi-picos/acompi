@@ -247,6 +247,7 @@ ul{
     border: 1px solid black;
     display: flex;
     flex-direction: column;
+    padding: 0;
 }
 header{
     border: 1px solid black;
@@ -258,6 +259,7 @@ header{
 
 /* início media querie*/
 @media(min-width:770px){
+    /* início index */
 #indexPrincipal{
     margin: 0;
     width: 40%;
@@ -287,5 +289,7 @@ html, body{
     margin-top: 6%;
     margin-bottom: 1%;
 }
+/* fim index */
+
 }
 /* fim media querie */
