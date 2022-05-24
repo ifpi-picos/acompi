@@ -1,0 +1,24 @@
+{
+    "background_color": "nenhum",
+    "description": "site para reserva de computadores do IFPI campus Picos",
+    "dir": "ltr",
+    "display": "navegador",
+    "name": "ifpi-picos.github",
+    "orientation": "any",
+    "scope": "",
+    "short_name": "acompi",
+    "start_url": "https://ifpi-picos.github.io/acompi-front-end/",
+    "theme_color": "none",
+    "categories": [],
+    "screenshots": [],
+    "icons": [
+      {
+        "src": "img\\logo.png",
+        "type": "image/png",
+        "sizes": "200x200"
+      }
+    ],
+    "shortcuts": [],
+    "orientação": "qualquer",
+    "escopo": "/"
+  }
