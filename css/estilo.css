@@ -126,6 +126,8 @@ html{
 /*Ajustando tamanho menu hambúrguer*/
 .menu-hamburguer {
     margin: 1%;
+    height: 4%;
+    width: 4%;
 }
 
 /*Centralizando e aumentando tamanho da imagem*/
@@ -134,6 +136,11 @@ html{
     margin-top: 5%;
 }
 
+/**/
+.img-per {
+    width: 4%;
+    height: 4%;
+}
 
 /*Centralizando o nome do usuário na tela*/
 .nome-usuario {
