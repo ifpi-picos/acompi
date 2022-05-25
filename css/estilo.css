@@ -163,6 +163,12 @@ html{
 }
 
 /**/
+.retorno {
+    width: 10%;
+    height: 10%;
+}
+
+/**/
 .msg-erro {
     width: 6%;
     height: 6%;
@@ -178,7 +184,9 @@ html{
     border: 1px solid #3da9fc;
     background-color: #3da9fc;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 /*Configurações do rodapé*/
@@ -249,9 +257,10 @@ ul{
     flex-direction: column;
     padding: 0;
 }
-header{
+/*header{
     border: 1px solid black;
 }
+*/
 /* fim menu */
 
 
