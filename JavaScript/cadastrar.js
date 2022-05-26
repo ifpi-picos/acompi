@@ -1,11 +1,9 @@
-const nome = document.querySelector(input)
+const nome = document.getElementById("nome")
+const email = document.getElementById("email")
 const btnCadastrar = document.querySelector("input.btnPrincipal")
 
 btnCadastrar.addEventListener("click", msgValidacao())
-
 function msgValidacao() { 
-if (nome.value == "" || email.value == "") {
-    alert("ERRO! Preencha todos os campos obrigatórios!")
-}else{
 alert("Deu certo!")
-}}
+alert(nome)
+}
