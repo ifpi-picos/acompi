@@ -17,16 +17,15 @@
                 <img class="logo" src="../img/hheee.jpeg" alt="Logo do ACOMPI">
                 <h1 class="tituloCadastro">CADASTRO</h1>
                 <form class="formularioCadastro" method="post">
-                    <!-- colocar id nos inputs para ligar com JS -->
-                    <p class="paragrafo"><b>Digite seu nome completo:</b></p>
+                    <p id="paragrafoNome" class="paragrafo"><b>Digite seu nome completo:</b></p>
                     <input id="nome" type="text" placeholder="nome" required>
-                    <p class="paragrafo"><b>Digite seu E-mail institucional</b></p>
+                    <p id="paragrafoEmail" class="paragrafo"><b>Digite seu E-mail institucional</b></p>
                     <input id="email" type="email" placeholder="E-mail" required>
-                    <p class="paragrafo"><b>Crie uma senha:</b></p>
-                    <input type="password" placeholder="senha" required>
-                    <p class="paragrafo"><b>Repita a senha criada anteriormente:</b></p>
-                    <input type="password" placeholder="senha" required>
-                    <input class="btnPrincipal" type="submit" value="Cadastrar">
+                    <p id="paragrafoSenha1" class="paragrafo"><b>Crie uma senha:</b></p>
+                    <input id="senha1" type="password" placeholder="senha">
+                    <p id="paragrafoSenha2" class="paragrafo"><b>Repita a senha criada anteriormente:</b></p>
+                    <input id="senha2" type="password" placeholder="senha">
+                    <button class="btnPrincipal" type="button">Cadastrar</button>
                 </form>
                 <a href="../autenticacao/login.html">Já possui conta ?</a>
             </div>
