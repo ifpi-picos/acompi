@@ -270,7 +270,41 @@
     /* fim menu */
     
     
-    /*Início do Login*/
+    /*-----------Início do Login-----------*/
+    /*Logo*/
+    .logoLogin{
+        width: 30%;
+    }
+    /*Corpo login*/
+    .containerLogin{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerLogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+    }
+    .campoEsqueceuSenha{
+        margin-bottom: 30%  ;
+    }
+    .paragrafoNaoPossuiConta{
+        margin-bottom: 0;
+    }
+    .containerCentro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formularioLogin input{
+        border: 0.1rem solid #929292;
+        margin-bottom: 5%;
+        width: 100% ;
+        border-radius: 5px;
+    }
+    /*-----------Fim do Login-----------*/
     
     /* início media querie*/
     @media(min-width:770px){

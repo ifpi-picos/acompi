@@ -6,13 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Login dos usuários para acessar o ACOMPI">
   <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="icon" type="image/x-icon" href="..\img\logo.png">
   <title>Login-Acompi</title>
 </head>
 <body>
-  <main>
+  <main class="containerLogin">
 
     <div class="login">
-      <img src="../img/hheee.jpeg" alt="Imagem do login">
+      <div class="containerLogo">
+        <img class="logoLogin" src="../img/logo.png" alt="Imagem do login">
+      </div>
       <h1 class="tituloLogin">LOGIN</h1>
 
       <form class="formularioLogin">
@@ -22,10 +25,14 @@
         <input type="password" placeholder="Senha">
       </form>
 
-      <a href="#">Esqueceu sua senha?</a>
+      <a class="campoEsqueceuSenha" href="#">Esqueceu sua senha?</a>
+
       <input class="btnPrincipal" type="submit" value="Entrar">
-      <p class="paragrafo">Não possui conta?</p>
-      <a href="../autenticacao/cadastro.html">Cadastre-se!</a>
+
+      <div class="containerCentro">
+        <p class="paragrafoNaoPossuiConta">Não possui conta?</p>
+        <a href="../autenticacao/cadastro.html">Cadastre-se!</a>
+      </div>
     </div>
 
   </main>
