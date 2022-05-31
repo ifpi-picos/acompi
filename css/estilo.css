@@ -31,7 +31,7 @@
     }
     
     /*titulo*/
-    .tituloCadastro, .tituloValidacao, .tituloLogin{
+    .tituloCadastro, .tituloValidacao, .tituloLogin, .tituloAlteracaoDeSenha{
         text-align: center;
         color: #094067;
     }
@@ -305,6 +305,38 @@
         border-radius: 5px;
     }
     /*-----------Fim do Login-----------*/
+
+    /*-----------Início de alteração de senha-----------*/
+    /*logo*/
+    .logoModificarSenha{
+        width: 30%;
+    }
+    /*Container de Modificar senha*/
+    .containerModificarSenha{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*Barra de input*/
+    .formularioModificarSenha input{
+        border: 0.1rem solid #929292;
+        margin-bottom: 5%;
+        width: 100% ;
+        border-radius: 5px;
+    }
+    /*Espaço entre o formulario e o botão*/
+    .botaoPrincipal{
+        padding-top: 3%;
+        padding-bottom: 3%;
+        background-color: #3da9fc;
+        color: #fffffe;
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10%;
+    }
+    /*-----------Fim de alteração de senha-----------*/
     
     /* início media querie*/
     @media(min-width:770px){
