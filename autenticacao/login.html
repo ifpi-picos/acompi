@@ -20,20 +20,23 @@
 
       <form class="formularioLogin">
         <p class="paragrafo">Digite seu e-mail:</p>
-        <input type="email" placeholder="E-mail">
+        <input id="emailLogin" type="email" placeholder="E-mail" required>
         <p class="paragrafo">Digite sua senha:</p>
-        <input type="password" placeholder="Senha">
+        <input id="senhaLogin" type="password" placeholder="Senha" required>
+        <button onclick="enviarMensagemLogin()" id="btnLogin" class="btnPrincipal">Login</button>
       </form>
 
       <a class="campoEsqueceuSenha" href="../autenticacao/modificarSenha.html">Esqueceu sua senha?</a>
 
-      <input class="btnPrincipal" type="submit" value="Entrar">
+     
 
       <div class="containerCentro">
         <p class="paragrafoNaoPossuiConta">Não possui conta?</p>
         <a href="../autenticacao/cadastro.html">Cadastre-se!</a>
       </div>
     </div>
+
+    <script src="../JavaScript/principal.js"></script>
 
   </main>
 
