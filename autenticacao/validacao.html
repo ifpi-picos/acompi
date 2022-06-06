@@ -14,16 +14,17 @@
 
         <div class="validacao">
             <img class="logo" src="../img/hheee.jpeg" alt="Logo do ACOMPI">
+            <section class="secaoParaTelaComputador">
             <h4 class="tituloValidacao paragrafo">Um e-mail foi enviado para você!</h4>
             <h4 class="paragrafo">Por favor, verifique sua caixa de e-mail e digite o código que você recebeu logo abaixo!</h4>
-            <input type="text" placeholder="00000">
-            <hr>
-            <button class="btnPrincipal">Confirmar</button>
-            <hr>
+            <input id="codigoVerificacao" type="text" placeholder="00000">
+            <button onclick="enviarMsgValidacao()" id="btnVerificacao" class="btnPrincipal">Confirmar</button>
+            
             <p class="paragrafo">Não recebeu o código?</p>
             <a href="#">Enviar novamente.</a>
+        </section>
         </div>
-
+        <script src="../JavaScript/index.js"></script>
     </div>
 </body>
 

@@ -27,7 +27,6 @@
         flex-direction: column;
         justify-items: center;
         min-width: 300px;
-        max-width: 500px;
     }
     
     /*titulo*/
@@ -62,7 +61,7 @@
     }
     
     
-    /*-------------------Configurações │ Página Turma--------------------*/
+    /*-------------------Configurações │ Página Turma e Pagina CancelarReserva--------------------*/
     
     /*Configurações gerais da página*/
     .corpo-pagina {
@@ -92,9 +91,16 @@
     .footer {
         text-align: center;
         font-weight: 900;
-        position: absolute;
-        bottom: 0;
         width: 100%;
+    }
+
+    /*botao do aluno cancelar a reserva*/
+    .btnCancelarReserva{
+        width: 40%;
+        background-color: #c54141;
+        color: #fffffe;
+        margin-bottom: -70%;
+        cursor: pointer;
     }
     
     /*--------------------Configurações │ Página Criar Turmas--------------------*/
@@ -378,6 +384,32 @@
         margin-bottom: 1%;
     }
     /* fim index */
-    
+
+    /* início tela de cadastro e validação*/
+    .cadastro, .validacao, .containerCancelarReserva{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .logo{
+        width: 35%;
+    }
+
+    .secaoParaTelaComputador{
+        width: 35%;
+    }
+    /* fim tela de cadastro e validaçao*/
+
+    /* início tela do aluno ver e cancelar reserva */
+    .containerCancelarReserva{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tela-turma{
+        max-width: 400px;
+    }
     }
     /* fim media querie */
