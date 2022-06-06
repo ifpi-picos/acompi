@@ -252,21 +252,28 @@
     /* inicio menu */
     
     .opcao{
-        border: 1px solid black;
+        color: white;
+        text-decoration: none;
     }
     nav{
         border: 1px solid black;
     }
-    ul{
+    .listaNavegacao{
         border: 1px solid black;
         display: flex;
         flex-direction: column;
+        height: 92.999vh;
+        width: 50vw;
+        background-color: darkslateblue;
+        align-items: center;
         padding: 0;
+        align-content: space-between;
+        margin-bottom: 0;
     }
-    /*header{
+    header{
         border: 1px solid black;
     }
-    */
+   
     /* fim menu */
     
     
