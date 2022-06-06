@@ -91,6 +91,11 @@ function enviarMensagemLogin() {
 }
 //---------------fim tela de Login---------------//
 
+// tela ver e cancelar reserva (aluno)
+function cancelarReserva(){
+  
+}
+// fim tela ver e cancelar reserva (aluno)
 //---------------Início da tela de Modificar senha---------------//
 
 //---------------Início da tela de Modificar senha---------------//
