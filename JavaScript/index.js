@@ -92,5 +92,12 @@ function enviarMensagemLogin() {
 //---------------fim tela de Login---------------//
 
 //---------------Início da tela de Modificar senha---------------//
+const emailModificarSenha = document.querySelector('#emailModificarSenha')
+const senha1ModificarSenha = document.querySelector('#senha1ModificarSenha')
+const senha2ModificarSenha = document.querySelector('#senha2ModificarSenha')
 
+function enviarMensagemModificarSenha() {
+  alert('Tudo certo!' + emailModificarSenha.value + senha1ModificarSenha.value + senha2ModificarSenha.value)
+  console.log('Teste')
+}
 //---------------Início da tela de Modificar senha---------------//
