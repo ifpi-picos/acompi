@@ -127,45 +127,47 @@
     }
     
     /*--------------------Configurações │ Página Perfil do Usuário--------------------*/
-    
-    /*Ajustando tamanho menu hambúrguer*/
-    .menu-hamburguer {
-        margin: 1%;
-        height: 4%;
-        width: 4%;
+    .header-perfil-usuario {
+        background-color: #fffffe;
     }
-    
-    /*Centralizando e aumentando tamanho da imagem*/
+        
+    .menu-hamburguer {
+        margin: 2%;
+        height: 3%;
+        width: 3%;
+    }
+        
     .img-perfil {
         text-align: center;
-        margin-top: 5%;
+        margin-top: 3%;
     }
     
-    /**/
     .img-per {
-        width: 4%;
-        height: 4%;
+        width: 8%;
+        height: 8%;
     }
-    
-    /*Centralizando o nome do usuário na tela*/
+        
     .nome-usuario {
         text-align: center;
     }
     
-    /*Configurações do main*/
     .main-perfil-usuario {
-        margin-top: 10%;
+        margin-top: 5%;
         text-align: center;
     }
     
-    /*Configurações do rodapé*/
     .footer-perfil-usuario {
         text-align: center;
         font-weight: 900;
         position: absolute;
         bottom: 0;
-        width: 100%;
+        width: 98%;
         margin-bottom: 1%;
+    }
+
+    /**/
+    .body-msg-erro {
+        background-color: #fffffe   ;
     }
     
     /*Aumentando ícone e centralizando na página*/
@@ -176,8 +178,8 @@
     
     /**/
     .retorno {
-        width: 10%;
-        height: 10%;
+        width: 8%;
+        height: 8%;
     }
     
     /**/
