@@ -257,29 +257,61 @@
     
     /* inicio menu */
     
-    .opcao{
-        color: white;
-        text-decoration: none;
-    }
-    nav{
-        border: 1px solid black;
-    }
-    .listaNavegacao{
-        border: 1px solid black;
-        display: flex;
-        flex-direction: column;
-        height: 92.999vh;
-        width: 50vw;
-        background-color: darkslateblue;
-        align-items: center;
-        padding: 0;
-        align-content: space-between;
-        margin-bottom: 0;
-    }
     header{
-        border: 1px solid black;
+        background-color: #094067;
+        margin: 0;
+        padding: 0;
     }
-   
+    .barra-navegacao{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        padding: 1.5rem 6rem;
+        height: 5rem;
+    }
+    .logo-header{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .img-logo-header{
+        width: 3rem;
+        margin: 0;
+        padding: 0;
+    }
+    .lista-navegacao{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .lista-navegacao ul{
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        width: 100%;
+    }
+    .item-navegacao{
+        margin: 0 15px;
+    }
+    .opcao{
+        text-decoration: none;
+        font-size: 1.15rem;
+        color: #fff;
+        font-weight: 400;
+    }
+
+    .icone-menu-mobile{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: none;
+    }
     /* fim menu */
     
     
@@ -350,7 +382,7 @@
         margin-top: 10%;
     }
     /*-----------Fim de alteração de senha-----------*/
-    
+
     /* início media querie*/
     @media(min-width:770px){
         /* início index */
@@ -413,3 +445,37 @@
     }
     }
     /* fim media querie */
+
+    /* inicio media querie celular */
+    @media(max-width:400px){
+        /* inicio menu */
+      .barra-navegacao{
+          padding: 1.5rem, 4rem;
+      }
+      .item-navegacao{
+          display: none;
+      }
+      .icone-menu-mobile{
+          display: block;
+      }
+      .icone-menu-mobile button{
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+      }
+      .menu-mobile ul{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          padding-bottom: 1rem;
+      }
+      .menu-mobile .item-navegacao{
+          display: block;
+          padding-top: 1.2rem;
+      }
+      .open{
+          display: block;
+      }
+      /* fim menu */
+  }
+  /* fim media querie celular */
