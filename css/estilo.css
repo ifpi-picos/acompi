@@ -6,9 +6,6 @@
         margin: 0;
         background-color: #fffffe;
     }
-    html{
-        height:100%;
-    }
     /* cor padrao dos paragrafos*/
     .paragrafo{
         color: #5f6c7b;
@@ -22,11 +19,12 @@
     }
     
     /*main*/
-    .cadastro, .validacao, .login{
+    .containerAuthenticacaoFilho, .validacao, .login{
         display: flex;
         flex-direction: column;
         justify-items: center;
-        min-width: 300px;
+        width: 300px;
+        margin-top: 40px;
     }
     
     /*titulo*/
@@ -47,10 +45,9 @@
         cursor: pointer;
     }
     
-    .containerValidacaoECadastro{
+    .containerAuthenticacaoPai{
         margin: 0;
         width: 100vw;
-        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -418,7 +415,7 @@
     /* fim index */
 
     /* início tela de cadastro e validação*/
-    .cadastro, .validacao, .containerCancelarReserva{
+    .containerAuthenticacaoFilho, .validacao, .containerCancelarReserva{
         width: 100vw;
         display: flex;
         flex-direction: row;
