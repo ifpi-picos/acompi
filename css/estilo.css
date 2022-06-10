@@ -95,6 +95,8 @@
     /*botao do aluno cancelar a reserva*/
     .btnCancelarReserva{
         width: 40%;
+        padding-top: 4%;
+        padding-bottom: 4%;
         background-color: #c54141;
         color: #fffffe;
         margin-bottom: -70%;

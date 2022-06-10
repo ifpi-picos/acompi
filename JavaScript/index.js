@@ -91,11 +91,22 @@ function enviarMensagemLogin() {
 }
 //---------------fim tela de Login---------------//
 
+
 // tela ver e cancelar reserva (aluno)
+const btnCancelarReserva1 = document.querySelector("#btnCancelarReserva1")
+
 function cancelarReserva(){
-  
+  if (btnCancelarReserva1.innerHTML == "Cancelar Reserva"){
+  btnCancelarReserva1.style.backgroundColor = "#3da9fc"
+  btnCancelarReserva1.innerHTML = "Reservar"
+}else{
+  btnCancelarReserva1.style.backgroundColor = "#c54141"
+  btnCancelarReserva1.innerHTML = "Cancelar Reserva";
+}
 }
 // fim tela ver e cancelar reserva (aluno)
+
+
 //---------------Início da tela de Modificar senha---------------//
 const emailModificarSenha = document.querySelector('#emailModificarSenha')
 const senha1ModificarSenha = document.querySelector('#senha1ModificarSenha')
