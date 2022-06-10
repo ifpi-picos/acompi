@@ -31,13 +31,13 @@ O objetivo do acompi é dar uso aos computadores ociosos do Instituto Federal do
 
 Os passos para se efetuar uma reserva no ACOMPI são:
 
-- 1. O professor cria um cartão de turma;
+- O professor cria um cartão de turma;
 
-- 2. Os alunos aceitam os cartões de turma e ao fazer isso criam cartões de alunos;
+- Os alunos aceitam os cartões de turma e ao fazer isso criam cartões de alunos;
 
-- 3. O site prioriza os cartões dos alunos em cada turma, cartões esses que ainda podem ser reordenados pelo professor;
+- O site prioriza os cartões dos alunos em cada turma, cartões esses que ainda podem ser reordenados pelo professor;
 
-- 4. Após os cartões serem ordenados pelo sistema, os primeiros da fila reservam os computadores;
+- Após os cartões serem ordenados pelo sistema, os primeiros da fila reservam os computadores;
 
 - Exemplo: se uma turma tem 30 cartões e o laboratório 15 computadores, o sistema prioriza os cartões e os 15 primeiros efetuam a reserva.
 
