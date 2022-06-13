@@ -20,9 +20,8 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 0;
 }
-/* wesley e iago
-tela cadastro/validaçao/login*/
 
 /* Configurações do button */
 .login a {
@@ -49,6 +48,9 @@ tela cadastro/validaçao/login*/
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
 
+/* wesley e iago
+tela cadastro/validaçao/login*/
+
 /* Cor padrão dos parágrafos */
 .paragrafo {
     color: #5f6c7b;
@@ -65,9 +67,9 @@ tela cadastro/validaçao/login*/
 .containerAuthenticacaoFilho, .validacao, .login {
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     width: 300px;
-    margin-top: 40px;
+    height: 100vh;
 }
     
 /* Título */
@@ -472,11 +474,12 @@ wesley */
     /* wesley */
     /* início tela de cadastro e validação*/
     .containerAuthenticacaoFilho, .validacao{
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
     }
 
     .logo {
