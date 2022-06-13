@@ -1,205 +1,207 @@
-*{
+* {
     box-sizing: border-box;
     font-family: sans-serif;
-    }
+}
     
-    body{
-        margin: 0;
-        background-color: #fffffe;
-    }
-    /* cor padrao dos paragrafos*/
-    .paragrafo{
-        color: #5f6c7b;
-    }
-    
-    .formularioCadastro input{
-        border: 0.1rem solid #929292;
-        margin-bottom: 5%;
-        width: 100% ;
-        border-radius: 5px;
-    }
-    
-    /*main*/
-    .containerAuthenticacaoFilho, .validacao, .login{
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        width: 300px;
-        margin-top: 40px;
-    }
-    
-    /*titulo*/
-    .tituloCadastro, .tituloValidacao, .tituloLogin, .tituloAlteracaoDeSenha{
-        text-align: center;
-        color: #094067;
-    }
-    
-    /*botao principal*/
-    .btnPrincipal, #indexBotao{
-        padding-top: 3%;
-        padding-bottom: 3%;
-        background-color: #3da9fc;
-        color: #fffffe;
-        display: block;
-        width: 100%;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    
-    .containerAuthenticacaoPai{
-        margin: 0;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .validacao input{
-        width: 100%;
-    }
-    
-    
-    /*-------------------Configurações │ Página Turma e Pagina CancelarReserva--------------------*/
-    
-    /*Configurações gerais da página*/
-    .corpo-pagina {
-        background-color: azure;
-    }
-    
-    /*Configurações da tela de adição e exclusão de turmas*/
-    .tela-turma {
-        border: 1px solid black;
-        border-radius: 10%;
-        padding: 4%;
-        margin: 4%;
-    }
-    
-    /*Configurações dos botões: menu, adicionar turma e deletar*/
-    .botoes {
-        display: flex;
-        justify-content: space-between;
-        margin: 2%;
-    }
-    
-    .botao-deletar {
-        text-align: center;
-    }
-    
-    /*Configurções do rodapé*/
-    .footer {
-        text-align: center;
-        font-weight: 900;
-        width: 100%;
-    }
+body {
+    margin: 0;
+    background-color: #fffffe;
+}
 
-    /*botao do aluno cancelar a reserva*/
-    .btnCancelarReserva{
-        width: 40%;
-        background-color: #c54141;
-        color: #fffffe;
-        margin-bottom: -70%;
-        cursor: pointer;
-    }
+/* Cor padrão dos parágrafos */
+.paragrafo {
+    color: #5f6c7b;
+}
     
-    /*--------------------Configurações │ Página Criar Turmas--------------------*/
+.formularioCadastro input {
+    border: 0.1rem solid #929292;
+    margin-bottom: 5%;
+    width: 100% ;
+    border-radius: 5px;
+}
     
-    /*Configurações gerais da página*/
-    .corpo-criar-pagina-turma {
-        background-color: azure;
-    }
+/* Main */
+.containerAuthenticacaoFilho, .validacao, .login {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 300px;
+    margin-top: 40px;
+}
     
-    /*Configurções iniciais*/
-    .criar-turma-main {
-        border: 1px solid black;
-        margin: 1%;
-        padding: 4%;
-    }
+/* Título */
+.tituloCadastro, .tituloValidacao, .tituloLogin, .tituloAlteracaoDeSenha {
+    text-align: center;
+    color: #094067;
+}
     
-    /*Configurações do rodapé*/
-    .criar-turma-footer {
-        text-align: center;
-        font-weight: 900;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
+/* Botão principal */
+.btnPrincipal, #indexBotao {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #3da9fc;
+    color: #fffffe;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
     
-    /*--------------------Configurações │ Página Perfil do Usuário--------------------*/
-    .header-perfil-usuario {
-        background-color: #fffffe;
-    }
-        
-    .menu-hamburguer {
-        margin: 2%;
-        height: 3%;
-        width: 3%;
-    }
-        
-    .img-perfil {
-        text-align: center;
-        margin-top: 3%;
-    }
+.containerAuthenticacaoPai {
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
     
-    .img-per {
-        width: 8%;
-        height: 8%;
-    }
-        
-    .nome-usuario {
-        text-align: center;
-    }
+.validacao input {
+    width: 100%;
+}
     
-    .main-perfil-usuario {
-        margin-top: 5%;
-        text-align: center;
-    }
+/*-------------------Configurações │ Tela Turma e Tela CancelarReserva--------------------*/
     
-    .footer-perfil-usuario {
-        text-align: center;
-        font-weight: 900;
-        position: absolute;
-        bottom: 0;
-        width: 98%;
-        margin-bottom: 1%;
-    }
+/* Configurações gerais da página */
+.corpo-pagina {
+    background-color: azure;
+}
+    
+/* Configurações da tela de adição e exclusão de turmas */
+.tela-turma {
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 4%;
+    margin: 4%;
+}
+    
+/* Configurações dos botões: menu, adicionar turma e deletar */
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+}
+    
+.botao-deletar {
+    text-align: center;
+}
+    
+/* Configurções do rodapé */
+.footer {
+    text-align: center;
+    font-weight: 900;
+    width: 100%;
+}
 
-    /**/
-    .body-msg-erro {
-        background-color: #fffffe   ;
-    }
+/* Botão do aluno cancelar a reserva */
+.btnCancelarReserva {
+    width: 40%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-color: #c54141;
+    color: #fffffe;
+    margin-bottom: -70%;
+    cursor: pointer;
+}
     
-    /*Aumentando ícone e centralizando na página*/
-    .icone-erro {
-        text-align: center;
-        margin-top: 2%;
-    }
+/*--------------------Configurações │ Tela Criar Turmas--------------------*/
     
-    /**/
-    .retorno {
-        width: 8%;
-        height: 8%;
-    }
+/* Configurações gerais da página */
+.corpo-criar-pagina-turma {
+    background-color: azure;
+}
     
-    /**/
-    .msg-erro {
-        width: 6%;
-        height: 6%;
-    }
+/* Configurações iniciais */
+.criar-turma-main {
+    border: 1px solid black;
+    margin: 1%;
+    padding: 4%;
+}
     
-    /*Configurações da mensagem de erro*/
-    .main-erro {
-        text-align: center;
-    }
+/* Configurações do rodapé */
+.criar-turma-footer {
+    text-align: center;
+    font-weight: 900;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
     
-    /*Configuraçoes do botão de retorno*/
-    .botao-retorno {
-        border: 1px solid #3da9fc;
-        background-color: #3da9fc;
-        text-align: center;
-        padding: 20px;
-        margin-left: 20%;
-        margin-right: 20%;
-    }
+/*--------------------Configurações │ Página Perfil do Usuário--------------------*/
+.header-perfil-usuario {
+    background-color: #fffffe;
+}
+        
+.menu-hamburguer {
+    margin: 2%;
+    height: 3%;
+    width: 3%;
+}
+        
+.img-perfil {
+    text-align: center;
+    margin-top: 3%;
+}
+    
+.img-per {
+    width: 8%;
+    height: 8%;
+}
+        
+.nome-usuario {
+    text-align: center;
+}
+    
+.main-perfil-usuario {
+    margin-top: 5%;
+    text-align: center;
+}
+    
+.footer-perfil-usuario {
+    text-align: center;
+    font-weight: 900;
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    margin-bottom: 1%;
+}
+
+/**/
+.body-msg-erro {
+    background-color: #fffffe   ;
+}
+    
+/* Aumentando ícone e centralizando na página */
+.icone-erro {
+    text-align: center;
+    margin-top: 2%;
+}
+    
+/**/
+.retorno {
+    width: 8%;
+    height: 8%;
+}
+    
+/**/
+.msg-erro {
+    width: 6%;
+    height: 6%;
+}
+    
+/* Configurações da mensagem de erro */
+.main-erro {
+    text-align: center;
+}
+    
+/* Configuraçoes do botão de retorno */
+.botao-retorno {
+    border: 1px solid #3da9fc;
+    background-color: #3da9fc;
+    text-align: center;
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
     
     /*Configurações do rodapé*/
     .footer-erro {
@@ -301,167 +303,198 @@
     /* fim menu */
     
     
-    /*-----------Início do Login-----------*/
-    /*Logo*/
-    .logoLogin{
-        width: 30%;
-    }
-    /*Corpo login*/
-    .containerLogin{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .containerLogo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10%;
-    }
-    .campoEsqueceuSenha{
-        margin-bottom: 30%  ;
-    }
-    .paragrafoNaoPossuiConta{
-        margin-bottom: 0;
-    }
-    .containerCentro{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .formularioLogin input{
-        border: 0.1rem solid #929292;
-        margin-bottom: 5%;
-        width: 100% ;
-        border-radius: 5px;
-    }
-    /*-----------Fim do Login-----------*/
+/*-----------Início do Login-----------*/
+    
+/* Logo */
+.logoLogin {
+    width: 30%;
+}
+    
+/* Corpo login */
+.containerLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.containerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+    
+.campoEsqueceuSenha {
+    margin-bottom: 30%  ;
+}
+    
+.paragrafoNaoPossuiConta {
+    margin-bottom: 0;
+}
+    
+.containerCentro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+.formularioLogin input {
+    border: 0.1rem solid #929292;
+    margin-bottom: 5%;
+    width: 100% ;
+    border-radius: 5px;
+}
+    
+/*-----------Fim do Login-----------*/
 
-    /*-----------Início de alteração de senha-----------*/
-    /*logo*/
-    .logoModificarSenha{
-        width: 30%;
-    }
-    /*Container de Modificar senha*/
-    .containerModificarSenha{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    /*Barra de input*/
-    .formularioModificarSenha input{
-        border: 0.1rem solid #929292;
-        margin-bottom: 5%;
-        width: 100% ;
-        border-radius: 5px;
-    }
-    /*Espaço entre o formulario e o botão*/
-    .botaoPrincipal{
-        padding-top: 3%;
-        padding-bottom: 3%;
-        background-color: #3da9fc;
-        color: #fffffe;
-        display: block;
-        width: 100%;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 10%;
-    }
-    /*-----------Fim de alteração de senha-----------*/
+/*-----------Início de alteração de senha-----------*/
 
-    /* início media querie*/
-    @media(min-width:770px){
-        /* início index */
-    #indexPrincipal{
+/* Logo */
+.logoModificarSenha {
+    width: 30%;
+}
+
+/* Container de modificar senha */
+.containerModificarSenha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+/* Barra de input */
+.formularioModificarSenha input {
+    border: 0.1rem solid #929292;
+    margin-bottom: 5%;
+    width: 100% ;
+    border-radius: 5px;
+}
+
+/* Espaço entre o formulário e o botão */
+.botaoPrincipal {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #3da9fc;
+    color: #fffffe;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10%;
+}
+    
+/*-----------Fim de alteração de senha-----------*/
+
+/* início media queries */
+@media(min-width:770px) {
+    
+    /* Início index */
+    #indexPrincipal {
         margin: 0;
         width: 40%;
     }
-    #indexBotao, #indexBotaoLink{
+
+    #indexBotao, #indexBotaoLink {
         margin: 0;
     }
-    #indexLogo{
+
+    #indexLogo {
         width: 25%;
     }
-    #indexBotaoLink{
+
+    #indexBotaoLink {
         width: 50%;
         margin-top: 6%;
         margin-bottom: 6%;
     }
-    html, body{
+
+    html, body {
         height: 100%;
     }
-    #indexBotao{
+
+    #indexBotao {
         width: 100%;
         height: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    #indexTitulo{
+
+    #indexTitulo {
         margin-top: 6%;
         margin-bottom: 1%;
     }
-    /* fim index */
+
+    /* Fim index */
 
     /* início tela de cadastro e validação*/
-    .containerAuthenticacaoFilho, .validacao, .containerCancelarReserva{
+    .containerAuthenticacaoFilho, .validacao, .containerCancelarReserva {
         width: 100vw;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
 
-    .logo{
+    .logo {
         width: 35%;
     }
 
-    .secaoParaTelaComputador{
+    .secaoParaTelaComputador {
         width: 35%;
     }
-    /* fim tela de cadastro e validaçao*/
+
+    /* Fim tela de cadastro e validação */
 
     /* início tela do aluno ver e cancelar reserva */
-    .containerCancelarReserva{
+    .containerCancelarReserva {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .tela-turma{
+    .tela-turma {
         max-width: 400px;
     }
-    }
-    /* fim media querie */
+}
+    /* Fim media queries */
 
-    /* inicio media querie celular */
-    @media(max-width:400px){
-        /* inicio menu */
-      .barra-navegacao{
-          padding: 1.5rem, 4rem;
+/* Início media queries celular */
+@media(max-width:400px){
+        
+    /* Início menu */
+    .barra-navegacao {
+        padding: 1.5rem, 4rem;
+    }
+
+    .item-navegacao {
+        display: none;
+    }
+      
+    .icone-menu-mobile {
+        display: block;
+    }
+      
+    .icone-menu-mobile button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+      
+    .menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+      
+    .menu-mobile .item-navegacao {
+        display: block;
+        padding-top: 1.2rem;
+    }
+      
+    .open {
+      display: block;
       }
-      .item-navegacao{
-          display: none;
-      }
-      .icone-menu-mobile{
-          display: block;
-      }
-      .icone-menu-mobile button{
-          background-color: transparent;
-          border: none;
-          cursor: pointer;
-      }
-      .menu-mobile ul{
-          display: flex;
-          flex-direction: column;
-          text-align: center;
-          padding-bottom: 1rem;
-      }
-      .menu-mobile .item-navegacao{
-          display: block;
-          padding-top: 1.2rem;
-      }
-      .open{
-          display: block;
-      }
-      /* fim menu */
-  }
-  /* fim media querie celular */
+      
+    /* Fim menu */
+}
+  
+/* Fim media queries celular */
