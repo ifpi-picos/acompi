@@ -86,8 +86,8 @@ const emailLogin = document.querySelector('#emailLogin')
 const senhaLogin = document.querySelector('#senhaLogin')
 
 function enviarMensagemLogin() {
-  alert('Alert tudo certo!' + emailLogin.value + senhaLogin.value)
-  console.log('help')
+  // if ()
+  alert('Alert tudo certo! \n Email: ' + emailLogin.value + '; Senha: ' + senhaLogin.value + '.')
 }
 //---------------fim tela de Login---------------//
 
