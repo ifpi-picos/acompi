@@ -9,28 +9,22 @@
 </head>
 <body>
     <header>
-        <nav class="barra-navegacao">
-            <div class="logo-header">
-                <img src="img\logo.png" class='img-logo-header'>
-            </div>
-            <div class="lista-navegacao">
-            <ul>
-                <li class="item-navegacao"><a href="/" class="opcao">tela 1</a></li>
-                <li class="item-navegacao"><a href="/" class="opcao">tela 2</a></li>
-                <li class="item-navegacao"><a href="/" class="opcao">tela 3</a></li>
+        <nav class="menuLateral">
+            <a href="#menu" class="botaoMenu abrirMenu">Menu</a>
+
+            <ul id="menu" class="menu">
+                <li class="botaoMenu fecharMenu">Sair</li>
+                <li class="itemMenu">
+                    <a href="/" class="acaoItemMenu">página1</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="/" class="acaoItemMenu">página2</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="/" class="acaoItemMenu">página3</a>
+                </li>
             </ul>
-        </div>
-        <div class="icone-menu-mobile">
-            <button onclick="showMenu()"><img class="icone-menu" src="img\menu-hambuger.svg"></button>
-        </div>
         </nav>
-        <div class="menu-mobile">
-            <ul>
-                <li class="item-navegacao"><a href="/" class="opcao">tela 1</a></li>
-                <li class="item-navegacao"><a href="/" class="opcao">tela 2</a></li>
-                <li class="item-navegacao"><a href="/" class="opcao">tela 3</a></li>
-            </ul>
-        </div>
     </header>
     <script src="JavaScript\menu.js"></script>
 </body>

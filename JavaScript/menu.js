@@ -1,9 +1,10 @@
-function showMenu() {
-    let menuMobile = document.querySelector('.menu-mobile');
-    if (menuMobile.classList.contains('open')){
-        menuMobile.classList.remove('open');
-    }
-    else{
-        menuMobile.classList.add('open');
-    }
-}
+const menu = document.querySelector('.menu')
+const botaoAbrirMenu = document.querySelector('.abrirMenu')
+const botaoFecharMenu = document.querySelector('.fecharMenu')
+
+botaoAbrirMenu.addEventListener('click',function(){
+    menu.classList.add('menuAberto')
+})
+botaoFecharMenu.addEventListener('click',function(){
+    menu.classList.remove('menuAberto')
+})
