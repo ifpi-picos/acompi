@@ -117,4 +117,5 @@ function enviarMensagemModificarSenha() {
   alert('Tudo certo!' + emailModificarSenha.value + senha1ModificarSenha.value + senha2ModificarSenha.value)
   console.log('Teste')
 }
+
 //---------------Início da tela de Modificar senha---------------//
