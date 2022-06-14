@@ -86,16 +86,17 @@ const emailLogin = document.querySelector('#emailLogin')
 const senhaLogin = document.querySelector('#senhaLogin')
 
 function enviarMensagemLogin() {
-  alert('Alert tudo certo!' + emailLogin.value + senhaLogin.value)
-  console.log('help')
+  // if ()
+  alert('Alert tudo certo! \n Email: ' + emailLogin.value + '; Senha: ' + senhaLogin.value + '.')
 }
 //---------------fim tela de Login---------------//
 
 
 // tela ver e cancelar reserva (aluno)
-const btnCancelarReserva1 = document.querySelector("#btnCancelarReserva1")
+const btnCancelarReserva1 = document.querySelector(".btnCancelarReserva1")
 
 function cancelarReserva(){
+  const btnCancelarReserva1 = document.querySelector(".btnCancelarReserva1")[]
   if (btnCancelarReserva1.innerHTML == "Cancelar Reserva"){
   btnCancelarReserva1.style.backgroundColor = "#3da9fc"
   btnCancelarReserva1.innerHTML = "Reservar"

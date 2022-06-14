@@ -21,6 +21,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 0;
 }
 
 /* Configurações do button */
@@ -48,6 +49,9 @@ body {
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
 
+/* wesley e iago
+tela cadastro/validaçao/login*/
+
 /* Cor padrão dos parágrafos */
 .paragrafo {
     color: #5f6c7b;
@@ -64,9 +68,9 @@ body {
 .containerAuthenticacaoFilho, .validacao, .login {
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     width: 300px;
-    margin-top: 40px;
+    height: 100vh;
 }
     
 /* Título */
@@ -98,6 +102,9 @@ body {
 .validacao input {
     width: 100%;
 }
+
+/* fim tela cadastro 
+wesley */
     
 /*-------------------Configurações │ Tela Turma e Tela CancelarReserva--------------------*/
     
@@ -135,11 +142,10 @@ body {
 /* Botão do aluno cancelar a reserva */
 .btnCancelarReserva {
     width: 40%;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     background-color: #c54141;
     color: #fffffe;
-    margin-bottom: -70%;
     cursor: pointer;
 }
     
@@ -438,12 +444,15 @@ body {
 
     /* Fim index */
 
+    /* wesley */
     /* início tela de cadastro e validação*/
-    .containerAuthenticacaoFilho, .validacao, .containerCancelarReserva {
+    .containerAuthenticacaoFilho, .validacao{
         width: 100vw;
+        height: 100vh;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
     }
 
     .logo {
@@ -455,6 +464,7 @@ body {
     }
 
     /* Fim tela de cadastro e validação */
+
 
     /* início tela do aluno ver e cancelar reserva */
     .containerCancelarReserva {
