@@ -6,7 +6,7 @@ const emailCadastro = document.querySelector('#emailCadastro')
 
 //quando clicar no botao cadastrar
 //verificar se todos os campos do cadastro estao preenchidos
-function validandoCamposCadastro () {
+function validandoCamposCadastro() {
   if (nomeCadastro.value != '') {
     if (emailCadastro.value != '') {
       if (senha1Cadastro.value != '') {
@@ -32,16 +32,16 @@ function validandoCamposCadastro () {
 }
 
 //emitir alerta avisando se estar tudo certo ou se a senha1 esta diferente da senha2
-function enviarMsgCadastro (nome, email, senha1, senha2) {
+function enviarMsgCadastro(nome, email, senha1, senha2) {
   if (validaSenha(senha1Cadastro, senha2Cadastro)) {
     alert(
       'Tudo certo!\nNome: ' +
-        nomeCadastro.value +
-        ';  E-mail: ' +
-        emailCadastro.value +
-        ';  Senha: ' +
-        senha1Cadastro.value +
-        '.'
+      nomeCadastro.value +
+      ';  E-mail: ' +
+      emailCadastro.value +
+      ';  Senha: ' +
+      senha1Cadastro.value +
+      '.'
     )
   } else {
     alert('A senha de confirmação precisa ser igual a primeira senha!')
@@ -51,7 +51,7 @@ function enviarMsgCadastro (nome, email, senha1, senha2) {
 }
 
 //verificar se a senha1 digitada esta igual a senha2
-function validaSenha (senha1, senha2) {
+function validaSenha(senha1, senha2) {
   if (senha1Cadastro.value == senha2Cadastro.value) {
     return true
   } else {
@@ -68,14 +68,14 @@ const codigoVerificacao = document.getElementById("codigoVerificacao")
 function enviarMsgValidacao() {
   if (codigoVerificacao.value != "") {
     alert(
-      'Tudo certo!\nCodigo de Validação correto!  '+ codigoVerificacao.value
+      'Tudo certo!\nCodigo de Validação correto!  ' + codigoVerificacao.value
     )
   } else {
     alert('Digite o código no campo solicitado!')
-    codigoVerificacao.style.boxShadow ="3px 3px 28px #ee6a6e";
-    window.setTimeout(function() {
+    codigoVerificacao.style.boxShadow = "3px 3px 28px #ee6a6e";
+    window.setTimeout(function () {
       codigoVerificacao.style.boxShadow = 'none';
-  }, 4000);
+    }, 4000);
   }
 }
 
@@ -95,15 +95,15 @@ function enviarMensagemLogin() {
 // tela ver e cancelar reserva (aluno)
 const btnCancelarReserva1 = document.querySelector(".btnCancelarReserva1")
 
-function cancelarReserva(){
+function cancelarReserva() {
   const btnCancelarReserva1 = document.querySelector(".btnCancelarReserva1")[]
-  if (btnCancelarReserva1.innerHTML == "Cancelar Reserva"){
-  btnCancelarReserva1.style.backgroundColor = "#3da9fc"
-  btnCancelarReserva1.innerHTML = "Reservar"
-}else{
-  btnCancelarReserva1.style.backgroundColor = "#c54141"
-  btnCancelarReserva1.innerHTML = "Cancelar Reserva";
-}
+  if (btnCancelarReserva1.innerHTML == "Cancelar Reserva") {
+    btnCancelarReserva1.style.backgroundColor = "#3da9fc"
+    btnCancelarReserva1.innerHTML = "Reservar"
+  } else {
+    btnCancelarReserva1.style.backgroundColor = "#c54141"
+    btnCancelarReserva1.innerHTML = "Cancelar Reserva";
+  }
 }
 // fim tela ver e cancelar reserva (aluno)
 
