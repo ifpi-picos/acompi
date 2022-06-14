@@ -171,13 +171,13 @@ wesley */
     
 /*-------------------- Configurações │ Tela Perfil do Usuário --------------------*/   
 .menu-hamburguer {
-    text-align: left;
+    
 }
         
 .img-perfil {
     margin-top: 20%;
-    width: 20%;
-    height: 20%;
+    width: 30%;
+    height: 30%;
 }
 
 .main-perfil {
