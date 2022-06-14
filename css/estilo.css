@@ -10,6 +10,7 @@
     --corBotaoP: #3da9fc;
     --corTextoBotao: white;
     --corTexto: #5f6c7b;
+    --corBotaoS: #5f6c7b;
 }
 
 /* Configurações gerais das telas */
@@ -23,7 +24,7 @@ body {
 }
 
 /* Configurações do button */
-.login a {
+.index a {
     background-color: var(--corBotaoP);
     border: none;
     color: var(--corTextoBotao);
@@ -36,8 +37,8 @@ body {
 }
 
 /* Configurações botão secundário */
-.login .btn-cadastro {
-    background-color: var(--corTexto);;
+.index .btn-cadastro {
+    background-color: var(--corBotaoS);
 }
 
 /* Configurações de margens dos botões */
@@ -165,44 +166,17 @@ body {
     width: 100%;
 }
     
-/*--------------------Configurações │ Página Perfil do Usuário--------------------*/
-.header-perfil-usuario {
-    background-color: #fffffe;
-}
-        
+/*-------------------- Configurações │ Tela Perfil do Usuário --------------------*/   
 .menu-hamburguer {
-    margin: 2%;
-    height: 3%;
-    width: 3%;
+    display: flex;
+    justify-content: flex-start;
 }
         
 .img-perfil {
-    text-align: center;
-    margin-top: 3%;
+    width: 20%;
+    height: 20%;
 }
-    
-.img-per {
-    width: 8%;
-    height: 8%;
-}
-        
-.nome-usuario {
-    text-align: center;
-}
-    
-.main-perfil-usuario {
-    margin-top: 5%;
-    text-align: center;
-}
-    
-.footer-perfil-usuario {
-    text-align: center;
-    font-weight: 900;
-    position: absolute;
-    bottom: 0;
-    width: 98%;
-    margin-bottom: 1%;
-}
+/*-------------------- Fim tela Perfil do Usuário -------------------- */
 
 /**/
 .body-msg-erro {
@@ -424,7 +398,7 @@ body {
 /*-----------Fim de alteração de senha-----------*/
 
 /* início media queries */
-@media(min-width:770px) {
+/*@media(min-width:770px) {
     
     /* Início index */
     #indexPrincipal {
@@ -449,7 +423,6 @@ body {
     html, body {
         height: 100%;
     }
-
     #indexBotao {
         width: 100%;
         height: 1.5rem;
@@ -492,7 +465,6 @@ body {
     .tela-turma {
         max-width: 400px;
     }
-}
     /* Fim media queries */
 
 /* Início media queries celular */
@@ -535,5 +507,4 @@ body {
       
     /* Fim menu */
 }
-  
 /* Fim media queries celular */
