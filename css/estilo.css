@@ -25,7 +25,7 @@ body {
 }
 
 /* Configurações do button */
-.index a {
+.index {
     background-color: var(--corBotaoP);
     border: none;
     color: var(--corTextoBotao);
@@ -38,8 +38,16 @@ body {
 }
 
 /* Configurações botão secundário */
-.index .btn-cadastro {
+.btn-2 {
     background-color: var(--corBotaoS);
+    border: none;
+    color: var(--corTextoBotao);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    width: 100%;
 }
 
 /* Configurações de margens dos botões */
@@ -230,7 +238,15 @@ wesley */
         width: 100%;
         margin-bottom: 1%;
     }
-    /*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+
+/* Configurações da tela de entrar nas turmas (Aluno) */
+.entrar-turma {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+/*---------------------------------------------------------------------------------*/
     
     .login{
         width: 50%;

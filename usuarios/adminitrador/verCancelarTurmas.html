@@ -5,13 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilo.css">
-    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <title>TURMAS</title>
 </head>
 
-<body>
+<body class="corpo-pagina">
 
+    <main class="containerCancelarReserva">
+        <div class="tela-turma">
+            <h2>Professor: XX<br></h2>
+            <p>Laboratório: X<br></p>
+            <p>Horário: XX:XX:XX<br></p>
+            <p>Informações do Administrador: XX</p>
+            <div class="botao-deletar">
+                <button onclick="cancelarReserva(0)" id="btnCancelarReserva1" class="btnCancelarReserva">Cancelar
+                    Reserva</button>
+            </div>
+        </div>
+
+        <div class="tela-turma">
+            <h2>Professor: XX<br></h2>
+            <p>Laboratório: X<br></p>
+            <p>Horário: XX:XX:XX<br></p>
+            <p>Informações do Administrador: XX</p>
+            <div class="botao-deletar">
+                <button onclick="cancelarReserva(1)" class="btnCancelarReserva">Cancelar Reserva</button>
+            </div>
+        </div>
+
+        <div class="tela-turma">
+            <h2>Professor: XX<br></h2>
+            <p>Laboratório: X<br></p>
+            <p>Horário: XX:XX:XX<br></p>
+            <p>Informações do Administrador: XX</p>
+            <div class="botao-deletar">
+                <button onclick="cancelarReserva(2)" class="btnCancelarReserva">Cancelar Reserva</button>
+            </div>
+        </div>
+    </main>
+    <script src="/JavaScript/index.js"></script>
 </body>
 
 </html>
