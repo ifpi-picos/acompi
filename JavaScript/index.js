@@ -1,3 +1,4 @@
+// Wesley
 //tela de cadastro
 const senha1Cadastro = document.querySelector('#senha1Cadastro')
 const senha2Cadastro = document.querySelector('#senha2Cadastro')
@@ -81,6 +82,21 @@ function enviarMsgValidacao() {
 
 //fim da tela de verificacao de codigo
 
+// tela ver e cancelar reserva (aluno)
+
+function cancelarReserva(numeroParaIdentificarTurma) {
+  const btnCancelarReserva = document.getElementsByClassName("btnCancelarReserva")[numeroParaIdentificarTurma]
+  if (btnCancelarReserva.innerHTML == "Cancelar Reserva") {
+    btnCancelarReserva.style.backgroundColor = "#3da9fc"
+    btnCancelarReserva.innerHTML = "Reservar Turma"
+  } else {
+    btnCancelarReserva.style.backgroundColor = "#c54141"
+    btnCancelarReserva.innerHTML = "Cancelar Reserva";
+  }
+}
+// fim tela ver e cancelar reserva (aluno)
+// fim Wesley
+
 //---------------Tela de Login----------------//
 const emailLogin = document.querySelector('#emailLogin')
 const senhaLogin = document.querySelector('#senhaLogin')
@@ -90,22 +106,6 @@ function enviarMensagemLogin() {
   alert('Alert tudo certo! \n Email: ' + emailLogin.value + '; Senha: ' + senhaLogin.value + '.')
 }
 //---------------fim tela de Login---------------//
-
-
-// tela ver e cancelar reserva (aluno)
-const btnCancelarReserva1 = document.querySelector(".btnCancelarReserva1")
-
-function cancelarReserva() {
-  const btnCancelarReserva1 = document.querySelector(".btnCancelarReserva1")[]
-  if (btnCancelarReserva1.innerHTML == "Cancelar Reserva") {
-    btnCancelarReserva1.style.backgroundColor = "#3da9fc"
-    btnCancelarReserva1.innerHTML = "Reservar"
-  } else {
-    btnCancelarReserva1.style.backgroundColor = "#c54141"
-    btnCancelarReserva1.innerHTML = "Cancelar Reserva";
-  }
-}
-// fim tela ver e cancelar reserva (aluno)
 
 
 //---------------Início da tela de Modificar senha---------------//

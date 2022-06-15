@@ -106,8 +106,30 @@ tela cadastro/validaçao/login*/
     width: 100%;
 }
 
-/* fim tela cadastro 
-wesley */
+/* fim tela cadastro */
+
+/*tela bloquar laboratorio*/
+
+
+#telaBloquearLab .tela-turma{
+    width: 300px;
+}
+
+.btnBloquearLab{
+    width: 120px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #c54141;
+    color: #fffffe;
+    cursor: pointer;
+}
+
+#telaBloquearLab div{
+    border: 0.1rem solid black;
+}
+/*fim tela bloquear laboratorio*/
+
+/*fim wesley*/
     
 /*-------------------Configurações │ Tela Turma e Tela CancelarReserva--------------------*/
     
@@ -419,7 +441,7 @@ wesley */
 /*-----------Fim de alteração de senha-----------*/
 
 /* início media queries */
-/*@media(min-width:770px) {
+@media(min-width:770px) {
     
     /* Início index */
     #indexPrincipal {
@@ -481,18 +503,24 @@ wesley */
     /* Fim tela de cadastro e validação */
 
 
-    /* início tela do aluno ver e cancelar reserva */
-    .containerCancelarReserva {
+    /* início tela do aluno ver e cancelar reserva e tela bloquear laboratorio*/
+    .containerCancelarReservaEBloquearLab {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .tela-turma {
         max-width: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
+}
     /* Fim media queries */
 
-/* Início media queries celular */
+/* Início media queries celular para o menu*/
 @media(max-width:400px){
         
     /* Início menu */
@@ -531,5 +559,6 @@ wesley */
       }
       
     /* Fim menu */
+
 }
-/* Fim media queries celular */
+/* Fim media queries celular para o menu*/
