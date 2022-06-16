@@ -83,7 +83,7 @@ function enviarMsgValidacao() {
 //fim da tela de verificacao de codigo
 
 // tela ver e cancelar reserva (aluno)
-
+// funçao para o butão mudar
 function cancelarReserva(numeroParaIdentificarTurma) {
   const btnCancelarReserva = document.getElementsByClassName("btnCancelarReserva")[numeroParaIdentificarTurma]
   if (btnCancelarReserva.innerHTML == "Cancelar Reserva") {
@@ -95,6 +95,33 @@ function cancelarReserva(numeroParaIdentificarTurma) {
   }
 }
 // fim tela ver e cancelar reserva (aluno)
+
+// tela de ver e controlar alunos (professor)
+
+// função para dar cor a msg 'possui computador'
+const possuiComp = document.querySelectorAll("h5.componentesDeAlunos")
+possuiComp.forEach(function(possuirCom){
+  if (possuirCom.innerHTML == "Possui Computador"){
+    possuirCom.style.color = "green";
+  }else{
+    possuirCom.style.color = "red";
+  }
+}) 
+
+// funçao para o butão mudar
+function removerAluno(numeroParaIdentificarAluno) {
+  const btnRemoverAluno = document.querySelectorAll("button.btnRemoverAluno")[numeroParaIdentificarAluno]
+  if (btnRemoverAluno.innerHTML == "Remover Aluno") {
+    btnRemoverAluno.style.backgroundColor = "#3da9fc"
+    btnRemoverAluno.innerHTML = "Readicionar Aluno"
+  } else {
+    btnRemoverAluno.style.backgroundColor = "#c54141"
+    btnRemoverAluno.innerHTML = "Remover Aluno";
+  }
+}
+
+// tela de ver e controlar alunos (professor)
+
 // fim Wesley
 
 //---------------Tela de Login----------------//

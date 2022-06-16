@@ -11,6 +11,7 @@
     --corTextoBotao: white;
     --corTexto: #5f6c7b;
     --corBotaoS: #5f6c7b;
+    --corBotaoVermelho: #c54141;
 }
 
 /* Configurações gerais das telas */
@@ -110,7 +111,6 @@ tela cadastro/validaçao/login*/
 
 /*tela bloquar laboratorio*/
 
-
 #telaBloquearLab .tela-turma{
     width: 300px;
 }
@@ -119,7 +119,7 @@ tela cadastro/validaçao/login*/
     width: 120px;
     padding-top: 3%;
     padding-bottom: 3%;
-    background-color: #c54141;
+    background-color: var(--corBotaoVermelho);
     color: #fffffe;
     cursor: pointer;
 }
@@ -129,16 +129,41 @@ tela cadastro/validaçao/login*/
 }
 /*fim tela bloquear laboratorio*/
 
+/* tela ver e remover alunos (professor)*/
+
+.alunos{
+    display: flex;
+    border: 0.1rem solid black;
+    width: 80%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.btnRemoverAluno{
+    background-color: var(--corBotaoVermelho);
+    color: #fffffe;
+    width: 27%;
+    height: 80%;
+}
+
+.componentesDeAlunos{
+    width: 27%;
+    height: 80%;
+}
+
+/* fim tela ver e remover alunos (professor)*/
+
 /*fim wesley*/
     
 /*-------------------Configurações │ Tela Turma e Tela CancelarReserva--------------------*/
     
 /* Configurações gerais da página */
 .corpo-pagina {
-    background-color: azure;
+    background-color: var(--corFundo);
 }
     
-/* Configurações da tela de adição e exclusão de turmas */
+/* Configurações da tela de adição e exclusão de turmas e Tela CancelarReserva*/
 .tela-turma {
     border: 1px solid black;
     border-radius: 10%;
@@ -169,7 +194,7 @@ tela cadastro/validaçao/login*/
     width: 40%;
     padding-top: 3%;
     padding-bottom: 3%;
-    background-color: #c54141;
+    background-color: var(--corBotaoVermelho);
     color: #fffffe;
     cursor: pointer;
 }
