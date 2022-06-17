@@ -111,8 +111,9 @@ tela cadastro/validaçao/login*/
 
 /*tela bloquar laboratorio*/
 
-#telaBloquearLab .tela-turma{
+.tela-turma{
     width: 300px;
+    margin-bottom: 4%;
 }
 
 .btnBloquearLab{
@@ -124,20 +125,23 @@ tela cadastro/validaçao/login*/
     cursor: pointer;
 }
 
-#telaBloquearLab div{
-    border: 0.1rem solid black;
-}
 /*fim tela bloquear laboratorio*/
 
 /* tela ver e remover alunos (professor)*/
 
+#containerAlunos{
+    width: 80%;
+}
+
 .alunos{
     display: flex;
     border: 0.1rem solid black;
-    width: 80%;
     justify-content: space-between;
     margin-bottom: 10px;
     align-items: center;
+    width: 100%;
+    padding: 1%;
+    margin-top: 10px;
 }
 
 .btnRemoverAluno{
@@ -145,11 +149,11 @@ tela cadastro/validaçao/login*/
     color: #fffffe;
     width: 27%;
     height: 80%;
+    cursor: pointer;
 }
 
 .componentesDeAlunos{
     width: 27%;
-    height: 80%;
 }
 
 /* fim tela ver e remover alunos (professor)*/
@@ -168,7 +172,8 @@ tela cadastro/validaçao/login*/
     border: 1px solid black;
     border-radius: 10%;
     padding: 4%;
-    margin: 4%;
+    width: 300px;
+    margin-bottom: 4%;
 }
     
 /* Configurações dos botões: menu, adicionar turma e deletar */
@@ -528,11 +533,12 @@ tela cadastro/validaçao/login*/
     /* Fim tela de cadastro e validação */
 
 
-    /* início tela do aluno ver e cancelar reserva e tela bloquear laboratorio*/
-    .containerCancelarReservaEBloquearLab {
+    /* início tela do aluno ver e cancelar reserva, tela do prof/adm bloquear laboratorio e tela remover aluno da turma*/
+    .containerCancelarReserva-BloquearLab-RemoverAlunoDaTurma {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content:space-around;
+        width: 100%;
     }
 
     .tela-turma {
@@ -541,7 +547,17 @@ tela cadastro/validaçao/login*/
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        margin: 2%;
     }
+    /* fim tela do aluno ver e cancelar reserva, tela do prof/adm bloquear laboratorio e tela remover aluno  da turma*/
+
+    /* tela ver e remover alunos da turma (professor)*/
+    .alunos{
+        width: 40%;
+    }
+    /* tela ver e remover alunos da turma (professor)*/
+
+
 }
     /* Fim media queries */
 
