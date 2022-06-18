@@ -469,6 +469,27 @@ tela cadastro/validaçao/login*/
 }
     
 /*-----------Fim de alteração de senha-----------*/
+/*-----------Início da tela de Filtrar turmas/reserva-----------*/
+.filtrarTurmas, .filtrarReservas{
+    background-color: aqua;
+    margin-top: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    border-radius: 5%;
+}
+.botaoSecundario {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color:#929292;
+    color: #fffffe;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5%;
+}
+/*-----------Fim da tela de Filtrar turmas/reserva-----------*/
 
 /* início media queries */
 @media(min-width:770px) {
