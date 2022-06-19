@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="..\..\css\allan\formularioProibirLaboratorio.css">
-    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="..\..\img\favicon.png">
     <link rel="manifest" href="manifest.webmanifest">
     <title>Proibir uso de laboratório</title>
 </head>
@@ -15,7 +15,7 @@
     </header>
     <main>
         <h2>Proibir uso de laboratório</h2>
-        <form>
+        <form onsubmit="submitForm(event)">
         <div class="preencher">
             <label>Escolha qual laboratório deseja proibir o uso:</label>
             <select id="laboratorios" required>
@@ -34,7 +34,7 @@
         </div>
         <div id="botoes">
             <button id="cancelar">cancelar</button>
-            <input type="submit" id="botaoCriar" onclick="redireciona()"/>
+            <button type="submit" id="botaoCriar">enviar</button>
         </div>
         </form>
     </main>
