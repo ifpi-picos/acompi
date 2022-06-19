@@ -1,0 +1,55 @@
+.menu{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.botaoMenu{
+    display: block;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    padding: 20px 15px;
+    background-position: 15px center;
+}
+.abrirMenu{
+    background-image: url('../../img/menu-hambuger.svg');
+    width: 25px;
+}
+.fecharMenu{
+    background-image: url('../../img/fechar.svg');
+    width: 25px;
+    cursor: pointer;
+}
+#divFecharMenu{
+    background-color: #3da9fc;
+}
+.acaoItemMenu{
+    color: #3da9fc;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+}
+.itemMenu{
+    padding: 20px 15px;
+    border-bottom: 1px solid #3da9fc;
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 200ms linear;
+}
+.menuAberto{
+    transform: translateX(0);
+}
+@media(min-width:770px) {
+    .menuAberto{
+        width:30%;  
+    }
+    .itemMenu{
+        border-right: 1px solid #3da9fc;
+    }
+}
