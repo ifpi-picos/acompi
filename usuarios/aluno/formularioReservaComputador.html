@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\..\css\allan\formularioCriarTurma.css">
+    <link rel="stylesheet" href="..\..\css\allan\formularioReservarComputador.css">
     <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <title>criar turma</title>
+    <title>bloquear uso de laboratório</title>
 </head>
 <body>
     <header>
@@ -17,25 +17,15 @@
         <h2>Criar turma</h2>
         <form onsubmit="submitForm(event)">
         <div class="preencher">
-            <label>Escolha qual laboratório deseja reservar:*</label>
-            <select required>
-                <option value=''>escolha</option>
-                <option value='1'>laboratório 1</option>
-                <option value='2'>laboratório 2</option>
-                <option value='3'>laboratório 3</option>
-                <option value='4'>laboratório 4</option>
-            </select>
-
+            <label>Você possui um computador?*</label>
+            <div>
+            <input type="radio" name="computador" value="sim" required/> Sim
+            <input type="radio" name="computador" value="nao"/> Não
+            </div>
         </div>
         <div class="preencher">
-            <label>Escolha a data que deseja reservar:*</label>
-            <input class="data" id="campoDataInicio" type="date" name="dataInicio" required>
-            <label>Escolha a hora em que inicia a reserva:*</label>
-            <input type="time" name="hora" id="horaInicio" required>
-            <label>Escolha a hora em que termina a reserva:*</label>
-            <input type="time" name="hora" id="horaFim" required>
-            <label>Escolha qual curso você ministra:</label>
-            <select>
+            <label>Escolha seu curso:*</label>
+            <select required>
                 <option value=''>escolha</option>
                 <option value='1'>administração</option>
                 <option value='2'>eletrotécnica</option>
@@ -47,10 +37,19 @@
                 <option value='8'>outro</option>
                 <option value='9'>nenhum</option>
             </select>
+            <label>Motivo da reserva:</label>
+            <input id="motivo" type="text">
+        </div>
+        <div class="preencher">
+            <label>Possui ciência que, aceitando entrar nesta turma, estará presente para estudar
+                e realizar trabalhos e não para entretenimento?*</label>
+            <div>
+            <input type="radio" name="consentimento" value="sim" required/> Sim
+            </div>
         </div>
         <div id="botoes">
             <button id="cancelar">cancelar</button>
-            <button id="botaoCriar"type="submit">criar</button>
+            <button id="botaoCriar"type="submit">reservar</button>
         </div>
         </form>
     </main>
