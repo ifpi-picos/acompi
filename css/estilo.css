@@ -61,12 +61,14 @@ body {
 /* wesley e iago
 tela cadastro/validaçao/login*/
     
-.formularioCadastro input {
-    border: 0.1rem solid #929292;
-    margin-bottom: 5%;
+form input {
+    border: 0.06rem solid #ccc;
     width: 100% ;   
     border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10%;
 }
+
     
 /* Main */
 .containerAuthenticacaoFilho, .validacao, .login {
@@ -101,10 +103,6 @@ tela cadastro/validaçao/login*/
     display: flex;
     justify-content: center;
     align-items: center;
-}
-    
-.validacao input {
-    width: 100%;
 }
 
 /* fim tela cadastro */
@@ -424,12 +422,6 @@ tela cadastro/validaçao/login*/
     align-items: center;
 }
     
-.formularioLogin input {
-    border: 0.1rem solid #929292;
-    margin-bottom: 5%;
-    width: 100% ;
-    border-radius: 5px;
-}
     
 /*-----------Fim do Login-----------*/
 
@@ -447,13 +439,7 @@ tela cadastro/validaçao/login*/
     align-items: center;
 }
     
-/* Barra de input */
-.formularioModificarSenha input {
-    border: 0.1rem solid #929292;
-    margin-bottom: 5%;
-    width: 100% ;
-    border-radius: 5px;
-}
+
 
 /* Espaço entre o formulário e o botão */
 .botaoPrincipal {

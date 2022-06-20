@@ -18,13 +18,13 @@
                 <section class="secaoParaTelaComputador">
                     <h1 class="tituloCadastro">CADASTRO</h1>
                     <form class="formularioCadastro" method="post">
-                        <p id="paragrafoNome" class="paragrafo"><b>Digite seu nome completo:</b></p>
+                       <label for="nomeCadastro">Digite seu nome completo:</label>
                         <input id="nomeCadastro" type="text" placeholder="Nome" required>
-                        <p id="paragrafoEmail" class="paragrafo"><b>Digite seu e-mail institucional</b></p>
+                        <label for="emailCadastro">Digite seu E-mail</label>
                         <input id="emailCadastro" type="email" placeholder="E-mail" required>
-                        <p id="paragrafoSenha1" class="paragrafo"><b>Crie uma senha:</b></p>
+                        <label for="senha1Cadastro">Crie uma senha</label>
                         <input id="senha1Cadastro" type="password" placeholder="Senha">
-                        <p id="paragrafoSenha2" class="paragrafo"><b>Repita a senha criada anteriormente:</b></p>
+                        <label for="senha2Cadastro">Repita a senha criada anteriormente:</label>
                         <input id="senha2Cadastro" type="password" placeholder="Repita a senha">
                         <button onclick="validandoCamposCadastro()" id="btnCadastro" class="btnPrincipal"
                             type="button">Cadastrar</button>
