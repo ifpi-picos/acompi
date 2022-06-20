@@ -6,5 +6,6 @@ cancelar.addEventListener('click', function(){
 })
 function submitForm(event){
     event.preventDefault(); 
+    alert('dados enviados com sucesso')
     window.location.assign("http://127.0.0.1:5500/autenticacao/cadastro.html")
 }

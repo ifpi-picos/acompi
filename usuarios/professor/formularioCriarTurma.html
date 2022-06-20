@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\..\css\allan\formularioBloquearLaboratorio.css">
-    <link rel="icon" type="image/x-icon" href="..\..\img\favicon.png">
+    <link rel="stylesheet" href="..\..\css\allan\formularioCriarTurma.css">
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
     <link rel="manifest" href="manifest.webmanifest">
     <title>bloquear uso de laboratório</title>
 </head>
@@ -14,10 +14,10 @@
         <img class="logo" src="../../img/logo.png" alt="logomarca do site">
     </header>
     <main>
-        <h2>bloquear uso de laboratório</h2>
+        <h2>Criar turma</h2>
         <form onsubmit="submitForm(event)">
         <div class="preencher">
-            <label>Escolha qual laboratório deseja bloquear:*</label>
+            <label>Escolha qual laboratório deseja reservar:*</label>
             <select required>
                 <option value=''>escolha</option>
                 <option value='1'>laboratório 1</option>
@@ -28,24 +28,25 @@
 
         </div>
         <div class="preencher">
-            <label>Escolha qual dia da semana será bloqueado:</label>
+            <label>Escolha a data que deseja reservar:*</label>
+            <input class="data" id="campoDataInicio" type="date" name="dataInicio" required>
+            <label>Escolha a hora em que inicia a reserva:*</label>
+            <input type="time" name="hora" id="horaInicio" required>
+            <label>Escolha a hora em que termina a reserva:*</label>
+            <input type="time" name="hora" id="horaFim" required>
+            <label>Escolha qual curso você ministra:</label>
             <select>
                 <option value=''>escolha</option>
-                <option value='1'>segunda-feira</option>
-                <option value='2'>terça-feira</option>
-                <option value='3'>quarta-feira</option>
-                <option value='4'>quinta-feira</option>
-                <option value='5'>sexta-feira</option>
-                <option value='6'>sábado</option>
+                <option value='1'>administração</option>
+                <option value='2'>eletrotécnica</option>
+                <option value='3'>informática</option>
+                <option value='4'>análise e desenvolvimento de sistemas</option>
+                <option value='5'>química</option>
+                <option value='6'>física</option>
+                <option value='7'>engenharia de software</option>
+                <option value='8'>outro</option>
+                <option value='9'>nenhum</option>
             </select>
-            <label>Escolha a data em que inicia o bloqueio:*</label>
-            <input class="data" id="campoDataInicio" type="date" name="dataInicio" required>
-            <label id="dataFim">Escolha a data em que termina o bloqueio:*</label>
-            <input class="data" type="date" id="campoDataFim" name="dataFim" required>
-            <label>Escolha a hora em que inicia o bloqueio:*</label>
-            <input type="time" name="hora" id="horaInicio" required>
-            <label>Escolha a hora em que inicia o bloqueio:*</label>
-            <input type="time" name="hora" id="horaFim" required>
         </div>
         <div id="botoes">
             <button id="cancelar">cancelar</button>
