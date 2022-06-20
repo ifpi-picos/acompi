@@ -17,12 +17,16 @@
             <img class="logo" src="../img/logo.png" alt="Logo do ACOMPI">
             <section class="secaoParaTelaComputador">
                 <h4 class="tituloValidacao paragrafo">Um e-mail foi enviado para você!</h4>
-                <h4 class="paragrafo">Por favor, verifique sua caixa de e-mail e digite o código que você recebeu logo
-                    abaixo!</h4>
-                <input id="codigoVerificacao" type="text" placeholder="00000">
-                <br></br>
-                <button onclick="enviarMsgValidacao()" id="btnVerificacao" class="btnPrincipal">Confirmar</button>
-
+                <form method="post">
+                    <label for="codigoVerificacao">
+                        <h4>Por favor, verifique sua caixa de e-mail e digite o código que você recebeu logo abaixo!</h4>
+                    </label>
+                    <input id="codigoVerificacao" type="text" placeholder="00000" required>
+                    <br></br>
+                    <button onclick="enviarMsgValidacao()" id="btnVerificacao" class="btnPrincipal" type="submit">
+                        <a href="https://ifpi-picos.github.io/acompi-front-end/autenticacao/login.html">Confirmar</a>
+                    </button>
+                </form>
                 <p class="paragrafo">Não recebeu o código?</p>
                 <a href="#">Enviar novamente.</a>
             </section>
