@@ -60,13 +60,12 @@ function submitForm(event){
   event.preventDefault();
   var url_atual = window.location.href; 
 
-  if(url_atual == "https://ifpi-picos.github.io/acompi-front-end/autenticacao/cadastro.html"){
+  if(url_atual == "http://127.0.0.1:5500/autenticacao/cadastro.html"){
     window.location.assign("https://ifpi-picos.github.io/acompi-front-end/autenticacao/validacao.html")
-    }
-  else{
-    if (url_atual == "https://ifpi-picos.github.io/acompi-front-end/autenticacao/validacao.html"){
+    }else{
+      if (url_atual == "http://127.0.0.1:5500/autenticacao/validacao.html"){
         window.location.assign("https://ifpi-picos.github.io/acompi-front-end/autenticacao/login.html")
-    }else(url_atual == "https://ifpi-picos.github.io/acompi-front-end/autenticacao/login.html"); {
+    }else if(url_atual == "https://ifpi-picos.github.io/acompi-front-end/autenticacao/login.html") {
         window.location.assign("https://ifpi-picos.github.io/acompi-front-end/usuarios/aluno/escolherTurma.html")
     }}
 }

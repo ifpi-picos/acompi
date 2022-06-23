@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="/css/allan/menu.css">
     <link rel="icon" type="image/x-icon" href="/img/favicon.png">
     <title>TURMAS</title>
 </head>
@@ -13,11 +14,25 @@
 <body>
     <header>
         <img src="/img/logo.png" alt="Nossa logomarca">
-        <nav>
-            <ul>
-                <li><a href="../perfilUsuario.html">Perfil</a></li>
+        <nav class="menuLateral">
+            <a href="#menu" class="botaoMenu abrirMenu">Menu</a>
+
+            <ul id="menu" class="menu">
+                <div id="divFecharMenu">
+                <li class="botaoMenu fecharMenu">Sair</li>
+                </div>
+                <li class="itemMenu">
+                    <a href="/" class="acaoItemMenu">página1</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="/" class="acaoItemMenu">página2</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="/" class="acaoItemMenu">página3</a>
+                </li>
             </ul>
         </nav>
+        <script src="/JavaScript/menu.js"></script>
     </header>
 
     <main class="turmas">
@@ -55,13 +70,13 @@
             <p>Laboratório: Informática I</p>
             <p>Professor: Jesiel Viana</p>
             <p>Horário: 16h:00min às 17h:30min</p>
-            <p>Data: 02/07/2022</p>
+            <p>Data: 03/07/2022</p>
         </div>
         <div>
             <h1>Turma 6</h1>
             <p>Laboratório: Informática I</p>
             <p>Professor: Jesiel Viana</p>
-            <p>Horário: 16h:00min às 17h:30min</p>
+            <p>Horário: 13h às 14h</p>
             <p>Data: 02/07/2022</p>
         </div>
     </main>

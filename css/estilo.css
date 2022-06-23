@@ -67,7 +67,7 @@ header ul{
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
 /* wesley e rodrigo */
-/* telas escolherTurma e bloquearLaboratorio*/
+/* telas escolherTurma(aluno) e bloquearLaboratorio(prof) e proibir laboratorio(adm)*/
 .turmas div, .laboratorios div{
     border: 1px solid #ccc;
     padding: 5px;
@@ -75,7 +75,7 @@ header ul{
     margin-bottom: 20px;
     text-align: center;
 }
-/* fim telas escolherTurma e bloquearLaboratorio*/
+/* fim telas escolherTurma(aluno) e bloquearLaboratorio(prof) e proibir laboratorio(adm)*/
 /* fim wesley e rodrigo */
 
 /* wesley e iago
@@ -583,7 +583,7 @@ form input {
     /* fim tela ver e remover alunos da turma (professor)*/
 
     /* wesley e rodrigo */
-    /* telas escolherTurma e bloquearLaboratorio*/
+    /* telas escolherTurma(aluno) e bloquearLaboratorio(prof) e proibir laboratorio(adm)*/
     .turmas, .laboratorios{
         display: flex;
         flex-wrap: wrap;
@@ -602,7 +602,13 @@ form input {
         justify-content: space-between;
 }
 
-    /* fim telas escolherTurma e bloquearLaboratorio*/
+    #btnProibirLabAdm{
+        position: absolute;
+        bottom: 50px;
+        left: 30%;
+        width: 40%;
+    }
+    /* fim telas escolherTurma(aluno) e bloquearLaboratorio(prof) e proibir laboratorio(adm)*/
     /* fim wesley e rodrigo */
 }
     /* Fim media queries */
