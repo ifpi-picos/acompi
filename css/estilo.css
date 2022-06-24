@@ -35,7 +35,7 @@ header ul{
 }
 
 /* Configurações do button */
-.index {
+.index{
     background-color: var(--corBotaoP);
     border: none;
     color: var(--corTextoBotao);
@@ -45,6 +45,7 @@ header ul{
     display: inline-block;
     white-space: nowrap;
     width: 100%;
+    border-radius: 10px;
 }
 
 /* Configurações botão secundário */
@@ -58,6 +59,7 @@ header ul{
     display: inline-block;
     white-space: nowrap;
     width: 100%;
+    border-radius: 5px;
 }
 
 /* Configurações de margens dos botões */
@@ -162,6 +164,7 @@ form input {
     width: 27%;
     height: 80%;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .componentesDeAlunos{
@@ -208,12 +211,17 @@ form input {
 
 /* Botão do aluno cancelar a reserva */
 .btnCancelarReserva {
-    width: 40%;
-    padding-top: 3%;
-    padding-bottom: 3%;
     background-color: var(--corBotaoVermelho);
     color: #fffffe;
     cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    width: 100%;
 }
     
 /*--------------------Configurações │ Tela Criar Turmas--------------------*/
@@ -647,4 +655,5 @@ form input {
     /* Fim menu */
 
 }
+
 /* Fim media queries celular para o menu*/
