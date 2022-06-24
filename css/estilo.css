@@ -45,6 +45,7 @@ header ul{
     display: inline-block;
     white-space: nowrap;
     width: 100%;
+    border-radius: 10px;
 }
 
 /* Configurações botão secundário */
@@ -58,6 +59,7 @@ header ul{
     display: inline-block;
     white-space: nowrap;
     width: 100%;
+    border-radius: 5px;
 }
 
 /* Configurações de margens dos botões */
@@ -660,4 +662,5 @@ form input {
     /* Fim menu */
 
 }
+
 /* Fim media queries celular para o menu*/
