@@ -2,39 +2,37 @@ const cancelar = document.querySelector('#cancelar')
 const criar = document.querySelector('#botaoCriar')
 var a = 0
 cancelar.addEventListener('click', function(){
-    var url_atual = window.location.href; 
-    alert('dados enviados com sucesso')
-    window.location.assign("http://127.0.0.1:5500/")
-    
-    if(url_atual == "https://ifpi-picos.github.io/acompi-front-end/usuarios/aluno/formularioReservaComputador.html"){
-    window.location.assign("https://ifpi-picos.github.io/acompi-front-end/usuarios/aluno/escolherTurma.html")
+    var url_atual = window.location.pathname; 
+
+    if(url_atual.endsWith("usuarios/aluno/formularioReservaComputador.html")){
+    window.location.replace("/usuarios/aluno/escolherTurma.html")
     }
-    if(url_atual == "https://ifpi-picos.github.io/acompi-front-end/usuarios/professor/formularioCriarTurma.html"){
-        window.location.assign("https://ifpi-picos.github.io/acompi-front-end/usuarios/professor/turmas.html")
+    if(url_atual.endsWith("usuarios/professor/formularioCriarTurma.html")){
+        window.location.replace("/usuarios/professor/turmas.html")
     }
-    if(url_atual == ""){
-        window.location.assign("http://127.0.0.1:5500/")
+    if(url_atual.endsWith("usuarios/professor/formularioBloquearLaboratorio.html")){
+        window.location.replace("/usuarios/professor/bloquearLaboratorio.html")
     }
-    if(url_atual == ""){
-        window.location.assign("http://127.0.0.1:5500/")
+    if(url_atual.endsWith("usuarios/adminitrador/formularioProibirLaboratorio.html")){
+        window.location.replace("/")
     }
 })
 function submitForm(event){
     event.preventDefault();
-    var url_atual = window.location.href; 
-    alert('dados enviados com sucesso')
-    window.location.assign("http://127.0.0.1:5500/")
-    
-    if(url_atual == "https://ifpi-picos.github.io/acompi-front-end/usuarios/aluno/formularioReservaComputador.html"){
-    window.location.assign("https://ifpi-picos.github.io/acompi-front-end/usuarios/aluno/escolherTurma.html")
-    }
-    if(url_atual == "https://ifpi-picos.github.io/acompi-front-end/usuarios/professor/formularioCriarTurma.html"){
-        window.location.assign("https://ifpi-picos.github.io/acompi-front-end/usuarios/professor/turmas.html")
-    }
-    if(url_atual == ""){
-        window.location.assign("http://127.0.0.1:5500/")
-    }
-    if(url_atual == ""){
-        window.location.assign("http://127.0.0.1:5500/")
-    }
+    criar.addEventListener('click', function(){
+        var url_atual = window.location.pathname; 
+        alert('dados enviados com sucesso')
+        if(url_atual.endsWith("usuarios/aluno/formularioReservaComputador.html")){
+        window.location.replace("/usuarios/aluno/escolherTurma.html")
+        }
+        if(url_atual.endsWith("usuarios/professor/formularioCriarTurma.html")){
+            window.location.replace("/usuarios/professor/turmas.html")
+        }
+        if(url_atual.endsWith("usuarios/professor/formularioBloquearLaboratorio.html")){
+            window.location.replace("/usuarios/professor/bloquearLaboratorio.html")
+        }
+        if(url_atual.endsWith("usuarios/adminitrador/formularioProibirLaboratorio.html")){
+            window.location.replace("/")
+        }
+    })
 }

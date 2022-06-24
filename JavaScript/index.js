@@ -58,17 +58,16 @@ function enviarMsgCadastro(nome, email, senha1, senha2, event) {
 //nao envia o formulario e navega entre as paginas mudando a url
 function submitForm(event){
   event.preventDefault();
-  var url_atual = window.location.href; 
-
-  if(url_atual == "http://127.0.0.1:5500/autenticacao/cadastro.html"){
-    window.location.assign("https://ifpi-picos.github.io/acompi-front-end/autenticacao/validacao.html")
-    }else{
-      if (url_atual == "http://127.0.0.1:5500/autenticacao/validacao.html"){
-        window.location.assign("https://ifpi-picos.github.io/acompi-front-end/autenticacao/login.html")
-    }else if(url_atual == "https://ifpi-picos.github.io/acompi-front-end/autenticacao/login.html") {
+  console.log(window.location.href)
+  if(window.location.href == "https://ifpi-picos.github.io/acompi-front-end/autenticacao/cadastro.html"){
+    window.location.href = "https://ifpi-picos.github.io/acompi-front-end/autenticacao/validacao.html"
+    } else if (window.location.href == "https://ifpi-picos.github.io/acompi-front-end/autenticacao/validacao.html"){
+        window.location.href = "https://ifpi-picos.github.io/acompi-front-end/autenticacao/login.html"
+    }else if(window.location.href == "https://ifpi-picos.github.io/acompi-front-end/autenticacao/login.html") {
         window.location.assign("https://ifpi-picos.github.io/acompi-front-end/usuarios/aluno/escolherTurma.html")
-    }}
-}
+    }
+ }
+
 
 //verificar se a senha1 digitada esta igual a senha2
 function validaSenha(senha1, senha2) {
