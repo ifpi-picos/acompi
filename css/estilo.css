@@ -66,6 +66,17 @@ header ul{
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
+/* wesley e rodrigo */
+/* telas escolherTurma(aluno) e bloquearLaboratorio(prof) e proibir laboratorio(adm)*/
+.turmas div, .laboratorios div{
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* fim telas escolherTurma(aluno) e bloquearLaboratorio(prof) e proibir laboratorio(adm)*/
+/* fim wesley e rodrigo */
 
 /* wesley e iago
 tela cadastro/validaçao/login*/
@@ -75,7 +86,7 @@ form input {
     width: 100% ;   
     border-radius: 5px;
     padding: 10px;
-    margin-bottom: 10%;
+    margin-bottom: 10px;
 }
 
     
@@ -99,16 +110,18 @@ form input {
     padding-top: 3%;
     padding-bottom: 3%;
     background-color: #3da9fc;
-    color: #fffffe;
     display: block;
     width: 100%;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 10px;
+    border: none;
+    color: #fffffe;
 }
-    
+
+
 .containerAuthenticacaoPai {
     margin: 0;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,28 +129,20 @@ form input {
 
 /* fim tela cadastro */
 
-/*tela bloquar laboratorio*/
+/*tela turmas (professsor)*/
 
 .tela-turma{
     width: 300px;
     margin-bottom: 4%;
 }
 
-.btnBloquearLab{
-    width: 120px;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    background-color: var(--corBotaoVermelho);
-    color: #fffffe;
-    cursor: pointer;
-}
-
-/*fim tela bloquear laboratorio*/
+/*fim tela turmas (professor)*/
 
 /* tela ver e remover alunos (professor)*/
 
 #containerAlunos{
     width: 80%;
+    margin: 0 auto;
 }
 
 .alunos{
@@ -538,6 +543,10 @@ form input {
         align-items: center;
     }
 
+    form input{
+    margin-bottom: 30px;
+    }
+
     .logo {
         width: 35%;
     }
@@ -549,8 +558,8 @@ form input {
     /* Fim tela de cadastro e validação */
 
 
-    /* início tela do aluno ver e cancelar reserva, tela do prof/adm bloquear laboratorio e tela remover aluno da turma*/
-    .containerCancelarReserva-BloquearLab-RemoverAlunoDaTurma {
+    /* início tela do aluno ver e cancelar reserva e tela remover aluno da turma*/
+    .containerCancelarReserva-RemoverAlunoDaTurma {
         display: flex;
         flex-wrap: wrap;
         justify-content:space-around;
@@ -565,15 +574,42 @@ form input {
         justify-content: center;
         margin: 2%;
     }
-    /* fim tela do aluno ver e cancelar reserva, tela do prof/adm bloquear laboratorio e tela remover aluno  da turma*/
+    /* fim tela do aluno ver e cancelar reserva e tela remover aluno  da turma*/
 
     /* tela ver e remover alunos da turma (professor)*/
     .alunos{
         width: 40%;
     }
-    /* tela ver e remover alunos da turma (professor)*/
+    /* fim tela ver e remover alunos da turma (professor)*/
 
+    /* wesley e rodrigo */
+    /* telas escolherTurma(aluno) e bloquearLaboratorio(prof) e proibir laboratorio(adm)*/
+    .turmas, .laboratorios{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1%;
+        row-gap: 1rem;
+}
 
+    .turmas div, .lab{
+        width: 24%;
+}
+
+    .lab{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: space-between;
+}
+
+    #btnProibirLabAdm{
+        position: absolute;
+        bottom: 50px;
+        left: 30%;
+        width: 40%;
+    }
+    /* fim telas escolherTurma(aluno) e bloquearLaboratorio(prof) e proibir laboratorio(adm)*/
+    /* fim wesley e rodrigo */
 }
     /* Fim media queries */
 
@@ -619,19 +655,3 @@ form input {
 
 }
 /* Fim media queries celular para o menu*/
-
-
-.turmas{
-    display: flex;
-    flex-wrap: wrap;
-
-    column-gap: 1%;
-    row-gap: 1rem;
-}
-
-.turmas div{
-    width: 24%;
-    border: 1px solid #ccc;
-    padding: 5px;
-    border-radius: 10px;
-}

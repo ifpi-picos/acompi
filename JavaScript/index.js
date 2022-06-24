@@ -7,7 +7,7 @@ const emailCadastro = document.querySelector('#emailCadastro')
 
 //quando clicar no botao cadastrar
 //verificar se todos os campos do cadastro estao preenchidos
-function validandoCamposCadastro() {
+function validandoCamposCadastro(event) {
   if (nomeCadastro.value != '') {
     if (emailCadastro.value != '') {
       if (senha1Cadastro.value != '') {
@@ -16,7 +16,8 @@ function validandoCamposCadastro() {
             nomeCadastro,
             emailCadastro,
             senha1Cadastro,
-            senha2Cadastro
+            senha2Cadastro, 
+            event
           )
         } else {
           alert('Preencha senha de confirmação')
@@ -33,8 +34,9 @@ function validandoCamposCadastro() {
 }
 
 //emitir alerta avisando se estar tudo certo ou se a senha1 esta diferente da senha2
-function enviarMsgCadastro(nome, email, senha1, senha2) {
+function enviarMsgCadastro(nome, email, senha1, senha2, event) {
   if (validaSenha(senha1Cadastro, senha2Cadastro)) {
+    
     alert(
       'Tudo certo!\nNome: ' +
       nomeCadastro.value +
@@ -44,11 +46,28 @@ function enviarMsgCadastro(nome, email, senha1, senha2) {
       senha1Cadastro.value +
       '.'
     )
+    // mudar a pagina
+    submitForm(event)
   } else {
     alert('A senha de confirmação precisa ser igual a primeira senha!')
     senha1Cadastro.value = ''
     senha2Cadastro.value = ''
   }
+}
+
+//nao envia o formulario e navega entre as paginas mudando a url
+function submitForm(event){
+  event.preventDefault();
+  var url_atual = window.location.href; 
+
+  if(url_atual == "http://127.0.0.1:5500/autenticacao/cadastro.html"){
+    window.location.assign("https://ifpi-picos.github.io/acompi-front-end/autenticacao/validacao.html")
+    }else{
+      if (url_atual == "http://127.0.0.1:5500/autenticacao/validacao.html"){
+        window.location.assign("https://ifpi-picos.github.io/acompi-front-end/autenticacao/login.html")
+    }else if(url_atual == "https://ifpi-picos.github.io/acompi-front-end/autenticacao/login.html") {
+        window.location.assign("https://ifpi-picos.github.io/acompi-front-end/usuarios/aluno/escolherTurma.html")
+    }}
 }
 
 //verificar se a senha1 digitada esta igual a senha2
@@ -66,11 +85,13 @@ function validaSenha(senha1, senha2) {
 
 const codigoVerificacao = document.getElementById("codigoVerificacao")
 
-function enviarMsgValidacao() {
+function enviarMsgValidacao(event) {
   if (codigoVerificacao.value != "") {
     alert(
       'Tudo certo!\nCodigo de Validação correto!  ' + codigoVerificacao.value
     )
+    // mudar a pagina
+    submitForm(event)
   } else {
     alert('Digite o código no campo solicitado!')
     codigoVerificacao.style.boxShadow = "3px 3px 28px #ee6a6e";
@@ -128,9 +149,10 @@ function removerAluno(numeroParaIdentificarAluno) {
 const emailLogin = document.querySelector('#emailLogin')
 const senhaLogin = document.querySelector('#senhaLogin')
 
-function enviarMensagemLogin() {
+function enviarMensagemLogin(event) {
   // if ()
   alert('Alert tudo certo! \n Email: ' + emailLogin.value + '; Senha: ' + senhaLogin.value + '.')
+  submitForm(event)
 }
 //---------------fim tela de Login---------------//
 

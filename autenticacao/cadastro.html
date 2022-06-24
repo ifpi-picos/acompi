@@ -23,11 +23,14 @@
                         <label for="emailCadastro">Digite seu E-mail</label>
                         <input id="emailCadastro" type="email" placeholder="E-mail" required>
                         <label for="senha1Cadastro">Crie uma senha</label>
-                        <input id="senha1Cadastro" type="password" placeholder="Senha">
+                        <input id="senha1Cadastro" type="password" placeholder="Senha" required>
                         <label for="senha2Cadastro">Repita a senha criada anteriormente:</label>
-                        <input id="senha2Cadastro" type="password" placeholder="Repita a senha">
-                        <button onclick="validandoCamposCadastro()" id="btnCadastro" class="btnPrincipal"
-                            type="button">Cadastrar</button>
+                        <input id="senha2Cadastro" type="password" placeholder="Repita a senha" required>
+                        
+                        <button onclick="validandoCamposCadastro(event)" id="btnCadastro" class="btnPrincipal" type="submit">
+                            Cadastrar
+                        </button>
+                        
                     </form>
                     <br>
                     <a href="../autenticacao/login.html">Já possui conta ?</a>
