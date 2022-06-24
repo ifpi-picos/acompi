@@ -59,12 +59,12 @@ function enviarMsgCadastro(nome, email, senha1, senha2, event) {
 function submitForm(event){
   event.preventDefault();
   console.log(window.location.href)
-  if(window.location.href == "https://ifpi-picos.github.io/acompi-front-end/autenticacao/cadastro.html"){
-    window.location.href = "https://ifpi-picos.github.io/acompi-front-end/autenticacao/validacao.html"
-    } else if (window.location.href == "https://ifpi-picos.github.io/acompi-front-end/autenticacao/validacao.html"){
-        window.location.href = "https://ifpi-picos.github.io/acompi-front-end/autenticacao/login.html"
-    }else if(window.location.href == "https://ifpi-picos.github.io/acompi-front-end/autenticacao/login.html") {
-        window.location.assign("https://ifpi-picos.github.io/acompi-front-end/usuarios/aluno/escolherTurma.html")
+  if(window.location.href.endsWith("autenticacao/cadastro.html")){
+    window.location.href = "validacao.html"
+    } else if (window.location.href.endsWith("autenticacao/validacao.html")){
+        window.location.href = "login.html"
+    }else if(window.location.href.endsWith("autenticacao/login.html")) {
+        window.location.assign("../usuarios/aluno/escolherTurma.html")
     }
  }
 
@@ -119,10 +119,10 @@ function cancelarReserva(numeroParaIdentificarTurma) {
 // tela de ver e controlar alunos (professor)
 
 // função para dar cor a msg 'possui computador'
-const possuiComp = document.querySelectorAll("h5.componentesDeAlunos")
+const possuiComp = document.querySelectorAll("h4.componentesDeAlunos")
 possuiComp.forEach(function(possuirCom){
   if (possuirCom.innerHTML == "Possui Computador"){
-    possuirCom.style.color = "green";
+    possuirCom.style.color = "#3da9fc";
   }else{
     possuirCom.style.color = "red";
   }

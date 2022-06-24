@@ -6,39 +6,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/estilo.css">
-    
+  <link rel="icon" type="image/x-icon" href="../img/favicon.png">
   <title>LOGIN</title>
 </head>
 
 <body>
-  <main class="containerLogin">
-
-    <div class="login">
-      <div class="containerLogo">
+  <main>
+    <div class="containerLogin">
+      <div class="login">
         <img class="logoLogin" src="../img/logo.png" alt="Imagem do login">
-      </div>
-      <h1 class="tituloLogin">LOGIN</h1>
-
-      <form class="formularioLogin">
-        <label for="emailLogin">Digite seu E-mail:</label>
-        <input id="emailLogin" type="email" placeholder="E-mail" required>
-        <label for="senhaLogin">Digite sua senha:</label>
-        <input id="senhaLogin" type="password" placeholder="Senha" required>
-        <br><br>
-        <button onclick="enviarMensagemLogin(event)" id="btnLogin" class="btnPrincipal">Login</button>
-      </form>
-
-      <a class="campoEsqueceuSenha" href="../autenticacao/modificarSenha.html">Esqueceu sua senha?</a>
-
-
-      <div class="containerCentro">
-        <p class="paragrafoNaoPossuiConta">Não possui conta?</p>
-        <a href="../autenticacao/cadastro.html">Cadastre-se!</a>
+        <section class="secaoTelaComputadorLogin">
+          <h1 class="tituloLogin">LOGIN</h1>
+          <form class="formularioLogin" method="post">
+            <label for="emailLogin">Digite seu E-mail:</label>
+            <input id="emailLogin" type="email" placeholder="E-mail" required>
+            <label for="senhaLogin">Digite sua senha:</label>
+            <input id="senhaLogin" type="password" placeholder="Senha" required>
+            <button onclick="enviarMensagemLogin(event)" id="btnLogin" class="btnPrincipal" type="submit">Login</button>
+          </form>
+          <a class="campoEsqueceuSenha" href="../autenticacao/modificarSenha.html">Esqueceu sua senha?</a>
+          <div class="containerCentro">
+            <p class="paragrafoNaoPossuiConta">Não possui conta?</p>
+            <a href="../autenticacao/cadastro.html">Cadastre-se!</a>
+          </div>
+        </section>
       </div>
     </div>
-
     <script src="../JavaScript/index.js"></script>
-
   </main>
 
 </body>
