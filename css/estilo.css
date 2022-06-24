@@ -241,21 +241,22 @@ form input {
     width: 100%;
 }
     
-/*-------------------- Configurações │ Tela Perfil do Usuário --------------------*/   
-.menu-hamburguer {
-    text-align: left;
-}
-        
+/*-------------------- Configurações │ Modificar nome usuário --------------------*/           
 .img-perfil {
-    margin-top: 20%;
-    width: 30%;
-    height: 30%;
+    margin-top: 5%;
+    width: 10%;
+    height: 10%;
 }
 
 .main-perfil {
-    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+    
 }
-/*-------------------- Fim tela Perfil do Usuário -------------------- */
+/*-------------------- Fim tela -------------------- */
 
 /**/
 .body-msg-erro {
