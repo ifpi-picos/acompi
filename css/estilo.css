@@ -312,11 +312,6 @@ form input {
 
 /*---------------------------------------------------------------------------------*/
     
-    .login{
-        width: 50%;
-        height: 20%;    
-    }
-    
     /* início index */
     
     .indexLogo{
@@ -401,13 +396,7 @@ form input {
     /* fim menu */
     
     
-/*-----------Início do Login-----------*/
-    
-/* Logo */
-/*.logoLogin {
-    width: 30%;
-}*/
-    
+/*-----------Início do Login-----------*/    
 /* Corpo login */
 .containerLogin {
     display: flex;
@@ -415,12 +404,12 @@ form input {
     align-items: center;
 }
     
-.containerLogo {
+ .containerLogo {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10%;
-}
+} 
     
 .campoEsqueceuSenha {
     margin-bottom: 30%  ;
@@ -532,9 +521,9 @@ form input {
 
     /* Fim index */
 
-    /* wesley */
-    /* início tela de cadastro e validação*/
-    .containerAuthenticacaoFilho, .validacao{
+    /* wesley e Iago*/
+    /* início tela de cadastro, validação e login */
+    .containerAuthenticacaoFilho, .validacao, .login, .modificarSenha{
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -547,15 +536,19 @@ form input {
     margin-bottom: 30px;
     }
 
-    .logo {
+    .logo, .logoLogin, .logoModificarSenha {
         width: 35%;
     }
 
-    .secaoParaTelaComputador {
+    .secaoParaTelaComputador, .secaoTelaComputadorLogin, .secaoTelaComputadorModificarSenha {
         width: 35%;
     }
 
     /* Fim tela de cadastro e validação */
+
+    /* Início da tela de Login */
+
+    /* Fim da tela de Login */
 
 
     /* início tela do aluno ver e cancelar reserva e tela remover aluno da turma*/
