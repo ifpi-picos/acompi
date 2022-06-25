@@ -1,59 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/estilo.css">
-    <link rel="stylesheet" href="/css/allan/menu.css">
-    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
-    <title>Ver alunos</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <title>TURMAS</title>
 </head>
 
-<header>
-    <img src="/img/logo.png" alt="Nossa logomarca">
-    <nav class="menuLateral">
-        
-        <a href="#menu" class="botaoMenu abrirMenu">Menu</a>
-
-        <ul id="menu" class="menu">
-            <div id="divFecharMenu">
-            <li class="botaoMenu fecharMenu">Sair</li>
-            </div>
-            <li class="itemMenu">
-                <a href="/" class="acaoItemMenu">página1</a>
-            </li>
-            <li class="itemMenu">
-                <a href="/" class="acaoItemMenu">página2</a>
-            </li>
-            <li class="itemMenu">
-                <a href="/" class="acaoItemMenu">página3</a>
-            </li>
-        </ul>
-    </nav>
-    <script src="/JavaScript/menu.js"></script>
-</header>
-
 <body>
-    <main id="containerAlunos" class="containerCancelarReserva-RemoverAlunoDaTurma">
-    <div class="alunos">
-        <h2 class="componentesDeAlunos">Wesley</h2>
-        <h4 class="componentesDeAlunos">Possui Computador</h4>
-        <button onclick="removerAluno(0)" class="btnRemoverAluno">Remover Aluno</button>
-    </div>
+    <header>
+        <a href="/">
+            <img src="../img/logo.png" alt="Nossa logomarca">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../perfilUsuario.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="alunos">
-        <h2 class="componentesDeAlunos">Iago</h2>
-        <h4 class="componentesDeAlunos">Não Possui Computador</h4>
-        <button onclick="removerAluno(1)" class="btnRemoverAluno">Remover Aluno</button>
-    </div>
+    <main class="turmas">
+        <div>
+            <h1>Allan Brabosa</h1>
+            <p>E-mail: capic.2020123tads0123@aluno.ifpi.edu.br</p>
+            <p>Curso: Administração</p>
+            <h4 class="ausenciaComputador" >Possui Computador</h4>
+            <button onclick="removerAluno(0)" class="btnRemoverAluno">Remover Aluno</button>
+        </div>
 
-    <div class="alunos">
-        <h2 class="componentesDeAlunos">Anna</h2>
-        <h4 class="componentesDeAlunos">Possui Computador</h4>
-        <button onclick="removerAluno(2)" class="btnRemoverAluno">Remover Aluno</button>
-    </div>
-</main>
-    <script src="/JavaScript/index.js"></script>
+        <div>
+            <h1>Iago Sousa</h1>
+            <p>E-mail: capic.2021013tads0022@aluno.ifpi.edu.br</p>
+            <p>Curso: ADS</p>
+            <h4 class="ausenciaComputador" >Não Possui Computador</h4>
+            <button onclick="removerAluno(1)" class="btnRemoverAluno">Remover Aluno</button>
+        </div>
+        <div>
+            <h1>Anna Nayra</h1>
+            <p>E-mail: capic.2021024tads0011@aluno.ifpi.edu.br</p>
+            <p>Curso: Física</p>
+            <h4 class="ausenciaComputador" >Possui Computador</h4>
+            <button onclick="removerAluno(2)" class="btnRemoverAluno">Remover Aluno</button>
+        </div>
+        <div>
+            <h1>Zé Inácio</h1>
+            <p>E-mail: capic.2021023tads1202@aluno.ifpi.edu.br</p>
+            <p>Curso: Administração</p>
+            <h4 class="ausenciaComputador" >Possui Computador</h4>
+            <button onclick="removerAluno(3)" class="btnRemoverAluno">Remover Aluno</button>
+        </div>
+    </main>
+    <script src="../JavaScript/index.js"></script>
 </body>
+
 </html>

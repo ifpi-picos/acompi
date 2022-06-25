@@ -77,6 +77,10 @@ header ul{
     margin-bottom: 20px;
     text-align: center;
 }
+
+#btnProibirLabAdm, #btnBloquearLabProf{
+    margin-bottom: 30px;
+}
 /* fim telas escolherTurma(aluno) e bloquearLaboratorio(prof) e proibir laboratorio(adm)*/
 /* fim wesley e rodrigo */
 
@@ -142,33 +146,18 @@ form input {
 
 /* tela ver e remover alunos (professor)*/
 
-#containerAlunos{
-    width: 80%;
-    margin: 0 auto;
-}
-
-.alunos{
-    display: flex;
-    border: 0.1rem solid black;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    align-items: center;
-    width: 100%;
-    padding: 1%;
-    margin-top: 10px;
-}
-
 .btnRemoverAluno{
     background-color: var(--corBotaoVermelho);
-    color: #fffffe;
-    width: 27%;
-    height: 80%;
     cursor: pointer;
+    border: none;
+    color: var(--corTextoBotao);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    width: 100%;
     border-radius: 10px;
-}
-
-.componentesDeAlunos{
-    width: 27%;
 }
 
 /* fim tela ver e remover alunos (professor)*/
@@ -577,11 +566,6 @@ form input {
     }
     /* fim tela do aluno ver e cancelar reserva e tela remover aluno  da turma*/
 
-    /* tela ver e remover alunos da turma (professor)*/
-    .alunos{
-        width: 40%;
-    }
-    /* fim tela ver e remover alunos da turma (professor)*/
 
     /* wesley e rodrigo */
     /* telas escolherTurma(aluno) e bloquearLaboratorio(prof) e proibir laboratorio(adm)*/
@@ -600,14 +584,12 @@ form input {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        justify-content: space-between;
+        column-gap: 30px;
 }
 
-    #btnProibirLabAdm{
-        position: absolute;
-        bottom: 50px;
-        left: 30%;
+    #btnProibirLabAdm, #btnBloquearLabProf{
         width: 40%;
+        margin-bottom: 30px;
     }
     /* fim telas escolherTurma(aluno) e bloquearLaboratorio(prof) e proibir laboratorio(adm)*/
     /* fim wesley e rodrigo */
