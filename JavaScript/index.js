@@ -166,4 +166,22 @@ function enviarMensagemModificarSenha() {
   console.log('Teste')
 }
 
-//---------------Início da tela de Modificar senha---------------//
+//--------------- Função modificar cor e nome botão "Entrar na turma" ---------------//
+
+function entrarTurma(numeroParaIdentificarTurma) {
+  const btnCancelarReserva = document.getElementsByClassName("btnEntrouTurma")[numeroParaIdentificarTurma]
+  if (btnCancelarReserva.innerHTML == "Entrar na turma") {
+    btnCancelarReserva.style.backgroundColor = "#3da9fc"
+    btnCancelarReserva.innerHTML = "Você entrou na turma"
+  }
+}
+
+//--------------- Função modificar cor e nome botão "Excluir turma" ---------------//
+
+function excluirTurma(numeroParaIdentificarTurma) {
+  const btnCancelarReserva = document.getElementsByClassName("btnExcluirTurma")[numeroParaIdentificarTurma]
+  if (btnCancelarReserva.innerHTML == "Entrar na turma") {
+    btnCancelarReserva.style.backgroundColor = "#3da9fc"
+    btnCancelarReserva.innerHTML = "Turma excluída"
+  }
+}

@@ -59,7 +59,7 @@ header ul {
     display: inline-block;
     white-space: nowrap;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 /* Configurações de margens dos botões */
@@ -67,12 +67,42 @@ header ul {
     margin: 10rem 0;
 }
 
+/* Botão entrar na turma(aluno) */
+.btnEntrouTurma {
+    background-color: var(--corBotaoS);
+    color: #fffffe;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    width: 100%;
+}
+
+/* Botão excluir turma(professor e adm) */
+.btnExcluirTurma {
+    background-color: var(--corBotaoVermelho);
+    color: #fffffe;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    width: 100%;
+}
 /* -------------------------------------------------------------------------------------------------------------------------- */
-/* wesley e rodrigo */
-/* telas escolherTurma(aluno) e bloquearLaboratorio(prof) e proibir laboratorio(adm)*/
+
+/* Wesley e Rodrigo */
+/* Telas escolherTurma(aluno), bloquearLaboratorio(prof) e proibirLaboratorio(adm) */
 .turmas div, .laboratorios div{
     border: 1px solid #ccc;
-    padding: 5px;
+    padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
     text-align: center;
@@ -82,7 +112,7 @@ header ul {
     margin-bottom: 30px;
 }
 /* fim telas escolherTurma(aluno) e bloquearLaboratorio(prof) e proibir laboratorio(adm)*/
-/* fim wesley e rodrigo */
+/* Fim Wesley e Rodrigo */
 
 /* wesley e iago
 tela cadastro/validaçao/login*/
