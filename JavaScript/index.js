@@ -119,7 +119,7 @@ function cancelarReserva(numeroParaIdentificarTurma) {
 // tela de ver e controlar alunos (professor)
 
 // função para dar cor a msg 'possui computador'
-const possuiComp = document.querySelectorAll("h4.componentesDeAlunos")
+const possuiComp = document.querySelectorAll("h4.ausenciaComputador")
 possuiComp.forEach(function(possuirCom){
   if (possuirCom.innerHTML == "Possui Computador"){
     possuirCom.style.color = "#3da9fc";
