@@ -22,20 +22,20 @@ body {
     padding: 0 5%;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header ul{
+header ul {
     display: flex;
     justify-content: flex-end;
     column-gap: 1rem;
 }
 
 /* Configurações do button */
-.index{
+.index {
     background-color: var(--corBotaoP);
     border: none;
     color: var(--corTextoBotao);
