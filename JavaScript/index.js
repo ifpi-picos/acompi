@@ -166,22 +166,44 @@ function enviarMensagemModificarSenha() {
   console.log('Teste')
 }
 
+//----------------------------------------------------------------------------------------------------------- //
+
 //--------------- Função modificar cor e nome botão "Entrar na turma" ---------------//
 
 function entrarTurma(numeroParaIdentificarTurma) {
-  const btnCancelarReserva = document.getElementsByClassName("btnEntrouTurma")[numeroParaIdentificarTurma]
-  if (btnCancelarReserva.innerHTML == "Entrar na turma") {
-    btnCancelarReserva.style.backgroundColor = "#3da9fc"
-    btnCancelarReserva.innerHTML = "Você entrou na turma"
+  const btnEntrouTurma = document.getElementsByClassName("btnEntrouTurma")[numeroParaIdentificarTurma]
+  if (btnEntrouTurma.innerHTML == "Entrar na turma") {
+    btnEntrouTurma.style.backgroundColor = "#2cb67d"
+    btnEntrouTurma.innerHTML = "Você entrou na turma"
   }
 }
 
 //--------------- Função modificar cor e nome botão "Excluir turma" ---------------//
 
 function excluirTurma(numeroParaIdentificarTurma) {
-  const btnCancelarReserva = document.getElementsByClassName("btnExcluirTurma")[numeroParaIdentificarTurma]
-  if (btnCancelarReserva.innerHTML == "Entrar na turma") {
-    btnCancelarReserva.style.backgroundColor = "#3da9fc"
-    btnCancelarReserva.innerHTML = "Turma excluída"
+  const btnExcluirTurma = document.getElementsByClassName("btnExcluirTurma")[numeroParaIdentificarTurma]
+  if (btnExcluirTurma.innerHTML == "Excluir turma") {
+    btnExcluirTurma.style.backgroundColor = "#3da9fc"
+    btnExcluirTurma.innerHTML = "Turma excluída"
+  }
+}
+
+//--------------- Função modificar cor e nome botão "Salvar alterções" ---------------//
+
+function alterar(numeroParaIdentificarTurma) {
+  const btnEntrouTurma = document.getElementsByClassName("btnEntrouTurma")[numeroParaIdentificarTurma]
+  if (btnEntrouTurma.innerHTML == "Salvar alterações") {
+    btnEntrouTurma.style.backgroundColor = "#2cb67d"
+    btnEntrouTurma.innerHTML = "Alterações salvas com sucesso!"
+  }
+}
+
+//--------------- Função modificar cor e nome botão "Excluir usuário" ---------------//
+
+function excluirUsuario(numeroParaIdentificarTurma) {
+  const btnExcluirTurma = document.getElementsByClassName("btnExcluirTurma")[numeroParaIdentificarTurma]
+  if (btnExcluirTurma.innerHTML == "Excluir usuário") {
+    btnExcluirTurma.style.backgroundColor = "#2cb67d"
+    btnExcluirTurma.innerHTML = "Usuário excluído com sucesso!"
   }
 }

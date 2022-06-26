@@ -69,7 +69,7 @@ header ul {
 
 /* Botão entrar na turma(aluno) */
 .btnEntrouTurma {
-    background-color: var(--corBotaoS);
+    background-color: var(--corBotaoP);
     color: #fffffe;
     cursor: pointer;
     border-radius: 10px;
