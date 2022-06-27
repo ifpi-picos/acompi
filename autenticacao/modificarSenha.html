@@ -19,12 +19,12 @@
           <h1 class="tituloAlteracaoDeSenha">Alteração de senha</h1>
           <form class="formularioModificarSenha" method="post">
             <label for="emailModificarSenha">Digite seu E-mail:</label>
-            <input ip="emailModificarSenha" type="email" placeholder="nome@exemplo.com" required>
+            <input id="emailModificarSenha" type="email" placeholder="nome@exemplo.com" required>
             <label for="senhaModificarSenha">Digite a nova senha:</label>
-            <input ip="senha1ModificarSenha" type="password" placeholder="Senha" required>
+            <input id="senha1ModificarSenha" type="password" placeholder="Senha" required>
             <label for="senha2ModificarSenha">Repita a senha criada anteriormente:</label>
-            <input ip="senha2ModificarSenha" type="password" placeholder="Senha" required>
-            <button onclick="enviarMensagemModificarSenha()" id="btnModificarSenha" class="botaoPrincipal" type="submit">Alterar
+            <input id="senha2ModificarSenha" type="password" placeholder="Senha" required>
+            <button onclick="enviarMensagemModificarSenha(event)" id="btnModificarSenha" class="botaoPrincipal" type="submit">Alterar
               Senha</button>
           </form>
           <div class="containerCentro">
@@ -33,11 +33,10 @@
           </div>
         </section>
       </div>
-
-
+      
     </div>
   </main>
-
+<script src="../JavaScript/index.js"></script>
 </body>
 
 </html>
