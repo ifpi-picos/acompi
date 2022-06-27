@@ -11,10 +11,10 @@ cancelar.addEventListener('click', function(){
         window.location.replace("/usuarios/professor/turmas.html")
     }
     if(url_atual.endsWith("usuarios/professor/formularioBloquearLaboratorio.html")){
-        window.location.replace("/usuarios/professor/bloquearLaboratorio.html")
+        window.location.replace("/usuarios/professor/bloquearLaboratorioProf.html")
     }
     if(url_atual.endsWith("usuarios/adminitrador/formularioProibirLaboratorio.html")){
-        window.location.replace("/")
+        window.location.replace("/usuarios/adminitrador/proibirLabAdm.html")
     }
 })
 function submitForm(event){
@@ -29,10 +29,10 @@ function submitForm(event){
             window.location.replace("/usuarios/professor/turmas.html")
         }
         if(url_atual.endsWith("usuarios/professor/formularioBloquearLaboratorio.html")){
-            window.location.replace("/usuarios/professor/bloquearLaboratorio.html")
+            window.location.replace("/usuarios/professor/bloquearLaboratorioProf.html")
         }
         if(url_atual.endsWith("usuarios/adminitrador/formularioProibirLaboratorio.html")){
-            window.location.replace("/")
+            window.location.replace("/usuarios/adminitrador/proibirLabAdm.html")
         }
     })
 }

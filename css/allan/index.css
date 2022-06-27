@@ -70,13 +70,16 @@ html, body{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        padding: 0;
+        margin: 0;
+        padding: 0 75.950px;
     }
     .indexLogo{
-        width: 33.6rem;
+        width: 29.9rem;
     }
     main{
         height: 100%;
-        width: 20%;
+        width: 31.8%;
     }
     html,body{
         overflow: hidden;
