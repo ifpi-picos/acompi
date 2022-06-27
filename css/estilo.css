@@ -67,35 +67,6 @@ header ul {
     margin: 10rem 0;
 }
 
-/* Botão entrar na turma(aluno) */
-.btnEntrouTurma {
-    background-color: var(--corBotaoP);
-    color: #fffffe;
-    cursor: pointer;
-    border-radius: 10px;
-    border: none;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    white-space: nowrap;
-    width: 100%;
-}
-
-/* Botão excluir turma(professor e adm) */
-.btnExcluirTurma {
-    background-color: var(--corBotaoVermelho);
-    color: #fffffe;
-    cursor: pointer;
-    border-radius: 10px;
-    border: none;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    white-space: nowrap;
-    width: 100%;
-}
 /* -------------------------------------------------------------------------------------------------------------------------- */
 
 /* Wesley e Rodrigo */
