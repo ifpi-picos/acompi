@@ -15,10 +15,10 @@
             <div class="containerAuthenticacaoFilho">
                 <img class="logo" src="../../img/logo.png" alt="logomarca do site">
                 <section class="secaoParaTelaComputador">
-        <h2>Criar turma</h2>
+        <h2 class="formTitulo">Criar turma</h2>
         <form onsubmit="submitForm(event)">
         <div class="preencher">
-            <label>Escolha qual laboratório deseja reservar:*</label>
+            <label class="formLabel">Escolha qual laboratório deseja reservar:*</label>
             <select required>
                 <option value=''>escolha</option>
                 <option value='1'>laboratório 1</option>
@@ -29,14 +29,14 @@
 
         </div>
         <div class="preencher">
-            <label>Escolha a data que deseja reservar:*</label>
+            <label class="formLabel">Escolha a data que deseja reservar:*</label>
             <input class="data" id="campoDataInicio" type="date" name="dataInicio" required>
-            <label>Escolha a hora em que inicia a reserva:*</label>
+            <label class="formLabel">Escolha a hora em que inicia a reserva:*</label>
             <input type="time" name="hora" id="horaInicio" required>
-            <label>Escolha a hora em que termina a reserva:*</label>
+            <label class="formLabel">Escolha a hora em que termina a reserva:*</label>
             <input type="time" name="hora" id="horaFim" required>
-            <label>Escolha qual curso você ministra:</label>
-            <select>
+            <label class="formLabel">Escolha qual curso você ministra:</label>
+            <select class="cursoProfessor">
                 <option value=''>escolha</option>
                 <option value='1'>administração</option>
                 <option value='2'>eletrotécnica</option>

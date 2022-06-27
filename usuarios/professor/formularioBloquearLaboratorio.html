@@ -15,10 +15,10 @@
         <div class="containerAuthenticacaoFilho">
             <img class="logo" src="../../img/logo.png" alt="logomarca do site">
             <section class="secaoParaTelaComputador">
-        <h2>bloquear uso de laboratório</h2>
+        <h2 class="formTitulo">bloquear uso de laboratório</h2>
         <form onsubmit="submitForm(event)">
         <div class="preencher">
-            <label>Escolha qual laboratório deseja bloquear:*</label>
+            <label class="formLabel">Escolha qual laboratório deseja bloquear:*</label>
             <select required>
                 <option value=''>escolha</option>
                 <option value='1'>laboratório 1</option>
@@ -29,8 +29,8 @@
 
         </div>
         <div class="preencher">
-            <label>Escolha qual dia da semana será bloqueado:</label>
-            <select>
+            <label class="formLabel">Escolha qual dia da semana será bloqueado:</label>
+            <select class="formMargin" required>
                 <option value=''>escolha</option>
                 <option value='1'>segunda-feira</option>
                 <option value='2'>terça-feira</option>
@@ -39,13 +39,13 @@
                 <option value='5'>sexta-feira</option>
                 <option value='6'>sábado</option>
             </select>
-            <label>Escolha a data em que inicia o bloqueio:*</label>
+            <label class="formLabel">Escolha a data em que inicia o bloqueio:*</label>
             <input class="data" id="campoDataInicio" type="date" name="dataInicio" required>
-            <label id="dataFim">Escolha a data em que termina o bloqueio:*</label>
-            <input class="data" type="date" id="campoDataFim" name="dataFim" required>
-            <label>Escolha a hora em que inicia o bloqueio:*</label>
+            <label class="formLabel" id="dataFim">Escolha a data em que termina o bloqueio:*</label>
+            <input class="data formMargin" type="date" id="campoDataFim" name="dataFim" required>
+            <label class="formLabel">Escolha a hora em que inicia o bloqueio:*</label>
             <input type="time" name="hora" id="horaInicio" required>
-            <label>Escolha a hora em que inicia o bloqueio:*</label>
+            <label class="formLabel">Escolha a hora em que inicia o bloqueio:*</label>
             <input type="time" name="hora" id="horaFim" required>
         </div>
         <div id="botoes">

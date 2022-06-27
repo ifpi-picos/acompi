@@ -136,7 +136,7 @@ form input {
 }
     
 /* Título */
-.tituloCadastro, .tituloValidacao, .tituloLogin, .tituloAlteracaoDeSenha {
+.tituloCadastro, .tituloValidacao, .tituloLogin, .tituloAlteracaoDeSenha, #indexTitulo, .formTitulo{
     text-align: center;
     color: #094067;
 }
@@ -343,10 +343,6 @@ form input {
 /*---------------------------------------- início páginas Allan ----------------------------------------------------------------------- */
 
     /* início página formulárioProibirLaboratorio */
-
-    #laboratorios{
-        margin-bottom: 16px;
-    }
     #cancelar{
         padding-top: 3%;
         padding-bottom: 3%;
@@ -373,27 +369,92 @@ form input {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        margin-top: 20px;
     }
     .preencher{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
     }
 
     .data{
-        width: 130px;
         border: 1px solid black;
+        border-radius: 0;
+        padding: 0;
+        width: 99.6px;
+        border: 1px solid black;
+        margin-bottom: 0;
+    }
+    #campoDataInicio{
         margin-bottom: 16px;
     }
     .formLabel{
         margin-bottom: 16px;;
     }
+    .formMargin{
+        margin-bottom: 16px;
+    }
     /* fim página formulárioProibirLaboratorio */
+
+    /* início página formulárioCriarTurma */
+    #horaFim, #horaInicio{
+        margin-bottom: 16px;
+        padding: 0;
+        border-radius: 0;
+        border: 1px solid black;
+        width: 99.6px;
+    }
+    .cursoProfessor{
+        width: 99.6px;
+    }
+    /* fim página formulárioCriarTurma */
+
     /* início index */
-    
-    
+    .indexTexto, #indexLink, #indexTitulo, #indexBotao{
+        margin: 0;
+        text-align: center;
+    }
+    #indexBotao{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    #indexTitulo{
+        margin-top: 50px;
+        margin-bottom: 24px;
+    }
+    .secaoIndex{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    #indexBotaoLink{
+        text-decoration: none;
+    }
     /* fim index */
     
+    /* início página formularioReservarComputador */
+    .formLabel{
+        margin-bottom: 16px;
+    }
+    .formSelect{
+        width: 99.6px;
+    }
+    .formDiv{
+        align-items: center;
+        width: 115px;
+        justify-content: center;
+        text-align: center;
+    }
+    .preencher div input{
+        margin:0
+    }   
+    .radioButton{
+        width: 20px;
+    }
+    /* fim página formularioReservarComputador */
     /* inicio menu */
     ul{
         list-style: none;
@@ -527,44 +588,20 @@ form input {
 
 /* início media queries */
 @media(min-width:770px) {
-    
+    /*---------------------------------------- início páginas Allan ----------------------------------------------------------------------- */
+
     /* Início index */
-    #indexPrincipal {
-        margin: 0;
-        width: 40%;
-    }
-
-    #indexBotao, #indexBotaoLink {
-        margin: 0;
-    }
-
-    #indexLogo {
-        width: 25%;
-    }
-
-    #indexBotaoLink {
-        width: 50%;
-        margin-top: 6%;
-        margin-bottom: 6%;
-    }
-
-    html, body {
-        height: 100%;
-    }
     #indexBotao {
-        width: 100%;
-        height: 1.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
 
     #indexTitulo {
-        margin-top: 6%;
-        margin-bottom: 1%;
+        margin-bottom: 30px;
     }
 
     /* Fim index */
+/*---------------------------------------- fim páginas Allan ----------------------------------------------------------------------- */
 
     /* wesley e Iago*/
     /* início tela de cadastro, validação e login */
