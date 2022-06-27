@@ -22,6 +22,40 @@
         </nav>
     </header>
 
+    <div class="filtrarAlunoProfessor">
+        <h3>Filtrar Aluno por:</h3>
+        <div class="camposFiltragem">
+
+            <div class="divisaoFiltragemForms">
+                <div class="filtrarPorCurso">
+                    <select class="formSelect">
+                        <option value=''>Curso</option>
+                        <option value='1'>Administração</option>
+                        <option value='2'>Eletrotécnica</option>
+                        <option value='3'>Informática</option>
+                        <option value='4'>Análise e desenvolvimento de sistemas</option>
+                        <option value='5'>Química</option>
+                        <option value='6'>Física</option>
+                        <option value='7'>Engenharia de software</option>
+                        <option value='8'>Outro</option>
+                        <option value='9'>Nenhum</option>
+                    </select>
+                </div>
+                
+                <div class="possuiComputador">
+                    <p>Possui computador?</p>
+                    <input class="radioButton"  type="radio" name="possuiComputador" value="sim" required/> Sim
+                    <input class="radioButton"  type="radio" name="possuiComputador" value="nao" required/> Não
+                </div>
+            </div>
+
+            <div class="botaoFiltrar">
+                <button id="botaoFiltrar"type="submit">Filtrar</button>
+            </div>
+            
+        </div>
+    </div>
+
     <main class="turmas">
         <div>
             <h1>Allan Brabosa</h1>
