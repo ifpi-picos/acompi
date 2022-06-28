@@ -47,6 +47,32 @@
         </nav>
     </header>
 
+    <div class="filtrarTurmasProfessor">
+        <h3>Filtrar Turmas por:</h3>
+        <div class="camposFiltragem">
+    
+            <div class="divisaoFiltragemBotao">
+                <div class="filtrarPorLaboratorio">
+                    <select class="formSelect">
+                        <option value="">Laboratório</option>
+                        <option value="1">Laboratório I</option>
+                        <option value="2">Laboratório II</option>
+                        <option value="3">Laboratório III</option>
+                        <option value="4">Laboratório IV</option>
+                    </select>
+                </div>
+    
+                <div class="filtragemPorHorario">
+                    <input type="time" id="HorarioDaReserva" name="time">
+                </div>
+            </div>
+    
+            <div class="botaoFiltrar">
+                <button id="botaoFiltrar"type="submit">Filtrar</button>
+            </div>
+            
+        </div>
+    </div>
 
     <main class="turmas">
         <div class="turma">
