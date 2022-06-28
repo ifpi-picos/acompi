@@ -5,16 +5,16 @@ cancelar.addEventListener('click', function(){
     var url_atual = window.location.pathname; 
 
     if(url_atual.endsWith("usuarios/aluno/formularioReservaComputador.html")){
-    window.location.href="/usuarios/aluno/escolherTurma.html"
+    window.location.href="escolherTurma.html"
     }
     if(url_atual.endsWith("usuarios/professor/formularioCriarTurma.html")){
-        window.location.href="/usuarios/professor/turmas.html"
+        window.location.href="turmas.html"
     }
     if(url_atual.endsWith("usuarios/professor/formularioBloquearLaboratorio.html")){
-        window.location.href="/usuarios/professor/bloquearLaboratorioProf.html"
+        window.location.href="bloquearLaboratorioProf.html"
     }
     if(url_atual.endsWith("/usuarios/administrador/formularioProibirLaboratorio.html")){
-        window.location.href="/usuarios/administrador/proibirLabAdm.html"
+        window.location.href="proibirLabAdm.html"
     }
 })
 function submitForm(event){
@@ -23,16 +23,16 @@ function submitForm(event){
         var url_atual = window.location.pathname; 
         alert('dados enviados com sucesso')
         if(url_atual.endsWith("usuarios/aluno/formularioReservaComputador.html")){
-            window.location.href="/usuarios/aluno/escolherTurma.html"
+            window.location.href="escolherTurma.html"
             }
             if(url_atual.endsWith("usuarios/professor/formularioCriarTurma.html")){
-                window.location.href="/usuarios/professor/turmas.html"
+                window.location.href="turmas.html"
             }
             if(url_atual.endsWith("usuarios/professor/formularioBloquearLaboratorio.html")){
-                window.location.href="/usuarios/professor/bloquearLaboratorioProf.html"
+                window.location.href="bloquearLaboratorioProf.html"
             }
             if(url_atual.endsWith("/usuarios/administrador/formularioProibirLaboratorio.html")){
-                window.location.href="/usuarios/administrador/proibirLabAdm.html"
+                window.location.href="proibirLabAdm.html"
             }
     })
 }
