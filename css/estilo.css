@@ -55,35 +55,6 @@ body {
     margin: 10rem 0;
 }
 
-/* Botão entrar na turma(aluno) */
-.btnEntrouTurma {
-    background-color: var(--corBotaoP);
-    color: #fffffe;
-    cursor: pointer;
-    border-radius: 10px;
-    border: none;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    white-space: nowrap;
-    width: 100%;
-}
-
-/* Botão excluir turma(professor e adm) */
-.btnExcluirTurma {
-    background-color: var(--corBotaoVermelho);
-    color: #fffffe;
-    cursor: pointer;
-    border-radius: 10px;
-    border: none;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    white-space: nowrap;
-    width: 100%;
-}
 /* -------------------------------------------------------------------------------------------------------------------------- */
 
 /* Wesley e Rodrigo */
@@ -257,8 +228,8 @@ form input {
 /*-------------------- Configurações │ Modificar nome usuário --------------------*/           
 .img-perfil {
     margin-top: 5%;
-    width: 10%;
-    height: 10%;
+    width: 20%;
+    height: 20%;
 }
 
 .main-perfil {
@@ -557,11 +528,41 @@ form input {
     width: 100%;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10%;
+    border: none;
 }
     
 /*-----------Fim de alteração de senha-----------*/
 /*-----------Início da tela de Filtrar turmas/reserva-----------*/
+.filtrarTurmasAluno, .filtrarAlunoProfessor, .filtrarPorCurso{
+    margin-bottom: 20px;
+}
+.camposFiltragem{
+    display: flex;
+    align-items: center;
+}
+.divisaoFiltragemBotao{
+    display: flex;
+}
+.filtrarPorLaboratorio, .filtrarPorCurso{
+    margin-right: 30px;
+}
+#botaoFiltrar{
+    margin-left: 60px;
+    padding-top: 5%;
+    padding-bottom: 6%;
+    background-color: #3da9fc;
+    color: #fffffe;
+    display: block;
+    width: 60%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 .filtrarTurmas, .filtrarReservas{
     background-color: aqua;
     margin-top: 10%;

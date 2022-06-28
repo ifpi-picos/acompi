@@ -16,7 +16,7 @@ function validandoCamposCadastro(event) {
             nomeCadastro,
             emailCadastro,
             senha1Cadastro,
-            senha2Cadastro, 
+            senha2Cadastro,
             event
           )
         } else {
@@ -36,7 +36,7 @@ function validandoCamposCadastro(event) {
 //emitir alerta avisando se estar tudo certo ou se a senha1 esta diferente da senha2
 function enviarMsgCadastro(nome, email, senha1, senha2, event) {
   if (validaSenha(senha1Cadastro, senha2Cadastro)) {
-    
+
     alert(
       'Tudo certo!\nNome: ' +
       nomeCadastro.value +
@@ -56,22 +56,26 @@ function enviarMsgCadastro(nome, email, senha1, senha2, event) {
 }
 
 //nao envia o formulario e navega entre as paginas mudando a url
-function submitForm(event){
+function submitForm(event) {
+  
   event.preventDefault();
   console.log(window.location.href)
-  if(window.location.href.endsWith("autenticacao/cadastro.html")){
+  if (window.location.href.endsWith("autenticacao/cadastro.html")) {
     window.location.href = "validacao.html"
-    } else if (window.location.href.endsWith("autenticacao/validacao.html")){
-        window.location.href = "login.html"
-    }else if(window.location.href.endsWith("autenticacao/login.html")) {
-        window.location.assign("../usuarios/aluno/escolherTurma.html")
-    }
- }
+  } else if (window.location.href.endsWith("autenticacao/validacao.html")) {
+    window.location.href = "login.html"
+  } else if (window.location.href.endsWith("autenticacao/login.html")) {
+    window.location.assign("../usuarios/aluno/escolherTurma.html")
+  } else if (window.location.href.endsWith("autenticacao/modificarSenha.html")) {
+    
+  }
+}
 
 
 //verificar se a senha1 digitada esta igual a senha2
 function validaSenha(senha1, senha2) {
-  if (senha1Cadastro.value == senha2Cadastro.value) {
+  console.log("oi")
+  if (senha1.value == senha2.value) {
     return true
   } else {
     return false
@@ -120,13 +124,13 @@ function cancelarReserva(numeroParaIdentificarTurma) {
 
 // função para dar cor a msg 'possui computador'
 const possuiComp = document.querySelectorAll("h4.ausenciaComputador")
-possuiComp.forEach(function(possuirCom){
-  if (possuirCom.innerHTML == "Possui Computador"){
+possuiComp.forEach(function (possuirCom) {
+  if (possuirCom.innerHTML == "Possui Computador") {
     possuirCom.style.color = "#3da9fc";
-  }else{
+  } else {
     possuirCom.style.color = "red";
   }
-}) 
+})
 
 // funçao para o butão mudar
 function removerAluno(numeroParaIdentificarAluno) {
@@ -149,8 +153,7 @@ const emailLogin = document.querySelector('#emailLogin')
 const senhaLogin = document.querySelector('#senhaLogin')
 
 function enviarMensagemLogin(event) {
-  // if ()
-  alert('Alert tudo certo! \n Email: ' + emailLogin.value + '; Senha: ' + senhaLogin.value + '.')
+  alert('Tudo certo!')
   submitForm(event)
 }
 //---------------fim tela de Login---------------//
@@ -161,49 +164,28 @@ const emailModificarSenha = document.querySelector('#emailModificarSenha')
 const senha1ModificarSenha = document.querySelector('#senha1ModificarSenha')
 const senha2ModificarSenha = document.querySelector('#senha2ModificarSenha')
 
-function enviarMensagemModificarSenha() {
-  alert('Tudo certo!' + emailModificarSenha.value + senha1ModificarSenha.value + senha2ModificarSenha.value)
-  console.log('Teste')
+function enviarMensagemModificarSenha(event) {
+  if (emailModificarSenha.value != '') {
+    if (senha1ModificarSenha.value != '') {
+      if (senha2ModificarSenha.value != '') {
+        if (validaSenha(senha1, senha2)) {
+          alert('Tudo certo!')
+          submitForm(event)
+        } else {
+          alert('A senha de confirmação precisa ser igual a primeira senha!')
+          senha1ModificarSenha.value = ''
+          senha2ModificarSenha.value = ''
+        }
+      } else {
+        alert("Preencha a senha de confirmação")
+      }
+    } else {
+      alert("Preencha a senha")
+    }
+  } else {
+    alert("Preencha o E-mail!")
+  }
+
 }
 
 //----------------------------------------------------------------------------------------------------------- //
-
-//--------------- Função modificar cor e nome botão "Entrar na turma" ---------------//
-
-function entrarTurma(numeroParaIdentificarTurma) {
-  const btnEntrouTurma = document.getElementsByClassName("btnEntrouTurma")[numeroParaIdentificarTurma]
-  if (btnEntrouTurma.innerHTML == "Entrar na turma") {
-    btnEntrouTurma.style.backgroundColor = "#2cb67d"
-    btnEntrouTurma.innerHTML = "Você entrou na turma"
-  }
-}
-
-//--------------- Função modificar cor e nome botão "Excluir turma" ---------------//
-
-function excluirTurma(numeroParaIdentificarTurma) {
-  const btnExcluirTurma = document.getElementsByClassName("btnExcluirTurma")[numeroParaIdentificarTurma]
-  if (btnExcluirTurma.innerHTML == "Excluir turma") {
-    btnExcluirTurma.style.backgroundColor = "#3da9fc"
-    btnExcluirTurma.innerHTML = "Turma excluída"
-  }
-}
-
-//--------------- Função modificar cor e nome botão "Salvar alterções" ---------------//
-
-function alterar(numeroParaIdentificarTurma) {
-  const btnEntrouTurma = document.getElementsByClassName("btnEntrouTurma")[numeroParaIdentificarTurma]
-  if (btnEntrouTurma.innerHTML == "Salvar alterações") {
-    btnEntrouTurma.style.backgroundColor = "#2cb67d"
-    btnEntrouTurma.innerHTML = "Alterações salvas com sucesso!"
-  }
-}
-
-//--------------- Função modificar cor e nome botão "Excluir usuário" ---------------//
-
-function excluirUsuario(numeroParaIdentificarTurma) {
-  const btnExcluirTurma = document.getElementsByClassName("btnExcluirTurma")[numeroParaIdentificarTurma]
-  if (btnExcluirTurma.innerHTML == "Excluir usuário") {
-    btnExcluirTurma.style.backgroundColor = "#2cb67d"
-    btnExcluirTurma.innerHTML = "Usuário excluído com sucesso!"
-  }
-}
