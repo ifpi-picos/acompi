@@ -532,8 +532,8 @@ form input {
 }
     
 /*-----------Fim de alteração de senha-----------*/
-/*-----------Início da tela de Filtrar turmas/reserva-----------*/
-.filtrarTurmasAluno, .filtrarAlunoProfessor, .filtrarPorCurso{
+/*-----------Início campos de filtragem-----------*/
+.filtrarTurmasAluno, .filtrarAlunoProfessor, .filtrarPorCurso, .filtrarReservasAluno, .filtrarLabBloqueadoProfessor, .filtrarTurmasProfessor, .filtrarTurmasAdministrador{
     margin-bottom: 20px;
 }
 .camposFiltragem{
@@ -543,17 +543,17 @@ form input {
 .divisaoFiltragemBotao{
     display: flex;
 }
-.filtrarPorLaboratorio, .filtrarPorCurso{
+.filtrarPorLaboratorio, .filtrarPorCurso, .filtrarPorUsuario{
     margin-right: 30px;
 }
 #botaoFiltrar{
-    margin-left: 60px;
-    padding-top: 5%;
-    padding-bottom: 6%;
+    margin-left: 30px;
+    padding-top: 6%;
+    padding-bottom: 8%;
     background-color: #3da9fc;
     color: #fffffe;
     display: block;
-    width: 60%;
+    width: 70%;
     border-radius: 5px;
     cursor: pointer;
     border: none;
@@ -563,7 +563,7 @@ form input {
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-.filtrarTurmas, .filtrarReservas{
+/*.filtrarTurmas, .filtrarReservas{
     background-color: aqua;
     margin-top: 10%;
     padding-left: 2%;
@@ -581,8 +581,8 @@ form input {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 5%;
-}
-/*-----------Fim da tela de Filtrar turmas/reserva-----------*/
+}*/
+/*-----------Fim de campos de filtragem-----------*/
 
 /* início media queries */
 @media(min-width:770px) {
