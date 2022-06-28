@@ -55,6 +55,9 @@ body {
     margin: 10rem 0;
 }
 
+#ajuste {
+    text-align: center;
+}
 /* -------------------------------------------------------------------------------------------------------------------------- */
 
 /* Wesley e Rodrigo */
@@ -227,19 +230,10 @@ form input {
     
 /*-------------------- Configurações │ Modificar nome usuário --------------------*/           
 .img-perfil {
-    margin-top: 5%;
     width: 20%;
     height: 20%;
 }
 
-.main-perfil {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 10%;
-    
-}
 /*-------------------- Fim tela -------------------- */
 
 /**/
