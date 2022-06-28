@@ -59,7 +59,7 @@ function enviarMsgCadastro(nome, email, senha1, senha2, event) {
 function submitForm(event) {
   
   event.preventDefault();
-  console.log(window.location.href)
+
   if (window.location.href.endsWith("autenticacao/cadastro.html")) {
     window.location.href = "validacao.html"
   } else if (window.location.href.endsWith("autenticacao/validacao.html")) {
@@ -67,14 +67,13 @@ function submitForm(event) {
   } else if (window.location.href.endsWith("autenticacao/login.html")) {
     window.location.assign("../usuarios/aluno/escolherTurma.html")
   } else if (window.location.href.endsWith("autenticacao/modificarSenha.html")) {
-    
+    location.href = "login.html"
   }
 }
 
 
 //verificar se a senha1 digitada esta igual a senha2
 function validaSenha(senha1, senha2) {
-  console.log("oi")
   if (senha1.value == senha2.value) {
     return true
   } else {
@@ -168,7 +167,7 @@ function enviarMensagemModificarSenha(event) {
   if (emailModificarSenha.value != '') {
     if (senha1ModificarSenha.value != '') {
       if (senha2ModificarSenha.value != '') {
-        if (validaSenha(senha1, senha2)) {
+        if (validaSenha(senha1ModificarSenha, senha2ModificarSenha)) {
           alert('Tudo certo!')
           submitForm(event)
         } else {
