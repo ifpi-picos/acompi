@@ -12,15 +12,43 @@
 
 <body>
     <header>
+        <nav class="menuLateral">
+            <a href="#menu" class="botaoMenu abrirMenu">Menu</a>
+
+            <ul id="menu" class="menu">
+                <div id="divFecharMenu">
+                <li class="botaoMenu fecharMenu">Sair</li>
+                </div>
+                <li class="itemMenu">
+                    <a href="excluirUsuarios.html" class="acaoItemMenu">excluir usuário</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="proibirLabAdm.html" class="acaoItemMenu">proibir laboratório</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="verCancelarTurmas.html" class="acaoItemMenu">turmas</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="../modificarDadosUsuario.html" class="acaoItemMenu">modificar nome</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="/" class="acaoItemMenu">sair</a>
+                </li>
+            </ul>
+        </nav>
         <a href="/">
             <img src="/img/logo.png" alt="Nossa logomarca">
         </a>
-        <nav>
+        <nav class="barraNavegacao">
             <ul>
-                <li><a href="../perfilUsuario.html">Perfil</a></li>
+                <li><a class="menuBotao" href="excluirUsuarios.html">excluir usuário</a></li>
+                <li><a class="menuBotao" href="proibirLabAdm.html">proibir laboratório</a></li>
+                <li><a class="menuBotao" href="verCancelarTurmas.html">turmas</a></li>
+                <li><a class="menuBotao" href="../modificarDadosUsuario.html">modificar nome</a></li>
+                <li><a class="menuBotao" href="/">sair</a></li>
             </ul>
         </nav>
-    </header>
+</header>
 
     <main class="turmas">
         <div class="turma">
@@ -75,7 +103,7 @@
     </main>
 
     <script src="/JavaScript/index.js"></script>
-
+    <script src="/JavaScript/menu.js"></script>
 </body>
 
 </html>

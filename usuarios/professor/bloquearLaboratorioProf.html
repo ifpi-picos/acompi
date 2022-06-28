@@ -14,7 +14,6 @@
 
 <body>
     <header>
-        <img src="/img/logo.png" alt="Nossa logomarca">
         <nav class="menuLateral">
             <a href="#menu" class="botaoMenu abrirMenu">Menu</a>
 
@@ -23,17 +22,30 @@
                 <li class="botaoMenu fecharMenu">Sair</li>
                 </div>
                 <li class="itemMenu">
-                    <a href="/" class="acaoItemMenu">página1</a>
+                    <a href="verCancelarTurma.html" class="acaoItemMenu">turmas</a>
                 </li>
                 <li class="itemMenu">
-                    <a href="/" class="acaoItemMenu">página2</a>
+                    <a href="bloquearLaboratorioProf.html" class="acaoItemMenu">bloquear laboratório</a>
                 </li>
                 <li class="itemMenu">
-                    <a href="/" class="acaoItemMenu">página3</a>
+                    <a href="../modificarDadosUsuario.html" class="acaoItemMenu">modificar nome</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="/" class="acaoItemMenu">sair</a>
                 </li>
             </ul>
         </nav>
-        <script src="/JavaScript/menu.js"></script>
+        <a href="/">
+            <img src="/img/logo.png" alt="Nossa logomarca">
+        </a>
+        <nav class="barraNavegacao">
+            <ul>
+                <li><a class="menuBotao" href="verCancelarTurma.html">turmas</a></li>
+                <li><a class="menuBotao" href="bloquearLaboratorioProf.html">bloquar laboratórios</a></li>
+                <li><a class="menuBotao" href="../modificarDadosUsuario.html">modificar nome</a></li>
+                <li><a class="menuBotao" href="/">sair</a></li>
+            </ul>
+        </nav>
     </header>
 
     <a class="index" id="btnBloquearLabProf" href="../professor/formularioBloquearLaboratorio.html">Bloquear Laboratório</a>
@@ -83,7 +95,7 @@
             </div>    
         </div>
     </main>
-
+    <script src="/JavaScript/menu.js"></script>
 </body>
 
 </html>

@@ -14,7 +14,6 @@
 
 <body>
     <header>
-        <img src="/img/logo.png" alt="Nossa logomarca">
         <nav class="menuLateral">
             <a href="#menu" class="botaoMenu abrirMenu">Menu</a>
 
@@ -23,18 +22,35 @@
                 <li class="botaoMenu fecharMenu">Sair</li>
                 </div>
                 <li class="itemMenu">
-                    <a href="/" class="acaoItemMenu">página1</a>
+                    <a href="excluirUsuarios.html" class="acaoItemMenu">excluir usuário</a>
                 </li>
                 <li class="itemMenu">
-                    <a href="/" class="acaoItemMenu">página2</a>
+                    <a href="proibirLabAdm.html" class="acaoItemMenu">proibir laboratório</a>
                 </li>
                 <li class="itemMenu">
-                    <a href="/" class="acaoItemMenu">página3</a>
+                    <a href="verCancelarTurmas.html" class="acaoItemMenu">turmas</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="../modificarDadosUsuario.html" class="acaoItemMenu">modificar nome</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="/" class="acaoItemMenu">sair</a>
                 </li>
             </ul>
         </nav>
-        <script src="/JavaScript/menu.js"></script>
-    </header>
+        <a href="/">
+            <img src="/img/logo.png" alt="Nossa logomarca">
+        </a>
+        <nav class="barraNavegacao">
+            <ul>
+                <li><a class="menuBotao" href="excluirUsuarios.html">excluir usuário</a></li>
+                <li><a class="menuBotao" href="proibirLabAdm.html">proibir laboratório</a></li>
+                <li><a class="menuBotao" href="verCancelarTurmas.html">turmas</a></li>
+                <li><a class="menuBotao" href="../modificarDadosUsuario.html">modificar nome</a></li>
+                <li><a class="menuBotao" href="/">sair</a></li>
+            </ul>
+        </nav>
+</header>
 
     <a class="index" id="btnProibirLabAdm" href="../adminitrador/formularioProibirLaboratorio.html">Proibir Laboratório</a>
     <main class="laboratorios">
@@ -60,7 +76,7 @@
             <h1>Laboratório IV</h1>
         </div>
     </main>
-
+    <script src="/JavaScript/menu.js"></script>
 </body>
 
 </html>
