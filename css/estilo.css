@@ -600,8 +600,14 @@ form input {
 
     /* Fim index */
     .menuBotao{
-        color: #0000CD;
+        color: #FFFFFF;
+        background-color: #6495ED;
         text-decoration: none;
+    }
+    .menuBotao:hover{
+        background-color: #FFFFFF;
+        color: black;
+        border: 1px solid black;
     }
     li{
         list-style: none;
