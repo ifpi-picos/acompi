@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="..\..\css\estilo.css">
     <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <title>criar turma</title>
+    <title>Criar turma</title>
 </head>
 <body>
     <main>
@@ -18,40 +18,40 @@
         <h2 class="formTitulo">Criar turma</h2>
         <form onsubmit="submitForm(event)">
         <div class="preencher">
-            <label class="formLabel">Escolha qual laboratório deseja reservar:*</label>
+            <label class="formLabel">Escolha qual laboratório deseja reservar:</label>
             <select required>
-                <option value=''>escolha</option>
-                <option value='1'>laboratório 1</option>
-                <option value='2'>laboratório 2</option>
-                <option value='3'>laboratório 3</option>
-                <option value='4'>laboratório 4</option>
+                <option value=''>Escolha</option>
+                <option value='1'>Laboratório I</option>
+                <option value='2'>Laboratório II</option>
+                <option value='3'>Laboratório III</option>
+                <option value='4'>Laboratório IV</option>
             </select>
 
         </div>
         <div class="preencher">
-            <label class="formLabel">Escolha a data que deseja reservar:*</label>
+            <label class="formLabel">Escolha a data que deseja reservar:</label>
             <input class="data" id="campoDataInicio" type="date" name="dataInicio" required>
-            <label class="formLabel">Escolha a hora em que inicia a reserva:*</label>
+            <label class="formLabel">Escolha a hora em que inicia a reserva:</label>
             <input type="time" name="hora" id="horaInicio" required>
-            <label class="formLabel">Escolha a hora em que termina a reserva:*</label>
+            <label class="formLabel">Escolha a hora em que termina a reserva:</label>
             <input type="time" name="hora" id="horaFim" required>
             <label class="formLabel">Escolha qual curso você ministra:</label>
             <select class="cursoProfessor">
-                <option value=''>escolha</option>
-                <option value='1'>administração</option>
-                <option value='2'>eletrotécnica</option>
-                <option value='3'>informática</option>
-                <option value='4'>análise e desenvolvimento de sistemas</option>
-                <option value='5'>química</option>
-                <option value='6'>física</option>
-                <option value='7'>engenharia de software</option>
-                <option value='8'>outro</option>
-                <option value='9'>nenhum</option>
+                <option value=''>Escolha</option>
+                <option value='1'>Administração</option>
+                <option value='2'>Eletrotécnica</option>
+                <option value='3'>Informática</option>
+                <option value='4'>Análise e Desenvolvimento de Sistemas</option>
+                <option value='5'>Química</option>
+                <option value='6'>Física</option>
+                <option value='7'>Engenharia de Software</option>
+                <option value='8'>Outro</option>
+                <option value='9'>Nenhum</option>
             </select>
         </div>
         <div id="botoes">
-            <button id="cancelar">cancelar</button>
-            <button id="botaoCriar"type="submit">criar</button>
+            <button id="cancelar">Cancelar</button>
+            <button id="botaoCriar"type="submit">Criar</button>
         </div>
         </form>
         </section>
