@@ -8,7 +8,7 @@ cancelar.addEventListener('click', function(){
     window.location.href="escolherTurma.html"
     }
     if(url_atual.endsWith("usuarios/professor/formularioCriarTurma.html")){
-        window.location.href="turmas.html"
+        window.location.href="verCancelarTurma.html"
     }
     if(url_atual.endsWith("usuarios/professor/formularioBloquearLaboratorio.html")){
         window.location.href="bloquearLaboratorioProf.html"
@@ -26,7 +26,7 @@ function submitForm(event){
             window.location.href="escolherTurma.html"
             }
             if(url_atual.endsWith("usuarios/professor/formularioCriarTurma.html")){
-                window.location.href="turmas.html"
+                window.location.href="verCancelarTurma.html"
             }
             if(url_atual.endsWith("usuarios/professor/formularioBloquearLaboratorio.html")){
                 window.location.href="bloquearLaboratorioProf.html"
