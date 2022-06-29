@@ -12,10 +12,46 @@
 </head>
 
 <body>
+    <header>
+        <nav class="menuLateral">
+            <a href="#menu" class="botaoMenu abrirMenu">Menu</a>
+
+            <ul id="menu" class="menu">
+                <div id="divFecharMenu">
+                    <li class="botaoMenu fecharMenu">Sair</li>
+                </div>
+                <li class="itemMenu">
+                    <a href="excluirUsuarios.html" class="acaoItemMenu">Excluir usuário</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="proibirLabAdm.html" class="acaoItemMenu">Proibir laboratório</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="verCancelarTurmas.html" class="acaoItemMenu">Turmas</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="../modificarDadosUsuario.html" class="acaoItemMenu">Modificar nome</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="/acompi-front-end" class="acaoItemMenu">Sair</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="/acompi-front-end">
+            <img src="../../img/logo.png" alt="Nossa logomarca">
+        </a>
+        <nav class="barraNavegacao">
+            <ul>
+                <li><a class="menuBotao" href="excluirUsuarios.html">Excluir usuário</a></li>
+                <li><a class="menuBotao" href="proibirLabAdm.html">Proibir laboratório</a></li>
+                <li><a class="menuBotao" href="verCancelarTurmas.html">Turmas</a></li>
+                <li><a class="menuBotao" href="../modificarDadosUsuario.html">Modificar nome</a></li>
+                <li><a class="menuBotao" href="/acompi-front-end">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <div class="containerAuthenticacaoPai">
-            <div class="containerAuthenticacaoFilho">
-                <img class="logo" src="../../img/logo.png" alt="logomarca do site">
+        <div class="divPai">
                 <section class="secaoParaTelaComputador">
                     <h2 class="tituloCadastro">Proibir uso de laboratório</h2>
                     <form onsubmit="submitForm(event)">
@@ -42,7 +78,6 @@
                     </form>
                 </section>
             </div>
-        </div>
     </main>
     <script src="..\..\JavaScript\formularioProibirLaboratorio.js"></script>
 </body>

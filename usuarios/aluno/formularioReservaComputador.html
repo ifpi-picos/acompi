@@ -10,10 +10,44 @@
     <title>Reservar computador</title>
 </head>
 <body>
-    <main>
-        <div class="containerAuthenticacaoPai">
-            <div class="containerAuthenticacaoFilho">
-                <img class="logo" src="../../img/logo.png" alt="logomarca do site">
+    <header>
+        <nav class="menuLateral">
+            <a href="#menu" class="botaoMenu abrirMenu">Menu</a>
+
+            <ul id="menu" class="menu">
+                <div id="divFecharMenu">
+                    <li class="botaoMenu fecharMenu">Sair</li>
+                </div>
+                
+                <li class="itemMenu">
+                    <a href="escolherTurma.html" class="acaoItemMenu">Reservar computador</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="verCancelarReserva.html" class="acaoItemMenu">Cancelar reserva</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="../modificarDadosUsuario.html" class="acaoItemMenu">Modificar nome</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="/acompi-front-end" class="acaoItemMenu">Sair</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="/acompi-front-end">
+            <img src="../../img/logo.png" alt="Nossa logomarca">
+        </a>
+        <nav class="barraNavegacao">
+            <ul>
+                <li><a class="menuBotao" href="escolherTurma.html">Reservar computador</a></li>
+                <li><a class="menuBotao" href="verCancelarReserva.html">Cancelar reserva</a></li>
+                <li><a class="menuBotao" href="../modificarDadosUsuario.html">Modificar nome</a></li>
+                <li><a class="menuBotao" href="/acompi-front-end">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>  
+
+        <div class="divPai">
                 <section class="secaoParaTelaComputador">
         <h2 class="formTitulo">Reservar computador</h2>
         <form onsubmit="submitForm(event)">
@@ -52,7 +86,6 @@
         </div>
         </form>
         </section>
-        </div>
         </div>
     </main>
     <script src="..\..\JavaScript\formularioProibirLaboratorio.js"></script>

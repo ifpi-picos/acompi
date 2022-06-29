@@ -10,10 +10,42 @@
     <title>Criar turma</title>
 </head>
 <body>
+    <header>
+        <nav class="menuLateral">
+            <a href="#menu" class="botaoMenu abrirMenu">Menu</a>
+
+            <ul id="menu" class="menu">
+                <div id="divFecharMenu">
+                <li class="botaoMenu fecharMenu">Sair</li>
+                </div>
+                <li class="itemMenu">
+                    <a href="verCancelarTurma.html" class="acaoItemMenu">Turmas</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="bloquearLaboratorioProf.html" class="acaoItemMenu">Bloquear laboratório</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="../modificarDadosUsuario.html" class="acaoItemMenu">Modificar nome</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="/acompi-front-end" class="acaoItemMenu">Sair</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="/acompi-front-end">
+            <img src="../../img/logo.png" alt="Nossa logomarca">
+        </a>
+        <nav class="barraNavegacao">
+            <ul>
+                <li><a class="menuBotao" href="verCancelarTurma.html">Turmas</a></li>
+                <li><a class="menuBotao" href="bloquearLaboratorioProf.html">Bloquar laboratórios</a></li>
+                <li><a class="menuBotao" href="../modificarDadosUsuario.html">Modificar nome</a></li>
+                <li><a class="menuBotao" href="/acompi-front-end">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <div class="containerAuthenticacaoPai">
-            <div class="containerAuthenticacaoFilho">
-                <img class="logo" src="../../img/logo.png" alt="logomarca do site">
+        <div class="divPai">
                 <section class="secaoParaTelaComputador">
         <h2 class="formTitulo">Criar turma</h2>
         <form onsubmit="submitForm(event)">
@@ -55,7 +87,6 @@
         </div>
         </form>
         </section>
-        </div>
         </div>
     </main>
     <script src="..\..\JavaScript\formularioProibirLaboratorio.js"></script>
