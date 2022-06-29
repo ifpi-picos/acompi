@@ -707,3 +707,6 @@ form input {
     /* fim wesley e rodrigo */
 }
     /* Fim media queries */
+.ajuste-direita {
+    text-align: end;
+}
