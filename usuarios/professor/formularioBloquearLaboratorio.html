@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="..\..\css\estilo.css">
     <link rel="icon" type="image/x-icon" href="..\..\img\favicon.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <title>bloquear uso de laboratório</title>
+    <title>Bloquear uso de laboratório</title>
 </head>
 <body>
     <main>
@@ -15,42 +15,42 @@
         <div class="containerAuthenticacaoFilho">
             <img class="logo" src="../../img/logo.png" alt="logomarca do site">
             <section class="secaoParaTelaComputador">
-        <h2 class="formTitulo">bloquear uso de laboratório</h2>
+        <h2 class="formTitulo">Bloquear uso de laboratório</h2>
         <form onsubmit="submitForm(event)">
         <div class="preencher">
-            <label class="formLabel">Escolha qual laboratório deseja bloquear:*</label>
+            <label class="formLabel">Escolha qual laboratório deseja bloquear:</label>
             <select required>
-                <option value=''>escolha</option>
-                <option value='1'>laboratório 1</option>
-                <option value='2'>laboratório 2</option>
-                <option value='3'>laboratório 3</option>
-                <option value='4'>laboratório 4</option>
+                <option value=''>Escolha</option>
+                <option value='1'>Laboratório I</option>
+                <option value='2'>Laboratório II</option>
+                <option value='3'>Laboratório III</option>
+                <option value='4'>Laboratório IV</option>
             </select>
 
         </div>
         <div class="preencher">
             <label class="formLabel">Escolha qual dia da semana será bloqueado:</label>
             <select class="formMargin" required>
-                <option value=''>escolha</option>
-                <option value='1'>segunda-feira</option>
-                <option value='2'>terça-feira</option>
-                <option value='3'>quarta-feira</option>
-                <option value='4'>quinta-feira</option>
-                <option value='5'>sexta-feira</option>
-                <option value='6'>sábado</option>
+                <option value=''>Escolha</option>
+                <option value='1'>Segunda-feira</option>
+                <option value='2'>Terça-feira</option>
+                <option value='3'>Quarta-feira</option>
+                <option value='4'>Quinta-feira</option>
+                <option value='5'>Sexta-feira</option>
+                <option value='6'>Sábado</option>
             </select>
-            <label class="formLabel">Escolha a data em que inicia o bloqueio:*</label>
+            <label class="formLabel">Escolha a data em que inicia o bloqueio:</label>
             <input class="data" id="campoDataInicio" type="date" name="dataInicio" required>
-            <label class="formLabel" id="dataFim">Escolha a data em que termina o bloqueio:*</label>
+            <label class="formLabel" id="dataFim">Escolha a data em que termina o bloqueio:</label>
             <input class="data formMargin" type="date" id="campoDataFim" name="dataFim" required>
-            <label class="formLabel">Escolha a hora em que inicia o bloqueio:*</label>
+            <label class="formLabel">Escolha a hora em que inicia o bloqueio:</label>
             <input type="time" name="hora" id="horaInicio" required>
-            <label class="formLabel">Escolha a hora em que inicia o bloqueio:*</label>
+            <label class="formLabel">Escolha a hora em que termina o bloqueio:</label>
             <input type="time" name="hora" id="horaFim" required>
         </div>
         <div id="botoes">
-            <button id="cancelar">cancelar</button>
-            <button id="botaoCriar"type="submit">proibir</button>
+            <button id="cancelar">Cancelar</button>
+            <button id="botaoCriar"type="submit">Proibir</button>
         </div>
         </form>
     </section>

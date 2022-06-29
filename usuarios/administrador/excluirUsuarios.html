@@ -12,51 +12,50 @@
 
 <body>
     <header>
-            <nav class="menuLateral">
-                <a href="#menu" class="botaoMenu abrirMenu">Menu</a>
-    
-                <ul id="menu" class="menu">
-                    <div id="divFecharMenu">
+        <nav class="menuLateral">
+            <a href="#menu" class="botaoMenu abrirMenu">Menu</a>
+
+            <ul id="menu" class="menu">
+                <div id="divFecharMenu">
                     <li class="botaoMenu fecharMenu">Sair</li>
-                    </div>
-                    <li class="itemMenu">
-                        <a href="excluirUsuarios.html" class="acaoItemMenu">Excluir usuário</a>
-                    </li>
-                    <li class="itemMenu">
-                        <a href="proibirLabAdm.html" class="acaoItemMenu">Proibir laboratório</a>
-                    </li>
-                    <li class="itemMenu">
-                        <a href="verCancelarTurmas.html" class="acaoItemMenu">Turmas</a>
-                    </li>
-                    <li class="itemMenu">
-                        <a href="../modificarDadosUsuario.html" class="acaoItemMenu">Modificar nome</a>
-                    </li>
-                    <li class="itemMenu">
-                        <a href="/acompi-front-end" class="acaoItemMenu">Sair</a>
-                    </li>
-                </ul>
-            </nav>
-            <a href="/">
-                <img src="../../img/logo.png" alt="Nossa logomarca">
-            </a>
-            <nav class="barraNavegacao">
-                <ul>
-                    <li><a class="menuBotao" href="excluirUsuarios.html">Excluir usuário</a></li>
-                    <li><a class="menuBotao" href="proibirLabAdm.html">Proibir laboratório</a></li>
-                    <li><a class="menuBotao" href="verCancelarTurmas.html">Turmas</a></li>
-                    <li><a class="menuBotao" href="../modificarDadosUsuario.html">Modificar nome</a></li>
-                    <li><a class="menuBotao" href="/">Sair</a></li>
-                </ul>
-            </nav>
+                </div>
+                <li class="itemMenu">
+                    <a href="excluirUsuarios.html" class="acaoItemMenu">Excluir usuário</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="proibirLabAdm.html" class="acaoItemMenu">Proibir laboratório</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="verCancelarTurmas.html" class="acaoItemMenu">Turmas</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="../modificarDadosUsuario.html" class="acaoItemMenu">Modificar nome</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="/acompi-front-end" class="acaoItemMenu">Sair</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="/">
+            <img src="../../img/logo.png" alt="Nossa logomarca">
+        </a>
+        <nav class="barraNavegacao">
+            <ul>
+                <li><a class="menuBotao" href="proibirLabAdm.html">Proibir laboratório</a></li>
+                <li><a class="menuBotao" href="verCancelarTurmas.html">Turmas</a></li>
+                <li><a class="menuBotao" href="../modificarDadosUsuario.html">Modificar nome</a></li>
+                <li><a class="menuBotao" href="/">Sair</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <div class="containerAuthenticacaoPai">
             <div class="containerAuthenticacaoFilho">
-                <img class="logo" src="../../img/logo.png" alt="Logo do ACOMPI">
                 <section class="secaoParaTelaComputador">
-                    <img class="img-perfil" src="../../img/usuario.svg" alt="Usuário">
-                    <form class="formularioCadastro" method="post">
-                        <label for="nomeCadastro">Digite a matrícula abaixo:</label>
+                    <div id="ajuste"><img class="img-perfil" src="../../img/usuario.svg" alt="Usuário"></div>
+                    <br><br><br><br>
+                    <form>
+                        <h4 id="ajuste">Digite a matrícula abaixo:</h4>
                         <input id="nomeCadastro" type="text" placeholder="Matrícula" required>
                         <a href="/usuarios/aluno/escolherTurma.html" class="index">Excluir usuário</a>
                     </form>

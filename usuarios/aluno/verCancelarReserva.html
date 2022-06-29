@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/estilo.css">
     <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
-    <title>TURMAS</title>
+    <title>Turmas</title>
 </head>
 
 <body>
@@ -21,16 +21,16 @@
                 <li class="botaoMenu fecharMenu">Sair</li>
                 </div>
                 <li class="itemMenu">
-                    <a href="escolherTurma.html" class="acaoItemMenu">reservar computador</a>
+                    <a href="escolherTurma.html" class="acaoItemMenu">Reservar computador</a>
                 </li>
                 <li class="itemMenu">
-                    <a href="verCancelarReserva.html" class="acaoItemMenu">cancelar reserva</a>
+                    <a href="verCancelarReserva.html" class="acaoItemMenu">Cancelar reserva</a>
                 </li>
                 <li class="itemMenu">
-                    <a href="../modificarDadosUsuario.html" class="acaoItemMenu">modificar nome</a>
+                    <a href="../modificarDadosUsuario.html" class="acaoItemMenu">Modificar nome</a>
                 </li>
                 <li class="itemMenu">
-                    <a href="/acompi-front-end" class="acaoItemMenu">sair</a>
+                    <a href="/acompi-front-end" class="acaoItemMenu">Sair</a>
                 </li>
             </ul>
         </nav>
@@ -39,13 +39,39 @@
         </a>
         <nav class="barraNavegacao">
             <ul>
-                <li><a class="menuBotao" href="escolherTurma.html">reservar computador</a></li>
-                <li><a class="menuBotao" href="verCancelarReserva.html">cancelar reserva</a></li>
-                <li><a class="menuBotao" href="../modificarDadosUsuario.html">modificar nome</a></li>
-                <li><a class="menuBotao" href="/acompi-front-end">sair</a></li>
+                <li><a class="menuBotao" href="escolherTurma.html">Reservar computador</a></li>
+                <li><a class="menuBotao" href="../modificarDadosUsuario.html">Modificar nome</a></li>
+                <li><a class="menuBotao" href="/acompi-front-end">Sair</a></li>
             </ul>
         </nav>
     </header>
+
+    <div class="filtrarReservasAluno">
+        <h3>Filtrar reservas por:</h3>
+        <div class="camposFiltragem">
+
+            <div class="divisaoFiltragemBotao">
+                <div class="filtrarPorLaboratorio">
+                    <select class="formSelect">
+                        <option value="">Laboratório</option>
+                        <option value="1">Laboratório I</option>
+                        <option value="2">Laboratório II</option>
+                        <option value="3">Laboratório III</option>
+                        <option value="4">Laboratório IV</option>
+                    </select>
+                </div>
+
+                <div class="filtragemPorHorario">
+                    <input type="time" id="HorarioDaReserva" name="time">
+                </div>
+            </div>
+
+            <div class="botaoFiltrar">
+                <button id="botaoFiltrar"type="submit">Filtrar</button>
+            </div>
+            
+        </div>
+    </div>
 
     <main class="turmas">
         <div class="turma">
