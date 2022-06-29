@@ -585,6 +585,16 @@ form input {
 .excluirUsuario{
     background-color: rgb(197, 65, 65);
 }
+.divFilho{
+    width: 404.96px;
+    height: 369.25px;
+}
+.divPai{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* início media queries */
 @media(min-width:770px) {
     /*---------------------------------------- início páginas Allan ----------------------------------------------------------------------- */
