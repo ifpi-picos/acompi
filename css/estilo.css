@@ -578,6 +578,13 @@ form input {
 }*/
 /*-----------Fim de campos de filtragem-----------*/
 
+.excluirTurma{
+    margin-top: 16px;
+    background-color: rgb(197, 65, 65);
+}
+.excluirUsuario{
+    background-color: rgb(197, 65, 65);
+}
 /* início media queries */
 @media(min-width:770px) {
     /*---------------------------------------- início páginas Allan ----------------------------------------------------------------------- */
@@ -705,6 +712,15 @@ form input {
     }
     /* fim telas escolherTurma(aluno) e bloquearLaboratorio(prof) e proibir laboratorio(adm)*/
     /* fim wesley e rodrigo */
+    .excluirUsuarioCentraliza{
+        height:70vh;
+    }
+    .mainTop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 91.6px;
+    }
 }
     /* Fim media queries */
 .ajuste-direita {
