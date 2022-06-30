@@ -65,7 +65,7 @@ function submitForm(event) {
   } else if (window.location.href.endsWith("autenticacao/validacao.html")) {
     window.location.href = "login.html"
   } else if (window.location.href.endsWith("autenticacao/login.html")) {
-    window.location.assign("../usuarios/aluno/escolher-turma.html")
+    window.location.assign("../usuarios/aluno/professores.html")
   } else if (window.location.href.endsWith("autenticacao/modificar-senha.html")) {
     location.href = "login.html"
   }
