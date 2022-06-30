@@ -152,8 +152,16 @@ const emailLogin = document.querySelector('#emailLogin')
 const senhaLogin = document.querySelector('#senhaLogin')
 
 function enviarMensagemLogin(event) {
-  alert('Tudo certo!')
-  submitForm(event)
+  if (emailLogin.value != ''){
+    if (senhaLogin.value != ''){
+      alert('Tudo certo!')
+      submitFrom(event)
+    } else{
+      alert('Preencha a senha!')
+    }
+  } else{
+    alert('Preencha o e-mail!')
+  }
 }
 //---------------fim tela de Login---------------//
 
