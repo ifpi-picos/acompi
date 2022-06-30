@@ -4,17 +4,17 @@ var a = 0
 cancelar.addEventListener('click', function(){
     var url_atual = window.location.pathname; 
 
-    if(url_atual.endsWith("usuarios/aluno/formularioReservaComputador.html")){
-    window.location.href="escolherTurma.html"
+    if(url_atual.endsWith("usuarios/aluno/formulario-reserva-computador.html")){
+    window.location.href="escolher-turma.html"
     }
-    if(url_atual.endsWith("usuarios/professor/formularioCriarTurma.html")){
-        window.location.href="verCancelarTurma.html"
+    if(url_atual.endsWith("usuarios/professor/formulario-criar-turma.html")){
+        window.location.href="ver-cancelar-turma.html"
     }
-    if(url_atual.endsWith("usuarios/professor/formularioBloquearLaboratorio.html")){
-        window.location.href="bloquearLaboratorioProf.html"
+    if(url_atual.endsWith("usuarios/professor/formulario-reservar-laboratorio.html")){
+        window.location.href="reservar-laboratorio.html"
     }
-    if(url_atual.endsWith("/usuarios/administrador/formularioProibirLaboratorio.html")){
-        window.location.href="proibirLabAdm.html"
+    if(url_atual.endsWith("/usuarios/administrador/formulario-proibir-laboratorio.html")){
+        window.location.href="proibir-lab-adm.html"
     }
 })
 function submitForm(event){
@@ -22,17 +22,17 @@ function submitForm(event){
     criar.addEventListener('click', function(){
         var url_atual = window.location.pathname; 
         alert('dados enviados com sucesso')
-        if(url_atual.endsWith("usuarios/aluno/formularioReservaComputador.html")){
-            window.location.href="escolherTurma.html"
+        if(url_atual.endsWith("usuarios/aluno/formulario-reserva-computador.html")){
+            window.location.href="escolher-turma.html"
             }
-            if(url_atual.endsWith("usuarios/professor/formularioCriarTurma.html")){
-                window.location.href="verCancelarTurma.html"
+            if(url_atual.endsWith("usuarios/professor/formulario-criar-turma.html")){
+                window.location.href="ver-cancelar-turma.html"
             }
-            if(url_atual.endsWith("usuarios/professor/formularioBloquearLaboratorio.html")){
-                window.location.href="bloquearLaboratorioProf.html"
+            if(url_atual.endsWith("usuarios/professor/formulario-reservar-laboratorio.html")){
+                window.location.href="reservar-laboratorio.html"
             }
-            if(url_atual.endsWith("/usuarios/administrador/formularioProibirLaboratorio.html")){
-                window.location.href="proibirLabAdm.html"
+            if(url_atual.endsWith("/usuarios/administrador/formulario-proibir-laboratorio.html")){
+                window.location.href="proibir-lab-adm.html"
             }
     })
 }

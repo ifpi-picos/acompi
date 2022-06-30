@@ -17,16 +17,19 @@
 
             <ul id="menu" class="menu">
                 <div id="divFecharMenu">
-                <li class="botaoMenu fecharMenu">Sair</li>
+                    <li class="botaoMenu fecharMenu">Sair</li>
                 </div>
                 <li class="itemMenu">
-                    <a href="verCancelarTurma.html" class="acaoItemMenu">Turmas</a>
+                    <a href="excluir-usuarios.html" class="acaoItemMenu">Excluir usuário</a>
                 </li>
                 <li class="itemMenu">
-                    <a href="bloquearLaboratorioProf.html" class="acaoItemMenu">Bloquear laboratório</a>
+                    <a href="proibir-lab-adm.html" class="acaoItemMenu">Proibir laboratório</a>
                 </li>
                 <li class="itemMenu">
-                    <a href="../modificarDadosUsuario.html" class="acaoItemMenu">Modificar nome</a>
+                    <a href="ver-turmas.html" class="acaoItemMenu">Turmas</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="../modificar-dados-usuario.html" class="acaoItemMenu">Modificar nome</a>
                 </li>
                 <li class="itemMenu">
                     <a href="/acompi-front-end" class="acaoItemMenu">Sair</a>
@@ -38,42 +41,45 @@
         </a>
         <nav class="barraNavegacao">
             <ul>
-                <li><a class="menuBotao" href="verCancelarTurma.html">Turmas</a></li>
-                <li><a class="menuBotao" href="bloquearLaboratorioProf.html">Bloquar laboratórios</a></li>
-                <li><a class="menuBotao" href="../modificarDadosUsuario.html">Modificar nome</a></li>
+                <li><a class="menuBotao" href="excluir-usuarios.html">Excluir usuário</a></li>
+                <li><a class="menuBotao" href="proibir-lab-adm.html">Proibir laboratório</a></li>
+                <li><a class="menuBotao" href="ver-turmas.html">Turmas</a></li>
+                <li><a class="menuBotao" href="../modificar-dados-usuario.html">Modificar nome</a></li>
                 <li><a class="menuBotao" href="/acompi-front-end">Sair</a></li>
             </ul>
         </nav>
     </header>
-    <div class="mainTop">
-        <div class="filtrarTurmasProfessor">
-            <h3>Filtrar Turmas por:</h3>
-            <div class="camposFiltragem">
 
-                <div class="divisaoFiltragemBotao">
-                    <div class="filtrarPorLaboratorio">
-                        <select class="formSelect">
-                            <option value="">Laboratório</option>
-                            <option value="1">Laboratório I</option>
-                            <option value="2">Laboratório II</option>
-                            <option value="3">Laboratório III</option>
-                            <option value="4">Laboratório IV</option>
-                        </select>
-                    </div>
+    <div class="filtrarTurmasAdministrador">
+        <h3>Filtrar Turmas por:</h3>
+        <div class="camposFiltragem">
 
-                    <div class="filtragemPorHorario">
-                        <input type="time" id="HorarioDaReserva" name="time">
-                    </div>
+            <div class="divisaoFiltragemBotao">
+                <div class="filtrarPorUsuario">
+                    <select class="formSelect">
+                        <option value="">Usuário</option>
+                        <option value="1">Aislan Rafael</option>
+                        <option value="2">Jesiel Viana</option>
+                        <option value="3">Israel Cardoso</option>
+                        <option value="4">Maila de Lima</option>
+                        <option value="5">Daniel de Sousa</option>
+                        <option value="6">Juciê Xavier</option>
+                        <option value="7">Marcus Linhares</option>
+                    </select>
                 </div>
 
-                <div class="botaoFiltrar">
-                    <button id="botaoFiltrar" type="submit">Filtrar</button>
+                <div class="filtragemPorHorario">
+                    <input type="time" id="HorarioDaReserva" name="time">
                 </div>
-
             </div>
+
+            <div class="botaoFiltrar">
+                <button id="botaoFiltrar" type="submit">Filtrar</button>
+            </div>
+
         </div>
-        <a id="btnProibirLabAdm" class="index" href="formularioCriarTurma.html">Criar turma</a>
     </div>
+
     <main class="turmas">
         <div class="turma">
             <h1>Turma 1</h1>
@@ -81,8 +87,6 @@
             <p>Professor: Jesiel Viana</p>
             <p>Horário: 14h:00min às 16h:00min</p>
             <p>Data: 25/06/2022</p>
-            <a href="verERemoverAlunosDaTurma.html" class="index">alunos</a>
-            <a href="" class="index excluirTurma">Excluir turma</a>
         </div>
 
         <div>
@@ -91,44 +95,38 @@
             <p>Professor: Jesiel Viana</p>
             <p>Horário: 16h:00min às 18h:00min</p>
             <p>Data: 27/06/2022</p>
-            <a href="verERemoverAlunosDaTurma.html" class="index">alunos</a>
-            <a href="" class="index excluirTurma">Excluir turma</a>
         </div>
+
         <div>
             <h1>Turma 3</h1>
             <p>Laboratório: Informática I</p>
             <p>Professor: Jesiel Viana</p>
             <p>Horário: 13h:40min às 15h:40min</p>
             <p>Data: 04/07/2022</p>
-            <a href="verERemoverAlunosDaTurma.html" class="index">alunos</a>
-            <a href="" class="index excluirTurma">Excluir turma</a>
         </div>
+
         <div>
             <h1>Turma 4</h1>
             <p>Laboratório: Informática I</p>
             <p>Professor: Jesiel Viana</p>
             <p>Horário: 16h:00min às 17h:30min</p>
             <p>Data: 02/07/2022</p>
-            <a href="verERemoverAlunosDaTurma.html" class="index">alunos</a>
-            <a href="" class="index excluirTurma">Excluir turma</a>
         </div>
+
         <div>
             <h1>Turma 5</h1>
             <p>Laboratório: Informática I</p>
             <p>Professor: Jesiel Viana</p>
             <p>Horário: 16h:00min às 17h:30min</p>
             <p>Data: 02/07/2022</p>
-            <a href="verERemoverAlunosDaTurma.html" class="index">alunos</a>
-            <a href="" class="index excluirTurma">Excluir turma</a>
         </div>
+
         <div>
             <h1>Turma 6</h1>
             <p>Laboratório: Informática I</p>
             <p>Professor: Jesiel Viana</p>
             <p>Horário: 16h:00min às 17h:30min</p>
             <p>Data: 02/07/2022</p>
-            <a href="verERemoverAlunosDaTurma.html" class="index">alunos</a>
-            <a href="" class="index excluirTurma">Excluir turma</a>
         </div>
     </main>
 

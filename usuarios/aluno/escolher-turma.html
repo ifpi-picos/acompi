@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/estilo.css">
     <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
-    <title>Turmas</title>
+    <title>Entrar na turma</title>
 </head>
 
 <body>
+
     <header>
         <nav class="menuLateral">
             <a href="#menu" class="botaoMenu abrirMenu">Menu</a>
@@ -19,17 +20,15 @@
                 <div id="divFecharMenu">
                     <li class="botaoMenu fecharMenu">Sair</li>
                 </div>
+                
                 <li class="itemMenu">
-                    <a href="excluirUsuarios.html" class="acaoItemMenu">Excluir usuário</a>
+                    <a href="professores.html" class="acaoItemMenu">Reservar computador</a>
                 </li>
                 <li class="itemMenu">
-                    <a href="proibirLabAdm.html" class="acaoItemMenu">Proibir laboratório</a>
+                    <a href="ver-cancelar-reservas.html" class="acaoItemMenu">Cancelar reserva</a>
                 </li>
                 <li class="itemMenu">
-                    <a href="verCancelarTurmas.html" class="acaoItemMenu">Turmas</a>
-                </li>
-                <li class="itemMenu">
-                    <a href="../modificarDadosUsuario.html" class="acaoItemMenu">Modificar nome</a>
+                    <a href="../modificar-dados-usuario.html" class="acaoItemMenu">Modificar nome</a>
                 </li>
                 <li class="itemMenu">
                     <a href="/acompi-front-end" class="acaoItemMenu">Sair</a>
@@ -41,30 +40,26 @@
         </a>
         <nav class="barraNavegacao">
             <ul>
-                <li><a class="menuBotao" href="excluirUsuarios.html">Excluir usuário</a></li>
-                <li><a class="menuBotao" href="proibirLabAdm.html">Proibir laboratório</a></li>
-                <li><a class="menuBotao" href="verCancelarTurmas.html">Turmas</a></li>
-                <li><a class="menuBotao" href="../modificarDadosUsuario.html">Modificar nome</a></li>
+                <li><a class="menuBotao" href="professores.html">Reservar computador</a></li>
+                <li><a class="menuBotao" href="ver-cancelar-reservas.html">Cancelar reserva</a></li>
+                <li><a class="menuBotao" href="../modificar-dados-usuario.html">Modificar nome</a></li>
                 <li><a class="menuBotao" href="/acompi-front-end">Sair</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="filtrarTurmasAdministrador">
-        <h3>Filtrar Turmas por:</h3>
+    <div class="filtrarTurmasAluno">
+        <h3>Filtrar turmas por:</h3>
         <div class="camposFiltragem">
 
             <div class="divisaoFiltragemBotao">
-                <div class="filtrarPorUsuario">
+                <div class="filtrarPorLaboratorio">
                     <select class="formSelect">
-                        <option value="">Usuário</option>
-                        <option value="1">Aislan Rafael</option>
-                        <option value="2">Jesiel Viana</option>
-                        <option value="3">Israel Cardoso</option>
-                        <option value="4">Maila de Lima</option>
-                        <option value="5">Daniel de Sousa</option>
-                        <option value="6">Juciê Xavier</option>
-                        <option value="7">Marcus Linhares</option>
+                        <option value="">Laboratório</option>
+                        <option value="1">Laboratório I</option>
+                        <option value="2">Laboratório II</option>
+                        <option value="3">Laboratório III</option>
+                        <option value="4">Laboratório IV</option>
                     </select>
                 </div>
 
@@ -87,6 +82,7 @@
             <p>Professor: Jesiel Viana</p>
             <p>Horário: 14h:00min às 16h:00min</p>
             <p>Data: 25/06/2022</p>
+            <a class="index" href="formulario-reserva-computador.html">Reservar</a>
         </div>
 
         <div>
@@ -95,38 +91,39 @@
             <p>Professor: Jesiel Viana</p>
             <p>Horário: 16h:00min às 18h:00min</p>
             <p>Data: 27/06/2022</p>
+            <a class="index" href="formulario-reserva-computador.html">Reservar</a>
         </div>
-
         <div>
             <h1>Turma 3</h1>
             <p>Laboratório: Informática I</p>
             <p>Professor: Jesiel Viana</p>
             <p>Horário: 13h:40min às 15h:40min</p>
             <p>Data: 04/07/2022</p>
+            <a class="index" href="formulario-reserva-computador.html">Reservar</a>
         </div>
-
         <div>
             <h1>Turma 4</h1>
             <p>Laboratório: Informática I</p>
             <p>Professor: Jesiel Viana</p>
             <p>Horário: 16h:00min às 17h:30min</p>
             <p>Data: 02/07/2022</p>
+            <a class="index" href="formulario-reserva-computador.html">Reservar</a>
         </div>
-
         <div>
             <h1>Turma 5</h1>
             <p>Laboratório: Informática I</p>
             <p>Professor: Jesiel Viana</p>
             <p>Horário: 16h:00min às 17h:30min</p>
             <p>Data: 02/07/2022</p>
+            <a class="index" href="formulario-reserva-computador.html">Reservar</a>
         </div>
-
         <div>
             <h1>Turma 6</h1>
             <p>Laboratório: Informática I</p>
             <p>Professor: Jesiel Viana</p>
             <p>Horário: 16h:00min às 17h:30min</p>
             <p>Data: 02/07/2022</p>
+            <a class="index" href="formulario-reserva-computador.html">Reservar</a>
         </div>
     </main>
 
