@@ -155,7 +155,7 @@ function enviarMensagemLogin(event) {
   if (emailLogin.value != ''){
     if (senhaLogin.value != ''){
       alert('Tudo certo!')
-      submitFrom(event)
+      submitForm(event)
     } else{
       alert('Preencha a senha!')
     }
