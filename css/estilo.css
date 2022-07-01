@@ -107,14 +107,14 @@ form input {
 .btnPrincipal, #indexBotao {
     padding-top: 3%;
     padding-bottom: 3%;
-    background-color: #3da9fc;
+    background-color: var(--corBotaoP);
     display: block;
     width: 100%;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 10px;
     border: none;
-    color: #fffffe;
+    color: var(--corTextoBotao);
 }
 
 
@@ -125,16 +125,9 @@ form input {
     align-items: center;
 }
 
-/* fim tela cadastro */
+/* fim iago
+fim tela cadastro/validaçao/login*/
 
-/*tela turmas (professsor)*/
-
-.tela-turma{
-    width: 300px;
-    margin-bottom: 4%;
-}
-
-/*fim tela turmas (professor)*/
 
 /* tela ver e remover alunos (professor)*/
 
@@ -163,14 +156,6 @@ form input {
     background-color: var(--corFundo);
 }
     
-/* Configurações da tela de adição e exclusão de turmas e Tela CancelarReserva*/
-.tela-turma {
-    border: 1px solid black;
-    border-radius: 10%;
-    padding: 4%;
-    width: 300px;
-    margin-bottom: 4%;
-}
     
 /* Configurações dos botões: menu, adicionar turma e deletar */
 .botoes {
@@ -670,11 +655,8 @@ form input {
         width: 35%;
     }
 
-    /* Fim tela de cadastro e validação */
-
-    /* Início da tela de Login */
-
-    /* Fim da tela de Login */
+    /* Fim tela de cadastro, login e validação */
+    /* fim Iago*/
 
 
     /* início tela do aluno ver e cancelar reserva e tela remover aluno da turma*/
@@ -685,14 +667,6 @@ form input {
         width: 100%;
     }
 
-    .tela-turma {
-        max-width: 400px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin: 2%;
-    }
     /* fim tela do aluno ver e cancelar reserva e tela remover aluno  da turma*/
 
 
@@ -722,6 +696,7 @@ form input {
     }
     /* fim telas escolherTurma(aluno) e bloquearLaboratorio(prof) e proibir laboratorio(adm)*/
     /* fim wesley e rodrigo */
+
     .excluirUsuarioCentraliza{
         height:70vh;
     }
@@ -731,8 +706,10 @@ form input {
         align-items: center;
         height: 91.6px;
     }
+
+    /* ajustando botoes de proibir laboratorios, e o de reservar laboratorios à direita */
+    .ajuste-direita {
+        text-align: end;
+    }
 }
     /* Fim media queries */
-.ajuste-direita {
-    text-align: end;
-}
