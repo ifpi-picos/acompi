@@ -104,7 +104,7 @@ form input {
 }
     
 /* Botão principal */
-.btnPrincipal, #indexBotao {
+.btnPrincipal, #indexBotaoLogin, #indexBotaoTurma {
     padding-top: 3%;
     padding-bottom: 3%;
     background-color: var(--corBotaoP);
@@ -350,13 +350,17 @@ fim tela cadastro/validaçao/login*/
     /* fim página formulárioCriarTurma */
 
     /* início index */
-    .indexTexto, #indexLink, #indexTitulo, #indexBotao{
+    .indexTexto, #indexLink, #indexTitulo, #indexBotaoTurma, #indexBotaoLogin{
         margin: 0;
         text-align: center;
     }
-    #indexBotao{
-        margin-top: 80px;
-        margin-bottom: 80px;
+    #indexBotaoTurma{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    #indexBotaoLogin{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
     #indexTitulo{
         margin-top: 50px;
@@ -585,9 +589,13 @@ fim tela cadastro/validaçao/login*/
     /*---------------------------------------- início páginas Allan ----------------------------------------------------------------------- */
 
     /* Início index */
-    #indexBotao {
-        margin-top: 100px;
-        margin-bottom: 100px;
+    #indexBotaoTurma{
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    #indexBotaoLogin{
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
     }
 
     #indexTitulo {
