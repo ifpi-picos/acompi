@@ -51,7 +51,8 @@ function submitForm(event){
                     method: 'POST',
                     headers:{
                         Accept: 'application/json',
-                        'Content-Type': 'application/json'
+                        'Content-Type': 'application/json',
+                        'Access-Control-Allow-Origin': '*'
                     },
                     body: JSON.stringify(dados)
                 })
