@@ -52,7 +52,7 @@ function submitForm(event){
                         Accept: 'application/json',
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify(dados)
+                    body: dados
                 })
                 if(resposta.status === 201){
                     // limparCampos()
