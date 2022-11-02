@@ -34,16 +34,17 @@ function submitForm(event){
                     return
                 }
                 const dados = {
-                    "id_turma": 1,
-                    "id_aluno": 1,
-                    "id_reserva": 1,
-                    "computador": "sim",
-                    "curso": "informática",  
-                    "consentimento": true   
+                    id_turma: 1,
+                    id_aluno: 1,
+                    id_reserva: 1,
+                    computador: "sim",
+                    curso: "informática",  
+                    consentimento: true   
                     // computador: inputComputador.value,
                     // curso: inputCurso.value,
                     // consetimento: inputConsentimento.value,
                 }
+            }
             async function enviarDados(dados){
                 try{
                 const resposta = await fetch('https://acompi-back-end-la29.onrender.com/reservas', {
@@ -52,7 +53,7 @@ function submitForm(event){
                         Accept: 'application/json',
                         'Content-Type': 'application/json'
                     },
-                    body: dados
+                    body: JSON.stringify(dados)
                 })
                 if(resposta.status === 201){
                     // limparCampos()
@@ -67,7 +68,6 @@ function submitForm(event){
             // function limparCampos () {
             //     document.querySelector().value = ''
             // }
-            }
             }
             if(url_atual.endsWith("usuarios/professor/formulario-criar-turma.html")){
                 window.location.href="ver-cancelar-turma.html"
