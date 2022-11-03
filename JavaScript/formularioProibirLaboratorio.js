@@ -22,7 +22,7 @@ function submitForm(event){
     criar.addEventListener('click', function(){
         var url_atual = window.location.pathname; 
         if(url_atual.endsWith("usuarios/aluno/formulario-reserva-computador.html")){
-            const dados = getDadosForm
+            const dados = getDadosForm()
             enviarDados(dados)
             function getDadosForm(){
                 const inputComputador = document.querySelector('#computador?')
