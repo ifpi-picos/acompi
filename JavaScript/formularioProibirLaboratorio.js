@@ -25,13 +25,13 @@ function submitForm(event){
             const dados = getDadosForm()
             enviarDados(dados)
             function getDadosForm(){
-                const inputComputador = document.querySelector('#computador?')
-                const inputCurso = document.querySelector('#curso')
-                const inputConsentimento = document.querySelector('#consentimento')
-                if (inputComputador.value === null || inputCurso.value === null || inputConsentimento.value === null){
-                    console.log('campos vazios')
-                    return
-                }
+                // const inputComputador = document.querySelector('#computador?')
+                // const inputCurso = document.querySelector('#curso')
+                // const inputConsentimento = document.querySelector('#consentimento')
+                // if (inputComputador.value === null || inputCurso.value === null || inputConsentimento.value === null){
+                //     console.log('campos vazios')
+                //     return
+                // }
                 const dados = {
                     id_turma: 1,
                     id_aluno: 1,
