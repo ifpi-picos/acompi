@@ -33,8 +33,8 @@ function submitForm(event){
                 //     return
                 // }
                 const dados = {
+                    id_turma: 1,
                     id_aluno: 1,
-                    id_reserva: 1,
                     computador: "sim",
                     curso: "informática",  
                     consentimento: true   
