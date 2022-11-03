@@ -25,9 +25,9 @@ function submitForm(event){
             const dados = getDadosForm()
             enviarDados(dados)
             function getDadosForm(){
-                // const inputComputador = document.querySelector('#computador?')
-                // const inputCurso = document.querySelector('#curso')
-                // const inputConsentimento = document.querySelector('#consentimento')
+                // const inputComputador = document.querySelector('.computador?')
+                // const inputCurso = document.querySelector('.curso')
+                // const inputConsentimento = document.querySelector('.consentimento')
                 // if (inputComputador.value === null || inputCurso.value === null || inputConsentimento.value === null){
                 //     console.log('campos vazios')
                 //     return
@@ -36,11 +36,9 @@ function submitForm(event){
                     id_turma: 1,
                     id_aluno: 1,
                     computador: "sim",
-                    curso: "informática",  
-                    consentimento: true   
+                    curso: "informática",    
                     // computador: inputComputador.value,
                     // curso: inputCurso.value,
-                    // consetimento: inputConsentimento.value,
                 }
                 return dados
             }
