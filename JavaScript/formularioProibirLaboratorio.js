@@ -51,17 +51,14 @@ function submitForm(event){
                     body: JSON.stringify(dados)
                 })
                 if(resposta.status === 201){
-                    limparCampos()
+                    document.querySelector('.computador').checked = false
+                    document.querySelector('.curso:checked').checked = false 
+                    document.querySelector('.consentimento:checked').checked = false
                     alert('dados enviados com sucesso')
                     window.location.href="ver-cancelar-reservas.html"
                 }else{
                     console.log(dados)
                     console.log('Erro ao reservar computador')
-                }
-                function limparCampos () {
-                    document.querySelector('.computador').checked = false
-                    document.querySelector('.curso:checked').checked = false 
-                    document.querySelector('.consentimento:checked').checked = false
                 }
             }catch(erro){
                 console.error(erro)
