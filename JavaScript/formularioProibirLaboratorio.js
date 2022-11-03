@@ -58,14 +58,14 @@ function submitForm(event){
                     console.log(dados)
                     console.log('Erro ao reservar computador')
                 }
+                function limparCampos () {
+                    document.querySelector('.computador').checked = false
+                    document.querySelector('.curso:checked').checked = false 
+                    document.querySelector('.consentimento:checked').checked = false
+                }
             }catch(erro){
                 console.error(erro)
             }
-            }
-            function limparCampos () {
-                document.querySelector('.computador:checked').value = ''
-                document.querySelector('.curso:checked').value = ''
-                document.querySelector('.consentimento:checked').value = ''
             }
             }
             if(url_atual.endsWith("usuarios/professor/formulario-criar-turma.html")){
