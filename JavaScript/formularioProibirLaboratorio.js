@@ -51,7 +51,7 @@ function submitForm(event){
                     body: JSON.stringify(dados)
                 })
                 if(resposta.status === 201){
-                    // limparCampos()
+                    limparCampos()
                     alert('dados enviados com sucesso')
                     window.location.href="ver-cancelar-reservas.html"
                 }else{
@@ -62,9 +62,11 @@ function submitForm(event){
                 console.error(erro)
             }
             }
-            // function limparCampos () {
-            //     document.querySelector().value = ''
-            // }
+            function limparCampos () {
+                document.querySelector('.computador').value = ''
+                document.querySelector('.curso').value = ''
+                document.querySelector('.consentimento').value = ''
+            }
             }
             if(url_atual.endsWith("usuarios/professor/formulario-criar-turma.html")){
                 window.location.href="ver-cancelar-turma.html"
