@@ -63,9 +63,9 @@ function submitForm(event){
             }
             }
             function limparCampos () {
-                document.querySelector('.computador').value = ''
-                document.querySelector('.curso').value = ''
-                document.querySelector('.consentimento').value = ''
+                document.querySelector('.computador:checked').value = ''
+                document.querySelector('.curso:checked').value = ''
+                document.querySelector('.consentimento:checked').value = ''
             }
             }
             if(url_atual.endsWith("usuarios/professor/formulario-criar-turma.html")){
