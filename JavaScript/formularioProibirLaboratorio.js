@@ -52,7 +52,7 @@ function submitForm(event){
                 })
                 if(resposta.status === 201){
                     document.querySelector('.computador:checked').checked = false
-                    document.querySelector('.curso').value = ''
+                    document.querySelector('.formSelect').value = ''
                     document.querySelector('.consentimento:checked').checked = false
                     alert('dados enviados com sucesso')
                     window.location.href="ver-cancelar-reservas.html"
