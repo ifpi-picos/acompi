@@ -59,6 +59,8 @@ function submitForm(event){
                     alert('dados enviados com sucesso')
                     window.location.href="ver-cancelar-reservas.html"
                 }else{
+                    console.log(dados)
+                    console.log(Json.stringify(dados))
                     console.log('Erro ao reservar computador')
                 }
             }catch(erro){
