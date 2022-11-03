@@ -21,7 +21,6 @@ function submitForm(event){
     event.preventDefault();
     criar.addEventListener('click', function(){
         var url_atual = window.location.pathname; 
-        alert('dados enviados com sucesso')
         if(url_atual.endsWith("usuarios/aluno/formulario-reserva-computador.html")){
             const dados = getDadosForm
             enviarDados(dados)
@@ -52,12 +51,12 @@ function submitForm(event){
                     headers:{
                         Accept: 'application/json',
                         'Content-Type': 'application/json',
-                        'Access-Control-Allow-Origin': '*'
                     },
                     body: JSON.stringify(dados)
                 })
                 if(resposta.status === 201){
                     // limparCampos()
+                    alert('dados enviados com sucesso')
                     window.location.href="ver-cancelar-reservas.html"
                 }else{
                     console.log('Erro ao reservar computador')
