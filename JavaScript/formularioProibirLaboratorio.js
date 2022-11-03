@@ -26,7 +26,7 @@ function submitForm(event){
             enviarDados(dados)
             function getDadosForm(){
                 const inputComputador = document.querySelector('.computador:checked')
-                const inputCurso = document.querySelector('.curso')
+                const inputCurso = document.querySelector('.curso:checked')
                 const inputConsentimento = document.querySelector('.consentimento')
                 if (inputComputador.value === null || inputCurso.value === null || inputConsentimento.value === null){
                     console.log('campos vazios')
