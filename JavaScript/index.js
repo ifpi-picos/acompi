@@ -10,23 +10,23 @@ const emailCadastro = document.querySelector('#emailCadastro')
 function validandoCamposCadastro(event) {
   if (nomeCadastro.value != '') {
     if (emailCadastro.value != '') {
-      if (emailCadastro.value.indexOf('ifpi.edu.br') != -1) {
+      if (emailCadastro.value.indexOf('@ifpi.edu.br') != -1 || emailCadastro.value.indexOf('@aluno.ifpi.edu.br')) {
         if (senha1Cadastro.value != '') {
-          if (senha1Cadastro.value.length <= 7) {
-          if (senha2Cadastro.value != '') {
-            enviarMsgCadastro(
-              nomeCadastro,
-              emailCadastro,
-              senha1Cadastro,
-              senha2Cadastro,
-              event
-            )
+          if (senha1Cadastro.value.length <= 7 && senha1Cadastro.value.length >= 13) {
+            if (senha2Cadastro.value != '') {
+              enviarMsgCadastro(
+                nomeCadastro,
+                emailCadastro,
+                senha1Cadastro,
+                senha2Cadastro,
+                event
+              )
+            } else {
+              alert('Preencha senha de confirmação')
+            }
           } else {
-            alert('Preencha senha de confirmação')
+            alert('A senha deve conter entre 8 e 12 caracteres')
           }
-        } else {
-          alert('A senha deve conter entre 8 e 12 caracteres')
-        }
         } else {
           alert('Preencha senha')
         }
