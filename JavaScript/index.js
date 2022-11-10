@@ -10,20 +10,28 @@ const emailCadastro = document.querySelector('#emailCadastro')
 function validandoCamposCadastro(event) {
   if (nomeCadastro.value != '') {
     if (emailCadastro.value != '') {
-      if (senha1Cadastro.value != '') {
-        if (senha2Cadastro.value != '') {
-          enviarMsgCadastro(
-            nomeCadastro,
-            emailCadastro,
-            senha1Cadastro,
-            senha2Cadastro,
-            event
-          )
+      if (emailCadastro.value.indexOf('ifpi.edu.br') != -1) {
+        if (senha1Cadastro.value != '') {
+          if (senha1Cadastro.value.length <= 7) {
+          if (senha2Cadastro.value != '') {
+            enviarMsgCadastro(
+              nomeCadastro,
+              emailCadastro,
+              senha1Cadastro,
+              senha2Cadastro,
+              event
+            )
+          } else {
+            alert('Preencha senha de confirmação')
+          }
         } else {
-          alert('Preencha senha de confirmação')
+          alert('A senha deve conter entre 8 e 12 caracteres')
+        }
+        } else {
+          alert('Preencha senha')
         }
       } else {
-        alert('Preencha senha')
+        alert('Utilize um email do instituto federal do piauí')
       }
     } else {
       alert('Preencha e-mail')
