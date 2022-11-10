@@ -4,6 +4,7 @@ const senha1Cadastro = document.querySelector('#senha1Cadastro')
 const senha2Cadastro = document.querySelector('#senha2Cadastro')
 const nomeCadastro = document.querySelector('#nomeCadastro')
 const emailCadastro = document.querySelector('#emailCadastro')
+const botaoCadastro = document.querySelector('#btnCadastro')
 
 //quando clicar no botao cadastrar
 //verificar se todos os campos do cadastro estao preenchidos
@@ -55,49 +56,51 @@ function enviarMsgCadastro(nome, email, senha1, senha2, event) {
 
 //nao envia o formulario e navega entre as paginas mudando a url
 function submitForm(event) {
-
   event.preventDefault();
-  if (window.location.href.endsWith("autenticacao/cadastro.html")) {
-    const dados = getDadosForm()
-    enviarDados(dados)
-    function getDadosForm() {
-      if (nomeCadastro.value === null || emailCadastro.value === null || senha1Cadastro.value === null) {
-        console.log('campos vazios')
-        return
-      }
-      const dados = {
-        nome: nomeCadastro.value,
-        senha: senha1Cadastro.value,
-        email: emailCadastro.value,
-      }
-      return dados
-    }
-    async function enviarDados(dados) {
-      try {
-        const resposta = await fetch('https://acompi-back-end-la29.onrender.com/cadastro', {
-          method: 'POST',
-          headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(dados)
-        })
-        if (resposta.status === 201) {
-          document.querySelector('#senha1Cadastro').value = ''
-          document.querySelector('#senha2Cadastro').value = ''
-          document.querySelector('#nomeCadastro').value = ''
-          document.querySelector('#emailCadastro').value = ''
-          alert('dados enviados com sucesso')
-        } else {
-          alert('este email já possui uma conta cadastrada')
-          console.log('Erro ao realizar cadastro')
+  botaoCadastro.addEventListener('click', function () {
+    if (window.location.href.endsWith("autenticacao/cadastro.html")) {
+      const dados = getDadosForm()
+      enviarDados(dados)
+      function getDadosForm() {
+        if (nomeCadastro.value === null || emailCadastro.value === null || senha1Cadastro.value === null) {
+          console.log('campos vazios')
+          return
         }
-      } catch (erro) {
-        console.error(erro)
+        const dados = {
+          nome: nomeCadastro.value,
+          senha: senha1Cadastro.value,
+          email: emailCadastro.value,
+        }
+        return dados
       }
+      async function enviarDados(dados) {
+        try {
+          const resposta = await fetch('https://acompi-back-end-la29.onrender.com/cadastro', {
+            method: 'POST',
+            headers: {
+              Accept: 'application/json',
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(dados)
+          })
+          if (resposta.status === 201) {
+            document.querySelector('#senha1Cadastro').value = ''
+            document.querySelector('#senha2Cadastro').value = ''
+            document.querySelector('#nomeCadastro').value = ''
+            document.querySelector('#emailCadastro').value = ''
+            alert('dados enviados com sucesso')
+          } else {
+            alert('este email já possui uma conta cadastrada')
+            console.log('Erro ao realizar cadastro')
+          }
+        } catch (erro) {
+          console.error(erro)
+        }
+      }
+      window.location.href = "validacao.html"
     }
-    window.location.href = "validacao.html"
-  } else if (window.location.href.endsWith("autenticacao/validacao.html")) {
+  });
+   if (window.location.href.endsWith("autenticacao/validacao.html")) {
     window.location.href = "login.html"
   } else if (window.location.href.endsWith("autenticacao/login.html")) {
     window.location.assign("../usuarios/aluno/professores.html")
