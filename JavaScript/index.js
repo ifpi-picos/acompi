@@ -57,12 +57,12 @@ function enviarMsgCadastro(nome, email, senha1, senha2, event) {
 //nao envia o formulario e navega entre as paginas mudando a url
 function submitForm(event) {
   event.preventDefault();
+  var url_atual = window.location.pathname;
+  if (url_atual.endsWith("autenticacao/cadastro.html")) {
   botaoCadastro.addEventListener('click', function () {
-    var url_atual = window.location.pathname;
-    if (url_atual.endsWith("autenticacao/cadastro.html")) {
       const dados = getDadosForm()
       enviarDados(dados)
-      function getDadosForm() {
+      function getDadosForm(){
         const nomeCadastro = document.querySelector('#nomeCadastro')
         const emailCadastro = document.querySelector('#emailCadastro')
         const senha1Cadastro = document.querySelector('#senha1Cadastro')
@@ -102,8 +102,8 @@ function submitForm(event) {
           console.error(erro)
         }
       }
-    }
-  });
+    })
+  };
    if (window.location.href.endsWith("autenticacao/validacao.html")) {
     window.location.href = "login.html"
   } else if (window.location.href.endsWith("autenticacao/login.html")) {
