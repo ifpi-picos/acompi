@@ -12,7 +12,7 @@ function validandoCamposCadastro(event) {
     if (emailCadastro.value != '') {
       if (emailCadastro.value.indexOf('@ifpi.edu.br') != -1 || emailCadastro.value.indexOf('@aluno.ifpi.edu.br')) {
         if (senha1Cadastro.value != '') {
-          if (senha1Cadastro.value.length <= 7 && senha1Cadastro.value.length >= 13) {
+          if (senha1Cadastro.value.length >= 8 && senha1Cadastro.value.length <= 12) {
             if (senha2Cadastro.value != '') {
               enviarMsgCadastro(
                 nomeCadastro,
