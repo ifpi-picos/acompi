@@ -10,7 +10,7 @@ const emailCadastro = document.querySelector('#emailCadastro')
 function validandoCamposCadastro(event) {
   if (nomeCadastro.value != '') {
     if (emailCadastro.value != '') {
-      if (emailCadastro.value.indexOf('@ifpi.edu.br') != -1 || emailCadastro.value.indexOf('@aluno.ifpi.edu.br')) {
+      if (emailCadastro.value.indexOf('@ifpi.edu.br') != -1 || emailCadastro.value.indexOf('@aluno.ifpi.edu.br') != -1) {
         if (senha1Cadastro.value != '') {
           if (senha1Cadastro.value.length >= 8 && senha1Cadastro.value.length <= 12) {
             if (senha2Cadastro.value != '') {
