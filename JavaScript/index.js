@@ -63,6 +63,9 @@ function submitForm(event) {
       const dados = getDadosForm()
       enviarDados(dados)
       function getDadosForm() {
+        const nomeCadastro = document.querySelector('#nomeCadastro')
+        const emailCadastro = document.querySelector('#emailCadastro')
+        const senha1Cadastro = document.querySelector('#senha1Cadastro')
         if (nomeCadastro.value === null || emailCadastro.value === null || senha1Cadastro.value === null) {
           console.log('campos vazios')
           return
