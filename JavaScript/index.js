@@ -58,7 +58,8 @@ function enviarMsgCadastro(nome, email, senha1, senha2, event) {
 function submitForm(event) {
   event.preventDefault();
   botaoCadastro.addEventListener('click', function () {
-    if (window.location.href.endsWith("autenticacao/cadastro.html")) {
+    var url_atual = window.location.pathname;
+    if (url_atual.endsWith("autenticacao/cadastro.html")) {
       const dados = getDadosForm()
       enviarDados(dados)
       function getDadosForm() {
