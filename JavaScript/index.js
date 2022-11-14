@@ -10,7 +10,7 @@ const botaoCadastro = document.querySelector('#btnCadastro')
 //verificar se todos os campos do cadastro estao preenchidos
 function validandoCamposCadastro(event) {
   if (nomeCadastro.value != '') {
-    if (nomeCadastro.value.length >= 2) {
+    if (nomeCadastro.value.length >= 3) {
       if (emailCadastro.value != '') {
         if (emailCadastro.value.indexOf('@ifpi.edu.br') != -1 || emailCadastro.value.indexOf('@aluno.ifpi.edu.br') != -1) {
           if (senha1Cadastro.value != '') {
