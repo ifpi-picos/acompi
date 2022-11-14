@@ -200,7 +200,7 @@ const senhaLogin = document.querySelector('#senhaLogin')
 function enviarMensagemLogin(event) {
   if (emailLogin.value != '') {
     if (senhaLogin.value != '') {
-      alert('Tudo certo!')
+      //alert('Tudo certo!')
       submitForm(event)
     } else {
       alert('Preencha a senha!')
