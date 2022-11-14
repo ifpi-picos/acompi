@@ -10,37 +10,37 @@ const botaoCadastro = document.querySelector('#btnCadastro')
 //verificar se todos os campos do cadastro estao preenchidos
 function validandoCamposCadastro(event) {
   if (nomeCadastro.value != '') {
-    if (nomeCadastro.length >= 2) {
-    if (emailCadastro.value != '') {
-      if (emailCadastro.value.indexOf('@ifpi.edu.br') != -1 || emailCadastro.value.indexOf('@aluno.ifpi.edu.br') != -1) {
-        if (senha1Cadastro.value != '') {
-          if (senha1Cadastro.value.length >= 8 && senha1Cadastro.value.length <= 12) {
-            if (senha2Cadastro.value != '') {
-              enviarMsgCadastro(
-                nomeCadastro,
-                emailCadastro,
-                senha1Cadastro,
-                senha2Cadastro,
-                event
-              )
+    if (nomeCadastro.value.length >= 2) {
+      if (emailCadastro.value != '') {
+        if (emailCadastro.value.indexOf('@ifpi.edu.br') != -1 || emailCadastro.value.indexOf('@aluno.ifpi.edu.br') != -1) {
+          if (senha1Cadastro.value != '') {
+            if (senha1Cadastro.value.length >= 8 && senha1Cadastro.value.length <= 12) {
+              if (senha2Cadastro.value != '') {
+                enviarMsgCadastro(
+                  nomeCadastro,
+                  emailCadastro,
+                  senha1Cadastro,
+                  senha2Cadastro,
+                  event
+                )
+              } else {
+                alert('Preencha senha de confirmação')
+              }
             } else {
-              alert('Preencha senha de confirmação')
+              alert('A senha deve conter entre 8 e 12 caracteres')
             }
           } else {
-            alert('A senha deve conter entre 8 e 12 caracteres')
+            alert('Preencha senha')
           }
         } else {
-          alert('Preencha senha')
+          alert('Utilize um email do instituto federal do piauí')
         }
       } else {
-        alert('Utilize um email do instituto federal do piauí')
+        alert('Preencha e-mail')
       }
     } else {
-      alert('Preencha e-mail')
+      alert('utilize um nome com mais de 2 caracteres')
     }
-  } else {
-    alert('utilize um nome com mais de 2 caracteres')
-  }
   } else {
     alert('Preencha nome')
   }
@@ -63,10 +63,10 @@ function submitForm(event) {
   event.preventDefault();
   var url_atual = window.location.pathname;
   if (url_atual.endsWith("autenticacao/cadastro.html")) {
-  botaoCadastro.addEventListener('click', function () {
+    botaoCadastro.addEventListener('click', function () {
       const dados = getDadosForm()
       enviarDados(dados)
-      function getDadosForm(){
+      function getDadosForm() {
         const nomeCadastro = document.querySelector('#nomeCadastro')
         const emailCadastro = document.querySelector('#emailCadastro')
         const senha1Cadastro = document.querySelector('#senha1Cadastro')
@@ -108,7 +108,7 @@ function submitForm(event) {
       }
     })
   };
-   if (window.location.href.endsWith("autenticacao/validacao.html")) {
+  if (window.location.href.endsWith("autenticacao/validacao.html")) {
     window.location.href = "login.html"
   } else if (window.location.href.endsWith("autenticacao/login.html")) {
     window.location.assign("../usuarios/aluno/professores.html")
