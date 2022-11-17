@@ -98,9 +98,6 @@ function submitForm(event) {
             document.querySelector('#emailCadastro').value = ''
             alert('dados enviados com sucesso')
             window.location.href = "validacao.html"
-          } else {
-            alert('este email já possui uma conta cadastrada')
-            console.log('Erro ao realizar cadastro')
           }
         } catch (erro) {
           console.error(erro)
