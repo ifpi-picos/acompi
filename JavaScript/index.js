@@ -63,7 +63,6 @@ function submitForm(event) {
   event.preventDefault();
   var url_atual = window.location.pathname;
   if (url_atual.endsWith("autenticacao/cadastro.html")) {
-    botaoCadastro.addEventListener('click', function () {
       const dados = getDadosForm()
       enviarDados(dados)
       function getDadosForm() {
@@ -103,10 +102,9 @@ function submitForm(event) {
             console.log('Erro ao realizar cadastro')
           }
         } catch (erro) {
-          console.log(erro)
+          console.error(erro)
         }
       }
-    })
   };
   if (window.location.href.endsWith("autenticacao/validacao.html")) {
     window.location.href = "login.html"
