@@ -126,5 +126,4 @@ function validaSenha(senha1, senha2) {
     return false
   }
 }
-
 //fim da tela de cadastro

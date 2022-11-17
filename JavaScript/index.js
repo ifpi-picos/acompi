@@ -195,11 +195,16 @@ function removerAluno(numeroParaIdentificarAluno) {
 const emailLogin = document.querySelector('#emailLogin')
 const senhaLogin = document.querySelector('#senhaLogin')
 
-function enviarMensagemLogin(event) {
+async function enviarMensagemLogin(event) {
   if (emailLogin.value != '') {
     if (senhaLogin.value != '') {
-      //alert('Tudo certo!')
-      submitForm(event)
+      alert('Tudo certo!')
+      const resp = await login()
+      if(resp){
+        submitForm(event)
+      } else{
+        alert("login fail")
+      }
     } else {
       alert('Preencha a senha!')
     }
@@ -207,6 +212,34 @@ function enviarMensagemLogin(event) {
     alert('Preencha o e-mail!')
   }
 }
+
+async function login(){
+  console.log("foi")
+  try {
+      const usuario = {
+          email: emailLogin.value,
+          senha: senhaLogin.value
+      }
+      console.log('fjbhdfjbhdflkgkdjghfghdfjghdjhgfghguhepgijengoerhgerhogierg')
+      const resp = await fetch('http://localhost:3000/login', {
+          method: 'POST',
+          headers: {
+              Accept: 'application/json',
+              'Content-type': 'application/json'
+          },
+          body: JSON.stringify(usuario)
+      })
+      if (resp.status === 201) {
+        console.log('certo')
+        return true
+      } else {
+          console.log('erro')
+          return false
+      }
+  } catch (error) {
+      console.error(error.message)
+      return false
+}}
 //---------------fim tela de Login---------------//
 
 
