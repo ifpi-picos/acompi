@@ -214,13 +214,13 @@ async function enviarMensagemLogin(event) {
 }
 
 async function login(){
-  console.log("foi")
+  alert("foi")
   try {
       const usuario = {
           email: emailLogin.value,
           senha: senhaLogin.value
       }
-      console.log('fjbhdfjbhdflkgkdjghfghdfjghdjhgfghguhepgijengoerhgerhogierg')
+      alert('fjbhdfjbhdflkgkdjghfghdfjghdjhgfghguhepgijengoerhgerhogierg')
       const resp = await fetch('http://localhost:3000/login', {
           method: 'POST',
           headers: {
@@ -230,7 +230,7 @@ async function login(){
           body: JSON.stringify(usuario)
       })
       if (resp.status === 201) {
-        console.log('certo')
+        alert('certo')
         return true
       } else {
           console.log('erro')
