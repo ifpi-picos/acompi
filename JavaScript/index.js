@@ -248,13 +248,20 @@ const emailModificarSenha = document.querySelector('#emailModificarSenha')
 const senha1ModificarSenha = document.querySelector('#senha1ModificarSenha')
 const senha2ModificarSenha = document.querySelector('#senha2ModificarSenha')
 
-function enviarMensagemModificarSenha(event) {
+async function enviarMensagemModificarSenha(event) {
   if (emailModificarSenha.value != '') {
     if (senha1ModificarSenha.value != '') {
       if (senha2ModificarSenha.value != '') {
         if (validaSenha(senha1ModificarSenha, senha2ModificarSenha)) {
           alert('Tudo certo!')
-          submitForm(event)
+          const resp = await enviarParaApi();
+          if (resp) {
+            alert('EQUARITA')
+            submitForm(event)
+          } else {
+            alert('so erro na vida de iago "give up"')
+          }
+          
         } else {
           alert('A senha de confirmação precisa ser igual a primeira senha!')
           senha1ModificarSenha.value = ''
@@ -271,5 +278,35 @@ function enviarMensagemModificarSenha(event) {
   }
 
 }
+
+async function enviarParaApi(){
+  alert("foi")
+  try {
+      const usuario = {
+          email: emailModificarSenha.value,
+          senha: senha1ModificarSenha.value,
+          confirmasenha: senha2ModificarSenha.value,
+      }
+      alert('fjbhdfjbhdflkgkdjghfghdfjghdjhgfghguhepgijengoerhgerhogierg')
+      const resp = await fetch('http://localhost:3000/modificar-senha', {
+          method: 'PATCH',
+          headers: {
+              Accept: 'application/json',
+              'Content-type': 'application/json'
+          },
+          body: JSON.stringify(usuario)
+      })
+      console.log(resp.status)
+      if (resp.status === 201) {
+        alert(resp)
+        return true
+      } else {
+          alert(resp)
+          return false
+      }
+  } catch (error) {
+      console.error(error.message)
+      return false
+}}
 
 //----------------------------------------------------------------------------------------------------------- //
