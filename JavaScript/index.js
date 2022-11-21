@@ -115,7 +115,7 @@ async function submitForm(event) {
           email: emailLogin.value,
           senha: senhaLogin.value
       }
-      const resp = await fetch('http://localhost:3000/login', {
+      const resp = await fetch('https://acompi-back-end-la29.onrender.com/login', {
           method: 'POST',
           headers: {
               Accept: 'application/json',
