@@ -59,7 +59,7 @@ function enviarMsgCadastro(nome, email, senha1, senha2, event) {
 }
 
 //nao envia o formulario e navega entre as paginas mudando a url
-function submitForm(event) {
+async function submitForm(event) {
   event.preventDefault();
   var url_atual = window.location.pathname;
   if (url_atual.endsWith("autenticacao/cadastro.html")) {
@@ -106,10 +106,33 @@ function submitForm(event) {
         }
       }
   };
+
   if (window.location.href.endsWith("autenticacao/validacao.html")) {
     window.location.href = "login.html"
   } else if (window.location.href.endsWith("autenticacao/login.html")) {
-    window.location.assign("../usuarios/aluno/professores.html")
+    try {
+      const usuario = {
+          email: emailLogin.value,
+          senha: senhaLogin.value
+      }
+      const resp = await fetch('http://localhost:3000/login', {
+          method: 'POST',
+          headers: {
+              Accept: 'application/json',
+              'Content-type': 'application/json'
+          },
+          body: JSON.stringify(usuario)
+      })
+      resp.json();
+      if (resp.status === 201) {
+        alert('certo')
+        window.location.href = "../usuarios/aluno/professores.html"
+      } else {
+          alert('erro')
+      }
+  } catch (error) {
+     console.error(error.message)
+}
   } else if (window.location.href.endsWith("autenticacao/modificar-senha.html")) {
     location.href = "login.html"
   }
@@ -198,13 +221,7 @@ const senhaLogin = document.querySelector('#senhaLogin')
 async function enviarMensagemLogin(event) {
   if (emailLogin.value != '') {
     if (senhaLogin.value != '') {
-      alert('Tudo certo!')
-      const resp = await login()
-      if(resp){
         submitForm(event)
-      } else{
-        alert("login fail")
-      }
     } else {
       alert('Preencha a senha!')
     }
@@ -213,33 +230,6 @@ async function enviarMensagemLogin(event) {
   }
 }
 
-async function login(){
-  alert("foi")
-  try {
-      const usuario = {
-          email: emailLogin.value,
-          senha: senhaLogin.value
-      }
-      alert('fjbhdfjbhdflkgkdjghfghdfjghdjhgfghguhepgijengoerhgerhogierg')
-      const resp = await fetch('http://localhost:3000/login', {
-          method: 'POST',
-          headers: {
-              Accept: 'application/json',
-              'Content-type': 'application/json'
-          },
-          body: JSON.stringify(usuario)
-      })
-      if (resp.status === 201) {
-        alert('certo')
-        return true
-      } else {
-          console.log('erro')
-          return false
-      }
-  } catch (error) {
-      console.error(error.message)
-      return false
-}}
 //---------------fim tela de Login---------------//
 
 
