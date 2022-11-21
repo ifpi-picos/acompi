@@ -128,15 +128,41 @@ async function submitForm(event) {
         alert('certo')
         window.location.href = "../usuarios/aluno/professores.html"
       } else {
-          alert('erro')
+          alert(resp.message)
       }
   } catch (error) {
-     console.error(error.message)
+     alert(error.message)
 }
   } else if (window.location.href.endsWith("autenticacao/modificar-senha.html")) {
-    location.href = "login.html"
+    try {
+      const usuario = {
+          email: emailModificarSenha.value,
+          senha: senha1ModificarSenha.value,
+          confirmasenha: senha2ModificarSenha.value,
+      }
+      const resp = await fetch('http://localhost:3000/modificar-senha', {
+          method: 'PATCH',
+          headers: {
+              Accept: 'application/json',
+              'Content-type': 'application/json'
+          },
+          body: JSON.stringify(usuario)
+      })
+      resp.json()
+      if (resp.status === 201) {
+        alert('TudoCertto')
+        location.href = "login.html"
+      
+      } else {
+          console.log(resp)
+      
+      }
+  } catch (error) {
+      alert(resp.message)
+}}
+
   }
-}
+
 
 
 //verificar se a senha1 digitada esta igual a senha2
@@ -244,14 +270,7 @@ async function enviarMensagemModificarSenha(event) {
       if (senha2ModificarSenha.value != '') {
         if (validaSenha(senha1ModificarSenha, senha2ModificarSenha)) {
           alert('Tudo certo!')
-          const resp = await enviarParaApi();
-
-          if (resp) {
-            alert('EQUARITA')
-            submitForm(event)
-          } else {
-            alert('so erro na vida de iago "give up"')
-          }
+          submitForm(event)
           
         } else {
           alert('A senha de confirmação precisa ser igual a primeira senha!')
