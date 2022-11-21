@@ -255,6 +255,7 @@ async function enviarMensagemModificarSenha(event) {
         if (validaSenha(senha1ModificarSenha, senha2ModificarSenha)) {
           alert('Tudo certo!')
           const resp = await enviarParaApi();
+
           if (resp) {
             alert('EQUARITA')
             submitForm(event)
@@ -296,6 +297,7 @@ async function enviarParaApi(){
           },
           body: JSON.stringify(usuario)
       })
+      resp.json()
       console.log(resp.status)
       if (resp.status === 201) {
         alert(resp)
