@@ -59,7 +59,7 @@ function enviarMsgCadastro(nome, email, senha1, senha2, event) {
 }
 
 //nao envia o formulario e navega entre as paginas mudando a url
-function submitForm(event) {
+async function submitForm(event) {
   event.preventDefault();
   var url_atual = window.location.pathname;
   if (url_atual.endsWith("autenticacao/cadastro.html")) {
@@ -106,14 +106,63 @@ function submitForm(event) {
         }
       }
   };
+
   if (window.location.href.endsWith("autenticacao/validacao.html")) {
     window.location.href = "login.html"
   } else if (window.location.href.endsWith("autenticacao/login.html")) {
-    window.location.assign("../usuarios/aluno/professores.html")
-  } else if (window.location.href.endsWith("autenticacao/modificar-senha.html")) {
-    location.href = "login.html"
-  }
+    try {
+      const usuario = {
+          email: emailLogin.value,
+          senha: senhaLogin.value
+      }
+      const resp = await fetch('https://acompi-back-end-la29.onrender.com/login', {
+          method: 'POST',
+          headers: {
+              Accept: 'application/json',
+              'Content-type': 'application/json'
+          },
+          body: JSON.stringify(usuario)
+      })
+      resp.json();
+      if (resp.status === 201) {
+        alert('certo')
+        window.location.href = "../usuarios/aluno/professores.html"
+      } else {
+          alert(resp.message)
+      }
+  } catch (error) {
+     alert(error.message)
 }
+  } else if (window.location.href.endsWith("autenticacao/modificar-senha.html")) {
+    try {
+      const usuario = {
+          email: emailModificarSenha.value,
+          senha: senha1ModificarSenha.value,
+          confirmasenha: senha2ModificarSenha.value,
+      }
+      const resp = await fetch('http://localhost:3000/modificar-senha', {
+          method: 'PATCH',
+          headers: {
+              Accept: 'application/json',
+              'Content-type': 'application/json'
+          },
+          body: JSON.stringify(usuario)
+      })
+      resp.json()
+      if (resp.status === 201) {
+        alert('TudoCertto')
+        location.href = "login.html"
+      
+      } else {
+          console.log(resp)
+      
+      }
+  } catch (error) {
+      alert(resp.message)
+}}
+
+  }
+
 
 
 //verificar se a senha1 digitada esta igual a senha2
@@ -195,11 +244,10 @@ function removerAluno(numeroParaIdentificarAluno) {
 const emailLogin = document.querySelector('#emailLogin')
 const senhaLogin = document.querySelector('#senhaLogin')
 
-function enviarMensagemLogin(event) {
+async function enviarMensagemLogin(event) {
   if (emailLogin.value != '') {
     if (senhaLogin.value != '') {
-      //alert('Tudo certo!')
-      submitForm(event)
+        submitForm(event)
     } else {
       alert('Preencha a senha!')
     }
@@ -207,6 +255,7 @@ function enviarMensagemLogin(event) {
     alert('Preencha o e-mail!')
   }
 }
+
 //---------------fim tela de Login---------------//
 
 
@@ -215,13 +264,14 @@ const emailModificarSenha = document.querySelector('#emailModificarSenha')
 const senha1ModificarSenha = document.querySelector('#senha1ModificarSenha')
 const senha2ModificarSenha = document.querySelector('#senha2ModificarSenha')
 
-function enviarMensagemModificarSenha(event) {
+async function enviarMensagemModificarSenha(event) {
   if (emailModificarSenha.value != '') {
     if (senha1ModificarSenha.value != '') {
       if (senha2ModificarSenha.value != '') {
         if (validaSenha(senha1ModificarSenha, senha2ModificarSenha)) {
           alert('Tudo certo!')
           submitForm(event)
+          
         } else {
           alert('A senha de confirmação precisa ser igual a primeira senha!')
           senha1ModificarSenha.value = ''
@@ -238,5 +288,36 @@ function enviarMensagemModificarSenha(event) {
   }
 
 }
+
+async function enviarParaApi(){
+  alert("foi")
+  try {
+      const usuario = {
+          email: emailModificarSenha.value,
+          senha: senha1ModificarSenha.value,
+          confirmasenha: senha2ModificarSenha.value,
+      }
+      alert('fjbhdfjbhdflkgkdjghfghdfjghdjhgfghguhepgijengoerhgerhogierg')
+      const resp = await fetch('http://localhost:3000/modificar-senha', {
+          method: 'PATCH',
+          headers: {
+              Accept: 'application/json',
+              'Content-type': 'application/json'
+          },
+          body: JSON.stringify(usuario)
+      })
+      resp.json()
+      console.log(resp.status)
+      if (resp.status === 201) {
+        alert(resp)
+        return true
+      } else {
+          alert(resp)
+          return false
+      }
+  } catch (error) {
+      console.error(error.message)
+      return false
+}}
 
 //----------------------------------------------------------------------------------------------------------- //
