@@ -96,7 +96,7 @@ function submitForm(event) {
             document.querySelector('#senha2Cadastro').value = ''
             document.querySelector('#nomeCadastro').value = ''
             document.querySelector('#emailCadastro').value = ''
-            alert('dados enviados com sucesso')
+            alert('Dados enviados, clique no link enviado ao email para verificar a conta')
             window.location.href = "validacao.html"
           } else {
             alert('este email já possui uma conta cadastrada')
