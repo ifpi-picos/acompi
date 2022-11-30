@@ -125,7 +125,7 @@ async function submitForm(event) {
       })
       resp.json();
       if (resp.status === 201) {
-        alert('certo')
+        alert('Sucesso')
         window.location.href = "../usuarios/aluno/professores.html"
       } else {
           alert(resp.message)
