@@ -95,8 +95,8 @@ async function submitForm(event) {
             document.querySelector('#senha2Cadastro').value = ''
             document.querySelector('#nomeCadastro').value = ''
             document.querySelector('#emailCadastro').value = ''
-            alert('dados enviados com sucesso')
-            window.location.href = "validacao.html"
+            alert('usuário cadatrado, clique no link enviado ao email para validar a conta')
+            window.location.href = "login.html"
           } else {
             alert('este email já possui uma conta cadastrada')
             console.log('Erro ao realizar cadastro')
