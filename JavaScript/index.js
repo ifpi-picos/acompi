@@ -143,13 +143,14 @@ async function submitForm (event) {
       )
       resp.json()
       if (resp.status === 201) {
-        alert('Sucesso')
-        if(usuario.email.indexOf('@aluno.ifpi.edu.br')) {
-        window.location.href = '../usuarios/aluno/escolher-turma.html'
-        } else if(usuario.email.indexOf('@ifpi.edu.br')) {
+        if(usuario.email.indexOf('@aluno.ifpi.edu.br') !== -1) {
+          window.location.href = '../usuarios/aluno/escolher-turma.html'
+        } else if(usuario.email.indexOf('@ifpi.edu.br') !== -1) {
         window.location.href = '../usuarios/professor/reservar-laboratorio.html'
-        } else if(usuario.email.indexOf('coord-ads.capic@ifpi.edu.br')) {
+        } else if(usuario.email.indexOf('coord-ads.capic@ifpi.edu.br') !== -1) {
         window.location.href = '../usuarios/administrador/excluir-usuarios.html'
+        } else {
+          alert('so erro na vida de PorEnquanto')
         }
       } else {
         alert("Dados incorretos!")
