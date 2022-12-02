@@ -146,7 +146,7 @@ async function submitForm (event) {
         alert('Sucesso')
         window.location.href = '../usuarios/aluno/professores.html'
       } else {
-        alert(resp.message)
+        alert("Dados incorretos!")
       }
     } catch (error) {
       alert(error.message)
