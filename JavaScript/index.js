@@ -146,9 +146,9 @@ async function submitForm (event) {
         alert('Sucesso')
         if(usuario.email.indexOf('@aluno.ifpi.edu.br')) {
         window.location.href = '../usuarios/aluno/escolher-turma.html'
-        } if(usuario.email.indexOf('@ifpi.edu.br')) {
+        } else if(usuario.email.indexOf('@ifpi.edu.br')) {
         window.location.href = '../usuarios/professor/reservar-laboratorio.html'
-        } if(usuario.email.indexOf('coord-ads.capic@ifpi.edu.br')) {
+        } else if(usuario.email.indexOf('coord-ads.capic@ifpi.edu.br')) {
         window.location.href = '../usuarios/administrador/excluir-usuarios.html'
         }
       } else {
