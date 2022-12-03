@@ -146,9 +146,9 @@ async function submitForm (event) {
         if(usuario.email.indexOf('@aluno.ifpi.edu.br') != -1) {
           window.location.href = '../usuarios/aluno/escolher-turma.html'
         } else if(usuario.email.indexOf('@ifpi.edu.br') != -1) {
-        window.location.href = '../usuarios/professor/reservar-laboratorio.html'
+        window.location.href = '../usuarios/professor/ver-cancelar-turma.html'
         } else if(usuario.email.indexOf('coord-ads.capic@ifpi.edu.br') != -1) {
-        window.location.href = '../usuarios/administrador/ver-cancelar-turma.html'
+        window.location.href = '../usuarios/administrador/excluir-usuarios.html'
         }
       } else {
         alert("Dados incorretos!")
@@ -293,6 +293,7 @@ async function enviarMensagemModificarSenha (event) {
     if (senha1ModificarSenha.value != '') {
       if (senha2ModificarSenha.value != '') {
         if (validaSenha(senha1ModificarSenha, senha2ModificarSenha)) {
+          alert('Tudo certo!')
           submitForm(event)
         } else {
           alert('A senha de confirmação precisa ser igual a primeira senha!')
@@ -311,13 +312,15 @@ async function enviarMensagemModificarSenha (event) {
 }
 
 async function enviarParaApi () {
+  alert('foi')
   try {
     const usuario = {
       email: emailModificarSenha.value,
       senha: senha1ModificarSenha.value,
       confirmasenha: senha2ModificarSenha.value
     }
-    const resp = await fetch('https://acompi-back-end-la29.onrender.com/modificar-senha', {
+    alert('fjbhdfjbhdflkgkdjghfghdfjghdjhgfghguhepgijengoerhgerhogierg')
+    const resp = await fetch('http://localhost:3000/modificar-senha', {
       method: 'PATCH',
       headers: {
         Accept: 'application/json',
