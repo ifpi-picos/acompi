@@ -293,7 +293,6 @@ async function enviarMensagemModificarSenha (event) {
     if (senha1ModificarSenha.value != '') {
       if (senha2ModificarSenha.value != '') {
         if (validaSenha(senha1ModificarSenha, senha2ModificarSenha)) {
-          alert('Tudo certo!')
           submitForm(event)
         } else {
           alert('A senha de confirmação precisa ser igual a primeira senha!')
@@ -312,15 +311,13 @@ async function enviarMensagemModificarSenha (event) {
 }
 
 async function enviarParaApi () {
-  alert('foi')
   try {
     const usuario = {
       email: emailModificarSenha.value,
       senha: senha1ModificarSenha.value,
       confirmasenha: senha2ModificarSenha.value
     }
-    alert('fjbhdfjbhdflkgkdjghfghdfjghdjhgfghguhepgijengoerhgerhogierg')
-    const resp = await fetch('http://localhost:3000/modificar-senha', {
+    const resp = await fetch('https://acompi-back-end-la29.onrender.com/modificar-senha', {
       method: 'PATCH',
       headers: {
         Accept: 'application/json',

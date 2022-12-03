@@ -19,21 +19,24 @@ cancelar.addEventListener('click', function(){
 })
 function submitForm(event){
     event.preventDefault();
-    criar.addEventListener('click', function(){
+    criar.addEventListener('click', async function(){
         var url_atual = window.location.pathname; 
         if(url_atual.endsWith("usuarios/aluno/formulario-reserva-computador.html")){
-            const dados = getDadosForm()
+            const dados = await getDadosForm()
             enviarDados(dados)
-            function getDadosForm(){
+            async function getDadosForm(){
                 const inputComputador = document.querySelector('.computador:checked')
                 const inputCurso = document.querySelector('.curso:checked')
                 const inputConsentimento = document.querySelector('.consentimento')
+                const search = window.location.search.substring(1).substring(6)
+                console.log(search)
+                const id_turma = parseInt(search)
                 if (inputComputador.value === null || inputCurso.value === null || inputConsentimento.value === null){
                     console.log('campos vazios')
                     return
                 }
                 const dados = {
-                    id_turma: 1,
+                    id_turma: id_turma,
                     id_aluno: 1,   
                     computador: inputComputador.value,
                     curso: inputCurso.value,
@@ -42,7 +45,7 @@ function submitForm(event){
             }
             async function enviarDados(dados){
                 try{
-                const resposta = await fetch('https://acompi-back-end-la29.onrender.com/reservas', {
+                const resposta = await fetch('http://localhost:3000/reservas', {
                     method: 'POST',
                     headers:{
                         Accept: 'application/json',
