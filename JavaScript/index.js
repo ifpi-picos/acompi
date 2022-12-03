@@ -148,7 +148,7 @@ async function submitForm (event) {
         } else if(usuario.email.indexOf('@ifpi.edu.br') != -1) {
         window.location.href = '../usuarios/professor/reservar-laboratorio.html'
         } else if(usuario.email.indexOf('coord-ads.capic@ifpi.edu.br') != -1) {
-        window.location.href = '../usuarios/administrador/excluir-usuarios.html'
+        window.location.href = '../usuarios/administrador/ver-cancelar-turma.html'
         }
       } else {
         alert("Dados incorretos!")
