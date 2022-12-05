@@ -29,7 +29,6 @@ function submitForm(event){
                 const inputCurso = document.querySelector('.curso:checked')
                 const inputConsentimento = document.querySelector('.consentimento')
                 const search = window.location.search.substring(1).substring(6)
-                console.log(search)
                 const id_turma = parseInt(search)
                 if (inputComputador.value === null || inputCurso.value === null || inputConsentimento.value === null){
                     console.log('campos vazios')
@@ -37,7 +36,7 @@ function submitForm(event){
                 }
                 const dados = {
                     id_turma: id_turma,
-                    id_aluno: 1,   
+                    id_aluno: 76,   
                     computador: inputComputador.value,
                     curso: inputCurso.value,
                 }

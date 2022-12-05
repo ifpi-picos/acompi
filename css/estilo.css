@@ -574,6 +574,7 @@ fim tela cadastro/validaçao/login*/
 .excluirTurma{
     margin-top: 16px;
     background-color: rgb(197, 65, 65);
+    cursor:pointer;
 }
 .excluirUsuario{
     background-color: rgb(197, 65, 65);

@@ -17,65 +17,31 @@
 
             <ul id="menu" class="menu">
                 <div id="divFecharMenu">
-                <li class="botaoMenu fecharMenu">Sair</li>
+                    <li class="botaoMenu fecharMenu">Sair</li>
                 </div>
                 <li class="itemMenu">
                     <a href="ver-cancelar-turma.html" class="acaoItemMenu">Turmas</a>
                 </li>
                 <li class="itemMenu">
-                    <a href="reservar-laboratorio.html" class="acaoItemMenu">Reservar laboratório</a>
-                </li>
-                <li class="itemMenu">
-                    <a href="../modificar-dados-usuario.html" class="acaoItemMenu">Modificar nome</a>
-                </li>
-                <li class="itemMenu">
-                    <a href="/acompi-front-end" class="acaoItemMenu">Sair</a>
+                    <a href="/" class="acaoItemMenu">Sair</a>
                 </li>
             </ul>
         </nav>
-        <a href="/acompi-front-end">
+        <a href="/">
             <img src="../../img/logo.png" alt="Nossa logomarca">
         </a>
         <nav class="barraNavegacao">
             <ul>
                 <li><a class="menuBotao" href="ver-cancelar-turma.html">Turmas</a></li>
-                <li><a class="menuBotao" href="reservar-laboratorio.html">Reservar laboratório</a></li>
-                <li><a class="menuBotao" href="../modificar-dados-usuario.html">Modificar nome</a></li>
-                <li><a class="menuBotao" href="/acompi-front-end">Sair</a></li>
+                <li><a class="menuBotao" href="/">Sair</a></li>
             </ul>
         </nav>
     </header>
     <div class="mainTop">
-        <div class="filtrarTurmasProfessor">
-            <h3>Filtrar Turmas por:</h3>
-            <div class="camposFiltragem">
-
-                <div class="divisaoFiltragemBotao">
-                    <div class="filtrarPorLaboratorio">
-                        <select class="formSelect">
-                            <option value="">Laboratório</option>
-                            <option value="1">Laboratório I</option>
-                            <option value="2">Laboratório II</option>
-                            <option value="3">Laboratório III</option>
-                            <option value="4">Laboratório IV</option>
-                        </select>
-                    </div>
-
-                    <div class="filtragemPorHorario">
-                        <input type="time" id="HorarioDaReserva" name="time">
-                    </div>
-                </div>
-
-                <div class="botaoFiltrar">
-                    <button id="botaoFiltrar" type="submit">Filtrar</button>
-                </div>
-
-            </div>
-        </div>
         <a id="btnProibirLabAdm" class="index" href="formulario-criar-turma.html">Criar turma</a>
     </div>
-    <main class="turmas">
-        <div>
+    <main class="turmas" id="turmas">
+        <!-- <div>
             <h1>Laboratório III</h1>
             <p>Professor: Jesiel Viana</p>
             <p>Horário: 14h:00min às 16h:00min</p>
@@ -123,11 +89,11 @@
             <p>Data: 02/07/2022</p>
             <a href="ver-remover-alunos-da-turma.html" class="index">Alunos</a>
             <a href="" class="index excluirTurma">Excluir turma</a>
-        </div>
+        </div> -->
     </main>
 
-    <script src="../../JavaScript/index.js"></script>
     <script src="../../JavaScript/menu.js"></script>
+    <script src="../../JavaScript/professor-turmas.js"></script>
 </body>
 
 </html>
