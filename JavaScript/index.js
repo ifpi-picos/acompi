@@ -8,7 +8,7 @@ const botaoCadastro = document.querySelector('#btnCadastro')
 
 //quando clicar no botao cadastrar
 //verificar se todos os campos do cadastro estao preenchidos
-function validandoCamposCadastro (event) {
+function validandoCamposCadastro(event) {
   if (nomeCadastro.value != '') {
     if (nomeCadastro.value.length >= 3) {
       if (emailCadastro.value != '') {
@@ -53,7 +53,7 @@ function validandoCamposCadastro (event) {
 }
 
 //emitir alerta avisando se estar tudo certo ou se a senha1 esta diferente da senha2
-function enviarMsgCadastro (nome, email, senha1, senha2, event) {
+function enviarMsgCadastro(nome, email, senha1, senha2, event) {
   if (validaSenha(senha1Cadastro, senha2Cadastro)) {
     // mudar a pagina
     submitForm(event)
@@ -65,13 +65,13 @@ function enviarMsgCadastro (nome, email, senha1, senha2, event) {
 }
 
 //nao envia o formulario e navega entre as paginas mudando a url
-async function submitForm (event) {
+async function submitForm(event) {
   event.preventDefault()
   var url_atual = window.location.pathname
   if (url_atual.endsWith('autenticacao/cadastro.html')) {
     const dados = getDadosForm()
     enviarDados(dados)
-    function getDadosForm () {
+    function getDadosForm() {
       const nomeCadastro = document.querySelector('#nomeCadastro')
       const emailCadastro = document.querySelector('#emailCadastro')
       const senha1Cadastro = document.querySelector('#senha1Cadastro')
@@ -90,7 +90,7 @@ async function submitForm (event) {
       }
       return dados
     }
-    async function enviarDados (dados) {
+    async function enviarDados(dados) {
       try {
         const resposta = await fetch(
           'https://acompi-back-end-la29.onrender.com/cadastro',
@@ -98,7 +98,8 @@ async function submitForm (event) {
             method: 'POST',
             headers: {
               Accept: 'application/json',
-              'Content-Type': 'application/json'
+              'Content-Type': 'application/json',
+              'Access-Control-Allow-Origin': 'https://acompi.netlify.app/'
             },
             body: JSON.stringify(dados)
           }
@@ -143,12 +144,12 @@ async function submitForm (event) {
       )
       resp.json()
       if (resp.status === 201) {
-        if(usuario.email.indexOf('@aluno.ifpi.edu.br') != -1) {
+        if (usuario.email.indexOf('@aluno.ifpi.edu.br') != -1) {
           window.location.href = '../usuarios/aluno/escolher-turma.html'
-        } else if(usuario.email.indexOf('@ifpi.edu.br') != -1) {
-        window.location.href = '../usuarios/professor/ver-cancelar-turma.html'
-        } else if(usuario.email.indexOf('coord-ads.capic@ifpi.edu.br') != -1) {
-        window.location.href = '../usuarios/administrador/excluir-usuarios.html'
+        } else if (usuario.email.indexOf('@ifpi.edu.br') != -1) {
+          window.location.href = '../usuarios/professor/ver-cancelar-turma.html'
+        } else if (usuario.email.indexOf('coord-ads.capic@ifpi.edu.br') != -1) {
+          window.location.href = '../usuarios/administrador/excluir-usuarios.html'
         }
       } else {
         alert("Dados incorretos!")
@@ -187,7 +188,7 @@ async function submitForm (event) {
 }
 
 //verificar se a senha1 digitada esta igual a senha2
-function validaSenha (senha1, senha2) {
+function validaSenha(senha1, senha2) {
   if (senha1.value == senha2.value) {
     return true
   } else {
@@ -201,7 +202,7 @@ function validaSenha (senha1, senha2) {
 
 const codigoVerificacao = document.getElementById('codigoVerificacao')
 
-function enviarMsgValidacao (event) {
+function enviarMsgValidacao(event) {
   if (codigoVerificacao.value != '') {
     alert(
       'Tudo certo!\nCodigo de Validação correto!  ' + codigoVerificacao.value
@@ -221,7 +222,7 @@ function enviarMsgValidacao (event) {
 
 // tela ver e cancelar reserva (aluno)
 // funçao para o butão mudar
-function cancelarReserva (numeroParaIdentificarTurma) {
+function cancelarReserva(numeroParaIdentificarTurma) {
   const btnCancelarReserva = document.getElementsByClassName(
     'btnCancelarReserva'
   )[numeroParaIdentificarTurma]
@@ -248,7 +249,7 @@ possuiComp.forEach(function (possuirCom) {
 })
 
 // funçao para o butão mudar
-function removerAluno (numeroParaIdentificarAluno) {
+function removerAluno(numeroParaIdentificarAluno) {
   const btnRemoverAluno = document.querySelectorAll('button.btnRemoverAluno')[
     numeroParaIdentificarAluno
   ]
@@ -269,7 +270,7 @@ function removerAluno (numeroParaIdentificarAluno) {
 const emailLogin = document.querySelector('#emailLogin')
 const senhaLogin = document.querySelector('#senhaLogin')
 
-async function enviarMensagemLogin (event) {
+async function enviarMensagemLogin(event) {
   if (emailLogin.value != '') {
     if (senhaLogin.value != '') {
       submitForm(event)
@@ -288,7 +289,7 @@ const emailModificarSenha = document.querySelector('#emailModificarSenha')
 const senha1ModificarSenha = document.querySelector('#senha1ModificarSenha')
 const senha2ModificarSenha = document.querySelector('#senha2ModificarSenha')
 
-async function enviarMensagemModificarSenha (event) {
+async function enviarMensagemModificarSenha(event) {
   if (emailModificarSenha.value != '') {
     if (senha1ModificarSenha.value != '') {
       if (senha2ModificarSenha.value != '') {
@@ -311,7 +312,7 @@ async function enviarMensagemModificarSenha (event) {
   }
 }
 
-async function enviarParaApi () {
+async function enviarParaApi() {
   alert('foi')
   try {
     const usuario = {

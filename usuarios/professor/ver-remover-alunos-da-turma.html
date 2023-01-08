@@ -23,62 +23,20 @@
                     <a href="ver-cancelar-turma.html" class="acaoItemMenu">Turmas</a>
                 </li>
                 <li class="itemMenu">
-                    <a href="reservar-laboratorio.html" class="acaoItemMenu">Reservar laboratório</a>
-                </li>
-                <li class="itemMenu">
-                    <a href="../modificar-dados-usuario.html" class="acaoItemMenu">Modificar nome</a>
-                </li>
-                <li class="itemMenu">
-                    <a href="/acompi-front-end" class="acaoItemMenu">Sair</a>
+                    <a href="/" class="acaoItemMenu">Sair</a>
                 </li>
             </ul>
         </nav>
-        <a href="/acompi-front-end">
+        <a href="/">
             <img src="../../img/logo.png" alt="Nossa logomarca">
         </a>
         <nav class="barraNavegacao">
             <ul>
                 <li><a class="menuBotao" href="ver-cancelar-turma.html">Turmas</a></li>
-                <li><a class="menuBotao" href="reservar-laboratorio.html">Reservar laboratório</a></li>
-                <li><a class="menuBotao" href="../modificar-dados-usuario.html">Modificar nome</a></li>
-                <li><a class="menuBotao" href="/acompi-front-end">Sair</a></li>
+                <li><a class="menuBotao" href="/">Sair</a></li>
             </ul>
         </nav>
     </header>
-
-    <div class="filtrarAlunoProfessor">
-        <h3>Filtrar Aluno por:</h3>
-        <div class="camposFiltragem">
-
-            <div class="divisaoFiltragemForms">
-                <div class="filtrarPorCurso">
-                    <select class="formSelect">
-                        <option value=''>Curso</option>
-                        <option value='1'>Administração</option>
-                        <option value='2'>Eletrotécnica</option>
-                        <option value='3'>Informática</option>
-                        <option value='4'>Análise e Desenvolvimento de Sistemas</option>
-                        <option value='5'>Química</option>
-                        <option value='6'>Física</option>
-                        <option value='7'>Engenharia de Software</option>
-                        <option value='8'>Outro</option>
-                        <option value='9'>Nenhum</option>
-                    </select>
-                </div>
-                
-                <div class="possuiComputador">
-                    <p>Possui computador?</p>
-                    <input class="radioButton"  type="radio" name="possuiComputador" value="sim" required/> Sim
-                    <input class="radioButton"  type="radio" name="possuiComputador" value="nao" required/> Não
-                </div>
-            </div>
-
-            <div class="botaoFiltrar">
-                <button id="botaoFiltrar"type="submit">Filtrar</button>
-            </div>
-            
-        </div>
-    </div>
 
     <main class="turmas">
         <div>
@@ -111,7 +69,7 @@
             <button onclick="removerAluno(3)" class="btnRemoverAluno">Remover Aluno</button>
         </div>
     </main>
-    <script src="../../JavaScript/index.js"></script>
+    <script src="../../JavaScript/professor-turmas-alunos.js"></script>
     <script src="../../JavaScript/menu.js"></script>
 </body>
 
