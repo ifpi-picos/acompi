@@ -99,7 +99,6 @@ async function submitForm(event) {
             headers: {
               Accept: 'application/json',
               'Content-Type': 'application/json',
-              'Access-Control-Allow-Origin': 'https://acompi.netlify.app/'
             },
             body: JSON.stringify(dados)
           }

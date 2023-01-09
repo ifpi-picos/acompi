@@ -44,7 +44,7 @@ function submitForm(event){
             }
             async function enviarDados(dados){
                 try{
-                const resposta = await fetch('http://localhost:3000/reservas', {
+                const resposta = await fetch('https://acompi-back-end-la29.onrender.com/reservas', {
                     method: 'POST',
                     headers:{
                         Accept: 'application/json',
