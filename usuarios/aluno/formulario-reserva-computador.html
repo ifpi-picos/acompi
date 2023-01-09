@@ -46,7 +46,7 @@
         <div class="divPai">
                 <section class="secaoParaTelaComputador">
         <h2 class="formTitulo">Reservar computador</h2>
-        <form onsubmit="submitForm(event)">
+        <form>
         <div class="preencher">
             <label class="formLabel">Você possui um computador?</label>
             <div class="formDiv">
@@ -78,7 +78,7 @@
         </div>
         <div id="botoes">
             <button id="cancelar">Cancelar</button>
-            <button id="botaoCriar"type="submit">Reservar</button>
+            <button onclick="submitForm(event)" id="botaoCriar"type="submit">Reservar</button>
         </div>
         </form>
         </section>
