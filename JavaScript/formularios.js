@@ -36,7 +36,7 @@ function submitForm(event){
                 }
                 const dados = {
                     id_turma: id_turma,
-                    id_aluno: 76,   
+                    id_aluno: 35,   
                     computador: inputComputador.value,
                     curso: inputCurso.value,
                 }
