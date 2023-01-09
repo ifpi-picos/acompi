@@ -32,19 +32,21 @@ O objetivo do ACOMPI é dar uso aos computadores ociosos do Instituto Federal do
 
 - Funcionários: aqueles que se voluntariam a supervisionar os laboratórios;
 
-- Administrador(es): Aquele(s) que gerencia(m) e supervisionam o site.
-
 Os passos para se efetuar uma reserva no ACOMPI são:
 
 - O professor cria um cartão de turma;
 
-- Os alunos aceitam os cartões de turma e ao fazer isso criam cartões de alunos;
+- Os alunos aceitam os cartões de turma e ao fazer isso criam cartões de alunos para os professores dentro das turmas;
 
-- O site prioriza os cartões dos alunos em cada turma, cartões esses que ainda podem ser reordenados pelo professor;
+- Os cartões dos alunos podem ser removidos pelo professor;
 
-- Após os cartões serem ordenados pelo sistema, os primeiros da fila reservam os computadores;
+**Motivo da escolha das tecnologias**
 
-- Exemplo: se uma turma tem 30 cartões e o laboratório 15 computadores, o sistema prioriza os cartões e os 15 primeiros efetuam a reserva.
+As tecnologias escolhidas foram usadas pois foram as ensinadas durante o curso
+
+**Implementação futura**
+
+Não temos previsão de alterações futuras após o fim do projeto.
 
 **Wireframes**
 
@@ -57,3 +59,24 @@ https://octopus.do/3rto2gys4i6
 **Paleta de cores**
 
 https://www.happyhues.co/palettes/3
+
+**Execução do projeto**
+
+- https://acompi.netlify.app/
+
+
+**Créditos**
+
+https://github.com/Allan-Barbosa <br />
+https://github.com/IagoBrenoAD <br />
+https://github.com/WesleyVeloso30 <br />
+https://github.com/RodrigoPereira25 <br />
+
+
+[![GitHub contributors](https://img.shields.io/github/contributors/ifpi-picos/acompi-back-end)](https://github.com/ifpi-picos/acompi-back-end/contributors/)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+[![Visual Studio](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)](https://visualstudio.microsoft.com)
+[![GitHub issues](https://img.shields.io/github/issues/ifpi-picos/acompi-back-end)](https://github.com/ifpi-picos/acompi-back-end/issues)
+[![GitHub forks](https://img.shields.io/github/forks/ifpi-picos/acompi-back-end)](https://github.com/ifpi-picos/acompi-back-end/network)
+[![GitHub stars](https://img.shields.io/github/stars/ifpi-picos/acompi-back-end)](https://github.com/ifpi-picos/acompi-back-end/stargazers)
+[![GitHub license](https://img.shields.io/github/license/ifpi-picos/acompi-back-end)](https://github.com/ifpi-picos/acompi-back-end/blob/main/LICENSE)
