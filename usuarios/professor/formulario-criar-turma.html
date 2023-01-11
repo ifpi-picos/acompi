@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <title>Criar turma</title>
 </head>
+
 <body>
     <header>
         <nav class="menuLateral">
@@ -16,7 +18,7 @@
 
             <ul id="menu" class="menu">
                 <div id="divFecharMenu">
-                <li class="botaoMenu fecharMenu">Sair</li>
+                    <li class="botaoMenu fecharMenu">Sair</li>
                 </div>
                 <li class="itemMenu">
                     <a href="ver-cancelar-turma.html" class="acaoItemMenu">Turmas</a>
@@ -46,49 +48,81 @@
     </header>
     <main>
         <div class="divPai">
-                <section class="secaoParaTelaComputador">
-        <h2 class="formTitulo">Criar turma</h2>
-        <form onsubmit="submitForm(event)">
-        <div class="preencher">
-            <label class="formLabel">Escolha qual laboratório deseja reservar:</label>
-            <select required>
-                <option value=''>Escolha</option>
-                <option value='1'>Laboratório I</option>
-                <option value='2'>Laboratório II</option>
-                <option value='3'>Laboratório III</option>
-                <option value='4'>Laboratório IV</option>
-            </select>
-
-        </div>
-        <div class="preencher">
-            <label class="formLabel">Escolha a data que deseja reservar:</label>
-            <input class="data" id="campoDataInicio" type="date" name="dataInicio" required>
-            <label class="formLabel">Escolha a hora em que inicia a reserva:</label>
-            <input type="time" name="hora" id="horaInicio" required>
-            <label class="formLabel">Escolha a hora em que termina a reserva:</label>
-            <input type="time" name="hora" id="horaFim" required>
-            <label class="formLabel">Escolha qual curso você ministra:</label>
-            <select class="cursoProfessor">
-                <option value=''>Escolha</option>
-                <option value='1'>Administração</option>
-                <option value='2'>Eletrotécnica</option>
-                <option value='3'>Informática</option>
-                <option value='4'>Análise e Desenvolvimento de Sistemas</option>
-                <option value='5'>Química</option>
-                <option value='6'>Física</option>
-                <option value='7'>Engenharia de Software</option>
-                <option value='8'>Outro</option>
-                <option value='9'>Nenhum</option>
-            </select>
-        </div>
-        <div id="botoes">
-            <button id="cancelar">Cancelar</button>
-            <button id="botaoCriar"type="submit">Criar</button>
-        </div>
-        </form>
-        </section>
+            <section class="secaoParaTelaComputador">
+                <h2 class="formTitulo">Criar turma</h2>
+                <form onsubmit="submitForm(event)">
+                    <div class="preencher">
+                        <label class="formLabel">Escolha qual laboratório deseja reservar:</label>
+                        <select required>
+                            <option value='' class="laboratorio">Escolha</option>
+                            <option value='1' class="laboratorio">Laboratório I</option>
+                            <option value='2' class="laboratorio">Laboratório II</option>
+                            <option value='3' class="laboratorio">Laboratório III</option>
+                            <option value='4' class="laboratorio">Laboratório IV</option>
+                        </select>
+                    </div>
+                    <div class="preencher">
+                        <label class="formLabel">Escolha a data que deseja reservar:</label>
+                        <input class="data" id="campoDataInicio" type="date" name="dataInicio" required>
+                        <label class="formLabel">Escolha a hora em que inicia a reserva:</label>
+                        <select id="horaInicio" required>
+                            <option value="">Escolha</option>
+                            <option value="8">8:00</option>
+                            <option value="9">9:00</option>
+                            <option value="10">10:00</option>
+                            <option value="11">11:00</option>
+                            <option value="12">12:00</option>
+                            <option value="13">13:00</option>
+                            <option value="14">14:00</option>
+                            <option value="15">15:00</option>
+                            <option value="16">16:00</option>
+                            <option value="17">17:00</option>
+                            <option value="18">18:00</option>
+                            <option value="19">19:00</option>
+                            <option value="20">20:00</option>
+                            <option value="21">21:00</option>
+                        </select>
+                        <label class="formLabel">Escolha a hora em que termina a reserva:</label>
+                        <select id="horaFim" required>
+                            <option value="">Escolha</option>
+                            <option value="9">9:00</option>
+                            <option value="10">10:00</option>
+                            <option value="11">11:00</option>
+                            <option value="12">12:00</option>
+                            <option value="13">13:00</option>
+                            <option value="14">14:00</option>
+                            <option value="15">15:00</option>
+                            <option value="16">16:00</option>
+                            <option value="17">17:00</option>
+                            <option value="18">18:00</option>
+                            <option value="19">19:00</option>
+                            <option value="20">20:00</option>
+                            <option value="21">21:00</option>
+                            <option value="22">22:00</option>
+                        </select>
+                        <label class="formLabel">Escolha qual curso você ministra:</label>
+                        <select class="cursoProfessor">
+                            <option value=''>Escolha</option>
+                            <option value='1'>Administração</option>
+                            <option value='2'>Eletrotécnica</option>
+                            <option value='3'>Informática</option>
+                            <option value='4'>Análise e Desenvolvimento de Sistemas</option>
+                            <option value='5'>Química</option>
+                            <option value='6'>Física</option>
+                            <option value='7'>Engenharia de Software</option>
+                            <option value='8'>Outro</option>
+                            <option value='9'>Nenhum</option>
+                        </select>
+                    </div>
+                    <div id="botoes">
+                        <button id="cancelar">Cancelar</button>
+                        <button id="botaoCriar" type="submit">Criar</button>
+                    </div>
+                </form>
+            </section>
         </div>
     </main>
     <script src="..\..\JavaScript\formularios.js"></script>
 </body>
+
 </html>

@@ -1,36 +1,37 @@
-// const divTurmas = document.querySelector('#turmas')
+const divReservas = document.querySelector('#reservas')
 
-// async function getTurmas() {
-//     const professorID = 16;
-//     const res = await fetch('https://acompi-back-end-la29.onrender.com/turmas/' + professorID.toString());
-//     const professor = await res.json();
-//     preencherAlunos(professor[0].turmas);
-// }
-// function preencherAlunos(turmas) {
-//     turmas.forEach(async turma => {
-//         const res = await fetch('http://localhost:3000/turmas/' + '115');
-//         const professor = await res.json();
-//         const novaTurmaHTML = '<div>\n<h1>Laboratório ' + turma.id_lab + '</h1>\n<p>Professor: ' + professor[0].nome + '</p>\n<p>Horário: ' + turma.horario_inicio + 'min às ' + turma.horario_fim + 'min</p>\n<p>Data: ' + turma.data_turma + '</p>\n<a href="ver-remover-alunos-da-turma.html?turma=' + turma.id + '" class="index">Alunos</a>\n<a onclick="excluirTurma(' + turma.id + ')" class="index excluirTurma" id="excluirTurma">Excluir turma</a>\n</div>'
-//         divTurmas.innerHTML = divTurmas.innerHTML + novaTurmaHTML
-//     });
-// }
-// getTurmas()
-// const botaoExcluirTurma = document.querySelector('#excluirTurma')
-// async function excluirTurma (id) {
-//     const dados = {id:+id}
-//     try {
-//         const resposta = await fetch('http://localhost:3000/turmas', {
-//             method: 'DELETE',
-//             headers: {
-//                 Accept: 'application/json',
-//                 'Content-Type': 'application/json',
-//             },
-//             body: JSON.stringify(dados)
-//         }); if (resposta.status === 200) {
-//             alert('Turma excluída')
-//             window.location.reload();
-//         };
-//     } catch (erro) {
-//         console.error(erro)
-//     }
-// }
+async function getReservas() {
+    const search = window.location.search.substring(1).substring(6)
+    const id_turma = parseInt(search)
+    const res = await fetch('https://acompi-back-end-la29.onrender.com/turmas/reservas/' + id_turma.toString());
+    const turma = await res.json();
+    preencherReservas(turma[0].reservas);
+}
+function preencherReservas(reservas) {
+    reservas.forEach(async reserva => {
+        const alunoID = reserva.id_aluno
+        console.log(alunoID)
+        const res = await fetch('https://acompi-back-end-la29.onrender.com/cadastro/aluno/' + alunoID.toString())
+        const aluno = await res.json();
+        const novaReservaHTML = '<div>\n<h1>'+aluno.nome+'</h1>\n<p>E-mail: '+aluno.email+'</p>\n<p>Curso: '+reserva.curso+'</p>\n<h4 class="ausenciaComputador" >'+'Possui Computador: '+reserva.computador+'</h4>\n<button onclick="excluirReserva(' + reserva.id + ')" class="btnRemoverAluno" id="excluirReserva">Remover Aluno</button>\n</div>'
+        divReservas.innerHTML = divReservas.innerHTML + novaReservaHTML
+    });
+}
+getReservas()
+const botaoExcluirReserva = document.querySelector('#excluirReserva')
+async function excluirReserva (id) {
+    try {
+        const resposta = await fetch('https://acompi-back-end-la29.onrender.com/reservas/' + id.toString(), {
+            method: 'DELETE',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
+            },
+        }); if (resposta.status === 200) {
+            alert('Reserva excluída')
+            window.location.reload();
+        };
+    } catch (erro) {
+        console.error(erro)
+    }
+}

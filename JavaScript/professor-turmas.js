@@ -2,7 +2,7 @@ const divTurmas = document.querySelector('#turmas')
 
 async function getTurmas() {
     const professorID = 16;
-    const res = await fetch('https://acompi-back-end-la29.onrender.com/turmas/' + professorID.toString());
+    const res = await fetch('https://acompi-back-end-la29.onrender.com/turmas/professor/' + professorID.toString());
     const professor = await res.json();
     preencherTurmas(professor[0].turmas);
 }
