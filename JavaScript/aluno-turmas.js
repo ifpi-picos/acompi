@@ -23,7 +23,7 @@ function preencherTurmas(turmas) {
 }
 function verificarReserva(reservas, alunoID) {
     reservas.forEach(reserva => {
-        if (resserva.id_aluno == alunoID) return true;
+        if (reserva.id_aluno == alunoID) return true;
     })
 }
 getTurmas()
