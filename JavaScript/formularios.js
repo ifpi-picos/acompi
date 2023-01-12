@@ -67,33 +67,30 @@ async function submitForm(event) {
         }
     }
     if (url_atual.endsWith("usuarios/professor/formulario-criar-turma.html")) {
-        const inputHoraInicio = document.querySelector('#horaInicio:checked')
-        const inputHoraFim = document.querySelector('#horaFim:checked')
-        if (inputHoraFim - inputHoraInicio > 1){
-            alert('as turmas devem ser de 1 hora')
-        }
-        if (inputHoraFim < inputHoraInicio){
-            alert('A hora Final deve ser menor que a hora inicial')
-        }
-        if (inputHoraFim == inputHoraInicio){
+        const inputHoraInicio = +document.querySelector('#horaInicio').value;
+        const inputHoraFim = +document.querySelector('#horaFim').value;
+        if (inputHoraFim == inputHoraInicio) {
             alert('A hora Final deve ser diferente da hora inicial')
-        }
-        if (inputHoraFim - inputHoraInicio === 1) {
+        } else if (inputHoraFim < inputHoraInicio) {
+            alert('A hora Final deve ser maior que a hora inicial')
+        } else if (inputHoraFim - inputHoraInicio > 1) {
+            alert('as turmas devem ser de 1 hora')
+        } else if (inputHoraFim - inputHoraInicio == 1) {
             const dados = await getDadosForm()
             enviarDados(dados)
             async function getDadosForm() {
                 const inputLaboratorio = document.querySelector('.laboratorio:checked')
-                const inputData = document.querySelector('.dataInicio:checked')
-                const inputHoraInicio = document.querySelector('#horaInicio:checked')
-                const inputHoraFim = document.querySelector('#horaFim:checked')
-                const inputCurso = document.querySelector('.cursoProfessor:checked')
+                const inputData = document.querySelector('.data')
+                const inputHoraInicio = document.querySelector('#horaInicio')
+                const inputHoraFim = document.querySelector('#horaFim')
+                const inputCurso = document.querySelector('.cursoProfessor')
                 const id_professor = "16"
                 if (inputLaboratorio.value === null || inputData.value === null || inputHoraInicio.value === null || inputHoraFim.value === null || inputCurso.value === null) {
                     console.log('campos vazios')
                     return
                 }
                 const dados = {
-                    id_lab: inputLaboratorio.value,
+                    id_lab: +inputLaboratorio.value,
                     id_professor: +id_professor,
                     curso: inputCurso.value,
                     data_turma: inputData.value,
@@ -104,7 +101,7 @@ async function submitForm(event) {
             }
             async function enviarDados(dados) {
                 try {
-                    const resposta = await fetch('https://acompi-back-end-la29.onrender.com/turmas', {
+                    const resposta = await fetch('http://localhost:3000/turmas', {
                         method: 'POST',
                         headers: {
                             Accept: 'application/json',
@@ -112,12 +109,12 @@ async function submitForm(event) {
                         },
                         body: JSON.stringify(dados)
                     })
-                    if (resposta.status === 201) {
-                        document.querySelector('.inputLaboratorio:checked').checked = false
-                        document.querySelector('.inputData:checked').checked = false
-                        document.querySelector('.inputHoraInicio:checked').checked = false
-                        document.querySelector('.inputHoraFim:checked').checked = false
-                        document.querySelector('.inputCurso:checked').checked = false
+                    if (resposta.status == 201) {
+                        document.querySelector('#labSelect').value = ""
+                        document.querySelector('.data').value = ""
+                        document.querySelector('#horaInicio').value = ""
+                        document.querySelector('#horaFim').value = ""
+                        document.querySelector('.cursoProfessor').value = ""
                         alert('dados enviados com sucesso')
                         window.location.href = "ver-cancelar-turma.html"
                     } else {

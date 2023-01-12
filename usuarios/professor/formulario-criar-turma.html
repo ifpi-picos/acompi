@@ -53,7 +53,7 @@
                 <form onsubmit="submitForm(event)">
                     <div class="preencher">
                         <label class="formLabel">Escolha qual laboratório deseja reservar:</label>
-                        <select required>
+                        <select id="labSelect" required>
                             <option value='' class="laboratorio">Escolha</option>
                             <option value='1' class="laboratorio">Laboratório I</option>
                             <option value='2' class="laboratorio">Laboratório II</option>
@@ -63,7 +63,7 @@
                     </div>
                     <div class="preencher">
                         <label class="formLabel">Escolha a data que deseja reservar:</label>
-                        <input class="data" id="campoDataInicio" type="date" name="dataInicio" required>
+                        <input class="data" id="campoDataInicio" value="" type="date" name="dataInicio" required>
                         <label class="formLabel">Escolha a hora em que inicia a reserva:</label>
                         <select id="horaInicio" required>
                             <option value="">Escolha</option>
@@ -103,15 +103,15 @@
                         <label class="formLabel">Escolha qual curso você ministra:</label>
                         <select class="cursoProfessor">
                             <option value=''>Escolha</option>
-                            <option value='1'>Administração</option>
-                            <option value='2'>Eletrotécnica</option>
-                            <option value='3'>Informática</option>
-                            <option value='4'>Análise e Desenvolvimento de Sistemas</option>
-                            <option value='5'>Química</option>
-                            <option value='6'>Física</option>
-                            <option value='7'>Engenharia de Software</option>
-                            <option value='8'>Outro</option>
-                            <option value='9'>Nenhum</option>
+                            <option value='Administração'>Administração</option>
+                            <option value='Eletrotécnica'>Eletrotécnica</option>
+                            <option value='Informática'>Informática</option>
+                            <option value='Análise e Desenvolvimento de Sistemas'>Análise e Desenvolvimento de Sistemas</option>
+                            <option value='Química'>Química</option>
+                            <option value='Física'>Física</option>
+                            <option value='Engenharia de Software'>Engenharia de Software</option>
+                            <option value='Outro'>Outro</option>
+                            <option value='Nenhum'>Nenhum</option>
                         </select>
                     </div>
                     <div id="botoes">
