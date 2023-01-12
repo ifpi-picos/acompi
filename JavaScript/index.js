@@ -141,14 +141,11 @@ async function submitForm(event) {
           body: JSON.stringify(usuario)
         }
       )
-      resp.json()
       if (resp.status === 201) {
         if (usuario.email.indexOf('@aluno.ifpi.edu.br') != -1) {
           window.location.href = '../usuarios/aluno/escolher-turma.html'
         } else if (usuario.email.indexOf('@ifpi.edu.br') != -1) {
           window.location.href = '../usuarios/professor/ver-cancelar-turma.html'
-        } else if (usuario.email.indexOf('coord-ads.capic@ifpi.edu.br') != -1) {
-          window.location.href = '../usuarios/administrador/excluir-usuarios.html'
         }
       } else {
         alert("Dados incorretos!")
