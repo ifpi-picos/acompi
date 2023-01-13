@@ -10,10 +10,10 @@ if (token.exp < dateNow.getTime() / 1000) {
 if (isExpiredToken == true){
     localStorage.setItem("acesso", "false")
 }
-if( await localStorage.getItem("acesso") == "true"){
+if(localStorage.getItem("acesso") == "true"){
     logado = true;
 }
-if (await logado != true){
+if (logado != true){
     alert("você não está autenticado");
     window.location.href = '../../autenticacao/login.html'
 }
