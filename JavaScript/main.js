@@ -25,7 +25,6 @@ if (token.user == "professor" && url_atual.endsWith("usuarios/aluno/escolher-tur
     window.location.href = '../../autenticacao/login.html'
 }
 function logout(){
-    localStorage.setItem("token", "")
-    localStorage.setItem("acesso", "false")
+    localStorage.clear()
     window.location.href = '/'
 }
