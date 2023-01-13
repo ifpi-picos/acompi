@@ -1,15 +1,15 @@
 var logado = false;
-const token = JSON.parse(localStorage.getItem("token"))
-var isExpiredToken = false;
+// const token = JSON.parse(localStorage.getItem("token"))
+// var isExpiredToken = false;
 
-var dateNow = new Date();
+// var dateNow = new Date();
 
-if (token.exp < dateNow.getTime() / 1000) {
-  isExpiredToken = true;
-}
-if (isExpiredToken == true){
-    localStorage.setItem("acesso", "false")
-}
+// if (token.exp < dateNow.getTime() / 1000) {
+//   isExpiredToken = true;
+// }
+// if (isExpiredToken == true){
+//     localStorage.setItem("acesso", "false")
+// }
 if(localStorage.getItem("acesso") == "true"){
     logado = true;
 }
