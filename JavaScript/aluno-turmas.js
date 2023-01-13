@@ -8,7 +8,8 @@ function preencherTurmas(turmas) {
     turmas.forEach(async turma => {
         const res = await fetch('https://acompi-back-end-la29.onrender.com/turmas/professor/' + turma.id_professor.toString())
         const professor = await res.json()
-        const alunoID = 35;
+        const token = JSON.parse(localStorage.getItem("token"))
+        const alunoID = token.id;
         const verificaReserva = verificarReserva(turma.reservas, alunoID);
         const retorno = await fetch('https://acompi-back-end-la29.onrender.com/reservas/' + turma.id.toString())
         const quantidadeReservaTurma = await retorno.json()

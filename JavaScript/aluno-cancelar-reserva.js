@@ -1,14 +1,16 @@
 const divReservas = document.querySelector('#reservas')
 
 async function getReservas() {
-    const alunoID = 35;
+    const token = JSON.parse(localStorage.getItem("token"))
+    const alunoID = token.id;
     const res = await fetch('https://acompi-back-end-la29.onrender.com/cadastro/aluno/' + alunoID.toString());
     const aluno = await res.json();
     preencherReservas(aluno.reservas);
 }
 
 async function preencherReservas(reservas) {
-    const alunoID = 35;
+    const token = JSON.parse(localStorage.getItem("token"))
+    const alunoID = token.id;
     const res = await fetch('https://acompi-back-end-la29.onrender.com/cadastro/aluno/' + alunoID.toString());
     const aluno = await res.json();
     reservas.forEach(async reserva => {

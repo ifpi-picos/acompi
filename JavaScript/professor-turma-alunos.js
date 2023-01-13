@@ -10,7 +10,6 @@ async function getReservas() {
 function preencherReservas(reservas) {
     reservas.forEach(async reserva => {
         const alunoID = reserva.id_aluno
-        console.log(alunoID)
         const res = await fetch('https://acompi-back-end-la29.onrender.com/cadastro/aluno/' + alunoID.toString())
         const aluno = await res.json();
         const novaReservaHTML = '<div>\n<h1>'+aluno.nome+'</h1>\n<p>E-mail: '+aluno.email+'</p>\n<p>Curso: '+reserva.curso+'</p>\n<h4 class="ausenciaComputador" >'+'Possui Computador: '+reserva.computador+'</h4>\n<button onclick="excluirReserva(' + reserva.id + ')" class="btnRemoverAluno" id="excluirReserva">Remover Aluno</button>\n</div>'

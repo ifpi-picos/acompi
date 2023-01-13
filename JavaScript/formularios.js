@@ -29,13 +29,15 @@ async function submitForm(event) {
             const inputConsentimento = document.querySelector('.consentimento')
             const search = window.location.search.substring(1).substring(6)
             const id_turma = parseInt(search)
+            const token = JSON.parse(localStorage.getItem("token"))
+            const id_aluno = token.id
             if (inputComputador.value === null || inputCurso.value === null || inputConsentimento.value === null) {
                 console.log('campos vazios')
                 return
             }
             const dados = {
                 id_turma: id_turma,
-                id_aluno: 35,
+                id_aluno: id_aluno,
                 computador: inputComputador.value,
                 curso: inputCurso.value,
             }
@@ -84,7 +86,8 @@ async function submitForm(event) {
                 const inputHoraInicio = document.querySelector('#horaInicio')
                 const inputHoraFim = document.querySelector('#horaFim')
                 const inputCurso = document.querySelector('.cursoProfessor')
-                const id_professor = "16"
+                const token = JSON.parse(localStorage.getItem("token"))
+                const id_professor = token.id
                 if (inputLaboratorio.value === null || inputData.value === null || inputHoraInicio.value === null || inputHoraFim.value === null || inputCurso.value === null) {
                     console.log('campos vazios')
                     return
@@ -101,7 +104,7 @@ async function submitForm(event) {
             }
             async function enviarDados(dados) {
                 try {
-                    const resposta = await fetch('http://localhost:3000/turmas', {
+                    const resposta = await fetch('https://acompi-back-end-la29.onrender.com/turmas', {
                         method: 'POST',
                         headers: {
                             Accept: 'application/json',

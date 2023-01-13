@@ -8,7 +8,7 @@ async function login(){
             email: emailCadastro.value,
             senha: senha1Cadastro.value
         }
-        const resp = await fetch('https://nimble-narwhal-3fca41.netlify.app/login.html', {
+        const resp = await fetch('https://acompi-back-end-la29.onrender.com/login.html', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',

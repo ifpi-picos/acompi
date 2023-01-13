@@ -1,7 +1,8 @@
 const divTurmas = document.querySelector('#turmas')
 
 async function getTurmas() {
-    const professorID = 16;
+    const token = JSON.parse(localStorage.getItem("token"))
+    const professorID = token.id;
     const res = await fetch('https://acompi-back-end-la29.onrender.com/turmas/professor/' + professorID.toString());
     const professor = await res.json();
     preencherTurmas(professor[0].turmas);

@@ -143,8 +143,16 @@ async function submitForm(event) {
       )
       if (resp.status === 201) {
         if (usuario.email.indexOf('@aluno.ifpi.edu.br') != -1) {
+          const resposta = await resp.json();
+          const token = await JSON.parse(atob(resposta.token.split('.')[1]));
+          localStorage.setItem("token", JSON.stringify(token))
+          localStorage.setItem("acesso", "true")
           window.location.href = '../usuarios/aluno/escolher-turma.html'
         } else if (usuario.email.indexOf('@ifpi.edu.br') != -1) {
+          const resposta = await resp.json();
+          const token = await JSON.parse(atob(resposta.token.split('.')[1]));
+          localStorage.setItem("token", JSON.stringify(token))
+          localStorage.setItem("acesso", "true")
           window.location.href = '../usuarios/professor/ver-cancelar-turma.html'
         }
       } else {
