@@ -89,7 +89,7 @@ form input {
 
     
 /* Main */
-.containerAuthenticacaoFilho, .validacao, .login {
+.containerAuthenticacaoFilho, .validacao, .login, .modificarSenha {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -493,7 +493,10 @@ fim tela cadastro/validaçao/login*/
 
 /* Logo */
 .logoModificarSenha {
-    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
 }
 
 /* Container de modificar senha */
