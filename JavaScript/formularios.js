@@ -45,7 +45,7 @@ async function submitForm(event) {
         }
         async function enviarDados(dados) {
             try {
-                const resposta = await fetch('https://acompi-back-end-la29.onrender.com/reservas', {
+                const resposta = await fetch('https://acompi-back-end-lhbe.onrender.com/reservas', {
                     method: 'POST',
                     headers: {
                         Accept: 'application/json',
@@ -104,7 +104,7 @@ async function submitForm(event) {
             }
             async function enviarDados(dados) {
                 try {
-                    const resposta = await fetch('https://acompi-back-end-la29.onrender.com/turmas', {
+                    const resposta = await fetch('https://acompi-back-end-lhbe.onrender.com/turmas', {
                         method: 'POST',
                         headers: {
                             Accept: 'application/json',

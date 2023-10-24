@@ -1,17 +1,17 @@
 const divTurmas = document.querySelector('#turmas')
 async function getTurmas() {
-    const res = await fetch('https://acompi-back-end-la29.onrender.com/turmas');
+    const res = await fetch('https://acompi-back-end-lhbe.onrender.com/turmas');
     const turmas = await res.json();
     preencherTurmas(turmas);
 }
 function preencherTurmas(turmas) {
     turmas.forEach(async turma => {
-        const res = await fetch('https://acompi-back-end-la29.onrender.com/turmas/professor/' + turma.id_professor.toString())
+        const res = await fetch('https://acompi-back-end-lhbe.onrender.com/turmas/professor/' + turma.id_professor.toString())
         const professor = await res.json()
         const token = JSON.parse(localStorage.getItem("token"))
         const alunoID = token.id;
         const verificaReserva = verificarReserva(turma.reservas, alunoID);
-        const retorno = await fetch('https://acompi-back-end-la29.onrender.com/reservas/' + turma.id.toString())
+        const retorno = await fetch('https://acompi-back-end-lhbe.onrender.com/reservas/' + turma.id.toString())
         const quantidadeReservaTurma = await retorno.json()
         console.log(verificaReserva)
         if (verificaReserva != true && quantidadeReservaTurma.qtd < 12) {

@@ -93,7 +93,7 @@ async function submitForm(event) {
     async function enviarDados(dados) {
       try {
         const resposta = await fetch(
-          'https://acompi-back-end-la29.onrender.com/cadastro',
+          'https://acompi-back-end-lhbe.onrender.com/cadastro',
           {
             method: 'POST',
             headers: {
@@ -131,7 +131,7 @@ async function submitForm(event) {
         senha: senhaLogin.value
       }
       const resp = await fetch(
-        'https://acompi-back-end-la29.onrender.com/login',
+        'https://acompi-back-end-lhbe.onrender.com/login',
         {
           method: 'POST',
           headers: {
@@ -170,7 +170,7 @@ async function submitForm(event) {
         senha: senha1ModificarSenha.value,
         confirmasenha: senha2ModificarSenha.value
       }
-      const resp = await fetch('https://acompi-back-end-la29.onrender.com/modificar-senha', {
+      const resp = await fetch('https://acompi-back-end-lhbe.onrender.com/modificar-senha', {
         method: 'PATCH',
         headers: {
           Accept: 'application/json',
@@ -325,7 +325,7 @@ async function enviarParaApi() {
       confirmasenha: senha2ModificarSenha.value
     }
     alert('fjbhdfjbhdflkgkdjghfghdfjghdjhgfghguhepgijengoerhgerhogierg')
-    const resp = await fetch('https://acompi-back-end-la29.onrender.com/modificar-senha', {
+    const resp = await fetch('https://acompi-back-end-lhbe.onrender.com/modificar-senha', {
       method: 'PATCH',
       headers: {
         Accept: 'application/json',
