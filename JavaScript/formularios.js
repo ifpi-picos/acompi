@@ -71,6 +71,8 @@ async function submitForm(event) {
     if (url_atual.endsWith("usuarios/professor/formulario-criar-turma.html")) {
         const inputHoraInicio = +document.querySelector('#horaInicio').value;
         const inputHoraFim = +document.querySelector('#horaFim').value;
+        console.log(inputHoraFim)
+        console.log(inputHoraInicio)
         if (inputHoraFim == inputHoraInicio) {
             alert('A hora Final deve ser diferente da hora inicial')
         } else if (inputHoraFim < inputHoraInicio) {
@@ -78,6 +80,7 @@ async function submitForm(event) {
         } else if (inputHoraFim - inputHoraInicio > 1) {
             alert('as turmas devem ser de 1 hora')
         } else if (inputHoraFim - inputHoraInicio == 1) {
+            console.log('funciona')
             const dados = await getDadosForm()
             enviarDados(dados)
             async function getDadosForm() {
