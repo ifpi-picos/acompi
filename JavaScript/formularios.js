@@ -112,6 +112,7 @@ async function submitForm(event) {
                         },
                         body: JSON.stringify(dados)
                     })
+                    console.log('foi')
                     if (resposta.status == 201) {
                         document.querySelector('#labSelect').value = ""
                         document.querySelector('.data').value = ""
