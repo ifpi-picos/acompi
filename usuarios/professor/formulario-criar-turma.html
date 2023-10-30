@@ -42,7 +42,7 @@
         <div class="divPai">
             <section class="secaoParaTelaComputador">
                 <h2 class="formTitulo">Criar turma</h2>
-                <form onsubmit="submitForm(event)">
+                <form>
                     <div class="preencher">
                         <label class="formLabel">Escolha qual laboratório deseja reservar:</label>
                         <select id="labSelect" required>
@@ -108,7 +108,7 @@
                     </div>
                     <div id="botoes">
                         <button id="cancelar">Cancelar</button>
-                        <button id="botaoCriar" type="submit">Criar</button>
+                        <button onclick="submitForm(event)" id="botaoCriar" type="submit">Criar</button>
                     </div>
                 </form>
             </section>
