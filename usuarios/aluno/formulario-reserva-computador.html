@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <script type="text/javascript" src="../../JavaScript/main.js"></script>
     <title>Reservar computador</title>
 </head>
+
 <body>
     <header>
         <nav class="menuLateral">
@@ -18,7 +20,7 @@
                 <div id="divFecharMenu">
                     <li class="botaoMenu fecharMenu">Sair</li>
                 </div>
-                
+
                 <li class="itemMenu">
                     <a href="escolher-turma.html" class="acaoItemMenu">Reservar computador</a>
                 </li>
@@ -41,49 +43,54 @@
             </ul>
         </nav>
     </header>
-    <main>  
+    <main>
 
         <div class="divPai">
-                <section class="secaoParaTelaComputador">
-        <h2 class="formTitulo">Reservar computador</h2>
-        <form>
-        <div class="preencher">
-            <label class="formLabel">Você possui um computador?</label>
-            <div class="formDiv">
-            <input class="radioButton computador" type="radio" name="computador" value="sim" required/> Sim
-            <input class="radioButton computador" type="radio" name="computador" value="nao"/> Não
-            </div>
-        </div>
-        <div class="preencher">
-            <label class="formLabel">Escolha seu curso:</label>
-            <select class="formSelect" required>
-                <option class="curso" value=''>Selecione</option>
-                <option class="curso" value='Administração'>Administração</option>
-                <option class="curso" value='Eletrotécnica'>Eletrotécnica</option>
-                <option class="curso" value='Informática'>Informática</option>
-                <option class="curso" value='Análise e Desenvolvimento de Sistemas'>Análise e Desenvolvimento de Sistemas</option>
-                <option class="curso" value='Química'>Química</option>
-                <option class="curso" value='Física'>Física</option>
-                <option class="curso" value='Engenharia de Software'>Engenharia de Software</option>
-                <option class="curso" value='Outro'>Outro</option>
-                <option class="curso" value='Nenhum'>Nenhum</option>
-            </select>
-        </div>
-        <div class="preencher">
-            <label class="formLabel">Possui ciência que, aceitando entrar nesta turma, estará presente para estudar
-                e realizar trabalhos e não para entretenimento?</label>
-            <div class="formDiv">
-            <input class="radioButton consentimento"  type="radio" name="consentimento" value="sim" required/> Sim
-            </div>
-        </div>
-        <div id="botoes">
-            <button id="cancelar">Cancelar</button>
-            <button onclick="submitForm(event)" id="botaoCriar"type="submit">Reservar</button>
-        </div>
-        </form>
-        </section>
+            <section class="secaoParaTelaComputador">
+                <h2 class="formTitulo">Reservar computador</h2>
+                <form>
+                    <div class="preencher">
+                        <label class="formLabel">Você possui um computador?</label>
+                        <div class="formDiv">
+                            <input class="radioButton computador" type="radio" name="computador" value="sim" required />
+                            Sim
+                            <input class="radioButton computador" type="radio" name="computador" value="nao" /> Não
+                        </div>
+                    </div>
+                    <div class="preencher">
+                        <label class="formLabel">Escolha seu curso:</label>
+                        <select class="formSelect" required>
+                            <option class="curso" value=''>Selecione</option>
+                            <option class="curso" value='Administração'>Administração</option>
+                            <option class="curso" value='Eletrotécnica'>Eletrotécnica</option>
+                            <option class="curso" value='Informática'>Informática</option>
+                            <option class="curso" value='Análise e Desenvolvimento de Sistemas'>Análise e
+                                Desenvolvimento de Sistemas</option>
+                            <option class="curso" value='Química'>Química</option>
+                            <option class="curso" value='Física'>Física</option>
+                            <option class="curso" value='Engenharia de Software'>Engenharia de Software</option>
+                            <option class="curso" value='Outro'>Outro</option>
+                            <option class="curso" value='Nenhum'>Nenhum</option>
+                        </select>
+                    </div>
+                    <div class="preencher">
+                        <label class="formLabel">Possui ciência que, aceitando entrar nesta turma, estará presente para
+                            estudar
+                            e realizar trabalhos e não para entretenimento?</label>
+                        <div class="formDiv">
+                            <input class="radioButton consentimento" type="radio" name="consentimento" value="sim"
+                                required /> Sim
+                        </div>
+                    </div>
+                    <div id="botoes">
+                        <button id="cancelar">Cancelar</button>
+                        <button onclick="submitForm(event)" id="botaoCriar" type="submit">Reservar</button>
+                    </div>
+                </form>
+            </section>
         </div>
     </main>
     <script src="..\..\JavaScript\formularios.js"></script>
 </body>
+
 </html>

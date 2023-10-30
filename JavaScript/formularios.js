@@ -68,7 +68,7 @@ async function submitForm(event) {
             }
         }
     }
-    if (url_atual.endsWith("usuarios/professor/formulario-criar-turma.html")) {
+    if (url_atual.endsWith("/usuarios/professor/formulario-criar-turma")) {
         const inputHoraInicio = +document.querySelector('#horaInicio').value;
         const inputHoraFim = +document.querySelector('#horaFim').value;
         console.log(inputHoraFim)
