@@ -8,10 +8,20 @@ async function getTurmas() {
     preencherTurmas(professor[0].turmas);
 }
 function preencherTurmas(turmas) {
+    function encodeInput (input)  {
+        const encoded = document.createElement('div');
+        encoded.innerText = input;
+        return encoded.innerHTML;
+      }
     turmas.forEach(async turma => {
         const res = await fetch('https://acompi-back-end-lhbe.onrender.com/turmas/professor/' + turma.id_professor.toString());
         const professor = await res.json();
-        const novaTurmaHTML = '<div>\n<h1>Laboratório ' + turma.id_lab + '</h1>\n<p>Professor: ' + professor[0].nome + '</p>\n<p>Horário: ' + turma.horario_inicio + 'min às ' + turma.horario_fim + 'min</p>\n<p>Data: ' + turma.data_turma + '</p>\n<a href="ver-remover-alunos-da-turma.html?turma=' + turma.id + '" class="index">Alunos</a>\n<a onclick="excluirTurma(' + turma.id + ')" class="index excluirTurma" id="excluirTurma">Excluir turma</a>\n</div>'
+        const nome_professor = encodeInput(professor[0].nome)
+        const id_lab = encodeInput(turma.id_lab)
+        const horario_i = encodeInput(turma.horario_inicio)
+        const horario_f = encodeInput(turma.horario_fim )
+        const data_turma = encodeInput(turma.data_turma)
+        const novaTurmaHTML = '<div>\n<h1>Laboratório ' + id_lab + '</h1>\n<p>Professor: ' + nome_professor + '</p>\n<p>Horário: ' + horario_i + 'min às ' + horario_f + 'min</p>\n<p>Data: ' + data_turma + '</p>\n<a href="ver-remover-alunos-da-turma.html?turma=' + turma.id + '" class="index">Alunos</a>\n<a onclick="excluirTurma(' + turma.id + ')" class="index excluirTurma" id="excluirTurma">Excluir turma</a>\n</div>'
         divTurmas.innerHTML = divTurmas.innerHTML + novaTurmaHTML
     });
 }
