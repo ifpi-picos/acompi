@@ -112,9 +112,6 @@ async function submitForm(event) {
       const nome_cadastro = escapeHTML(nomeCadastro.value)
       const senha_cadastro = escapeHTML(senha1Cadastro.value)
       const email_cadastro = escapeHTML(emailCadastro.value)
-      console.log('nome antes do tratamento:',nomeCadastro.value, '\napós tratamento:', nome_cadastro,
-      '\nsenha antes do tratamento:', senha1Cadastro.value, '\nnome após tratamento:', senha_cadastro,
-      '\nemail antes do tratamento:', emailCadastro.value, '\nemail após tratamento:', email_cadastro)
       const dados = {
         nome: nome_cadastro,
         senha: senha_cadastro,
@@ -157,10 +154,12 @@ async function submitForm(event) {
   if (window.location.href.endsWith('autenticacao/validacao.html')) {
     window.location.href = 'login.html'
   } else if (window.location.href.endsWith('autenticacao/login.html')) {
+    const email_login = escapeHTML(emailLogin.value)
+    const senha_login = escapeHTML(senhaLogin.value)
     try {
       const usuario = {
-        email: emailLogin.value,
-        senha: senhaLogin.value
+        email: email_login,
+        senha: senha_login
       }
       const resp = await fetch(
         'https://acompi-back-end-lhbe.onrender.com/login',
@@ -196,11 +195,14 @@ async function submitForm(event) {
   } else if (
     window.location.href.endsWith('autenticacao/modificar-senha.html')
   ) {
+    const email_m_senha = escapeHTML(emailModificarSenha.value)
+    const senha1_m_senha = escapeHTML(senha1ModificarSenha.value)
+    const senha2_m_senha = escapeHTML(senha2ModificarSenha.value)
     try {
       const usuario = {
-        email: emailModificarSenha.value,
-        senha: senha1ModificarSenha.value,
-        confirmasenha: senha2ModificarSenha.value
+        email: email_m_senha,
+        senha: senha1_m_senha,
+        confirmasenha: senha2_m_senha
       }
       const resp = await fetch('https://acompi-back-end-lhbe.onrender.com/modificar-senha', {
         method: 'PATCH',
