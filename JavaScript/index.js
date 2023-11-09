@@ -113,8 +113,8 @@ async function submitForm(event) {
       const senha_cadastro = escapeHTML(senha1Cadastro.value)
       const email_cadastro = escapeHTML(emailCadastro.value)
       console.log('nome antes do tratamento:',nomeCadastro.value, '\napós tratamento:', nome_cadastro,
-      'senha antes do tratamento:', senha1Cadastro.value, '\nnome após tratamento:', senha_cadastro,
-      'email antes do tratamento:', emailCadastro.value, '\nemail após tratamento:', email_cadastro)
+      '\nsenha antes do tratamento:', senha1Cadastro.value, '\nnome após tratamento:', senha_cadastro,
+      '\nemail antes do tratamento:', emailCadastro.value, '\nemail após tratamento:', email_cadastro)
       const dados = {
         nome: nome_cadastro,
         senha: senha_cadastro,
