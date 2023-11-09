@@ -6,6 +6,31 @@ const nomeCadastro = document.querySelector('#nomeCadastro')
 const emailCadastro = document.querySelector('#emailCadastro')
 const botaoCadastro = document.querySelector('#btnCadastro')
 
+function escapeHTML(str) {
+  return str.replace(/[&<>"'\/]/g, function (char) {
+    switch (char) {
+      case '&':
+        return '&amp;';
+      case '<':
+        return '&lt;';
+      case '>':
+        return '&gt;';
+      case '"':
+        return '&quot;';
+      case "'":
+        return '&#39;';
+      case '/':
+        return '&#x2F;';
+      case '\ ':
+        return '&#92;';
+      default:
+        return char;
+    }
+  });
+}
+
+
+
 //quando clicar no botao cadastrar
 //verificar se todos os campos do cadastro estao preenchidos
 function validandoCamposCadastro(event) {
@@ -70,6 +95,7 @@ async function submitForm(event) {
   var url_atual = window.location.pathname
   if (url_atual.endsWith('autenticacao/cadastro.html')) {
     const dados = getDadosForm()
+
     enviarDados(dados)
     function getDadosForm() {
       const nomeCadastro = document.querySelector('#nomeCadastro')
@@ -83,10 +109,16 @@ async function submitForm(event) {
         console.log('campos vazios')
         return
       }
+      const nome_cadastro = escapeHTML(nomeCadastro.value)
+      const senha_cadastro = escapeHTML(senha1Cadastro.value)
+      const email_cadastro = escapeHTML(emailCadastro.value)
+      console.log('nome antes do tratamento:',nomeCadastro.value, '\napós tratamento:', nome_cadastro,
+      'senha antes do tratamento:', senha1Cadastro.value, '\nnome após tratamento:', senha_cadastro,
+      'email antes do tratamento:', emailCadastro.value, '\nemail após tratamento:', email_cadastro)
       const dados = {
-        nome: nomeCadastro.value,
-        senha: senha1Cadastro.value,
-        email: emailCadastro.value
+        nome: nome_cadastro,
+        senha: senha_cadastro,
+        email: email_cadastro
       }
       return dados
     }
